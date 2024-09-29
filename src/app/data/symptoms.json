@@ -1,0 +1,1235 @@
+
+
+{
+
+    "symptoms" : [
+        {
+            "id": 1,
+            "name": "Head",
+            "symptoms": [
+                {
+                    "name": "Headache",
+                    "id": 1
+                },
+
+                    
+                
+
+                {
+                    "name": "Dizziness",
+                    "id": 2
+                },
+                    
+                    {
+                        "name": "Lightheadedness",
+                        "id": 3
+                    },
+
+                    {
+                        "name": "Confusion",
+                        "id": 4
+                    },
+                        
+                        {
+                            "name": "Memory Loss",
+                            "id": 5
+                        },
+
+                        {
+                            "name": "Ringing in Ears",
+                            "id": 6
+                        },
+
+                        {
+                            "name": "Sinus Pain",
+                            "id": 7
+                        },
+                            
+                            {
+                                "name": "Nausea",
+                                "id": 8
+                            },
+                                
+                                {
+                                    "name": "Migraine",
+                                    "id": 9
+                                },
+
+                                {
+                                    "name": "Vertigo",
+                                    "id": 10
+                                },
+
+                                {
+                                    "name": "Blurred Vision",
+                                    "id": 11
+                                }
+
+            ]
+
+        },
+                        
+        {
+
+            "id": 2,
+            "name": "Eyes",
+            "symptoms": [
+                {
+                    "name": "Redness",
+                    "id": 1
+                },
+
+                {
+                    "name": "Itching",
+                    "id": 2
+                },
+
+                {
+                    "name": "Dry Eyes",
+                    "id": 3
+                },
+
+                {
+                    "name": "Watery Eyes",
+                    "id": 4
+                },
+
+                {
+                    "name": "Blurred Vision",
+                    "id": 5
+                },
+
+                {
+                    "name": "Double Vision",
+                    "id": 6
+                },
+
+                {
+                    "name": "Light Sensitivity",
+                    "id": 7
+                },
+
+                {
+                    "name": "Eye Pain",
+                    "id": 8
+                },
+
+                {
+                    "name": "Eye Discharge",
+                    "id": 9
+                },
+
+                {
+                    "name": "Floaters",
+                    "id": 10
+                }
+
+            ]
+
+        },
+            
+            {
+    
+                "id": 3,
+                "name": "Ears",
+                "symptoms": [
+                    {
+                        "name": "Earache",
+                        "id": 1
+                    },
+    
+                    {
+                        "name": "Hearing Loss",
+                        "id": 2
+                    },
+    
+                    {
+                        "name": "Ringing in Ears",
+                        "id": 3
+                    },
+    
+                    {
+                        "name": "Itching",
+                        "id": 4
+                    },
+    
+                    {
+                        "name": "Dizziness",
+                        "id": 5
+                    },
+    
+                    {
+                        "name": "Ear Discharge",
+                        "id": 6
+                    },
+    
+                    {
+                        "name": "Fullness in Ears",
+                        "id": 7
+                    },
+    
+                    {
+                        "name": "Vertigo",
+                        "id": 8
+                    },
+    
+                    {
+                        "name": "Ear Pressure",
+                        "id": 9
+                    }
+    
+                ]
+    
+            },
+    
+            {
+    
+                "id": 4,
+                "name": "Nose",
+                "symptoms": [
+                    {
+                        "name": "Runny Nose",
+                        "id": 1
+                    },
+    
+                    {
+                        "name": "Nasal Congestion",
+                        "id": 2
+                    },
+    
+                    {
+                        "name": "Sneezing",
+                        "id": 3
+                    },
+    
+                    {
+                        "name": "Postnasal Drip",
+                        "id": 4
+                    },
+    
+                    {
+                        "name": "Nosebleed",
+                        "id": 5
+                    },
+    
+                    {
+                        "name": "Loss of Smell",
+                        "id": 6
+                    },
+    
+                    {
+                        "name": "Facial Pain",
+                        "id": 7
+                    },
+    
+                    {
+                        "name": "Sinus Pressure",
+                        "id": 8
+                    },
+    
+                    {
+                        "name": "Snoring",
+                        "id": 9
+                    },
+    
+                    {
+                        "name": "Sore Throat",
+                        "id": 10
+                    }
+    
+                ]
+    
+            },
+    
+            {
+    
+                "id": 5,
+                "name": "Mouth",
+                "symptoms": [
+                    {
+                        "name": "Toothache",
+                        "id": 1
+                    },
+    
+                    {
+                        "name": "Mouth Sores",
+                        "id": 2
+                    },
+
+                    {
+                        "name": "Bleeding Gums",
+                        "id": 3
+                    },
+    
+                    {
+                        "name": "Bad Breath",
+                        "id": 4
+                    },
+    
+                    {
+                        "name": "Dry Mouth",
+                        "id": 5
+                    },
+    
+                    {
+                        "name": "Jaw Pain",
+                        "id": 6
+                    },
+    
+                    {
+                        "name": "Swollen Gums",
+                        "id": 7
+                    },
+    
+                    {
+                        "name": "Mouth Ulcers",
+                        "id": 8
+                    },
+    
+                    {
+                        "name": "Gum Recession",
+                        "id": 9
+                    },
+    
+                    {
+                        "name": "Canker Sores",
+                        "id": 10
+                    }
+    
+                ]
+    
+            },
+    
+            {
+    
+                "id": 6,
+                "name": "Throat",
+                "symptoms": [
+                    {
+                        "name": "Sore Throat",
+                        "id": 1
+                    },
+    
+                    {
+                        "name": "Hoarseness",
+                        "id": 2
+                    },
+    
+                    {
+                        "name": "Throat Pain",
+                        "id": 3
+                    },
+    
+                    {
+                        "name": "Difficulty Swallowing",
+                        "id": 4
+                    },
+    
+                    {
+                        "name": "Lump in Throat",
+                        "id": 5
+                    },
+    
+                    {
+                        "name": "Throat Clearing",
+                        "id": 6
+                    },
+    
+                    {
+                        "name": "Throat Tightness",
+                        "id": 7
+                    },
+    
+                    {
+                        "name": "Throat Swelling",
+                        "id": 8
+                    },
+    
+                    {
+                        "name": "Throat Itching",
+                        "id": 9
+                    },
+    
+                    {
+                        "name": "Throat Ulcers",
+                        "id": 10
+                    }
+    
+                ]
+    
+            },
+
+
+{
+
+    "id": 7,
+    "name": "Chest",
+    "symptoms": [
+        {
+            "name": "Chest Pain",
+            "id": 1
+        },
+
+        {
+            "name": "Shortness of Breath",
+            "id": 2
+        },
+
+        {
+            "name": "Palpitations",
+            "id": 3
+        },
+
+        {
+            "name": "Coughing",
+            "id": 4
+        },
+
+        {
+            "name": "Wheezing",
+            "id": 5
+        },
+
+        {
+            "name": "Tightness in Chest",
+            "id": 6
+        },
+
+        {
+            "name": "Heartburn",
+            "id": 7
+        },
+
+        {
+            "name": "Swelling in Chest",
+            "id": 8
+        },
+
+        {
+            "name": "Sputum Production",
+            "id": 9
+        }
+
+    ]
+
+},
+
+{
+
+    "name": "Cardiovascular",
+    "id": 7.5,
+
+    "symptoms": [
+        
+        {
+            "name": "Irregular Heartbeat",
+            "id": 1
+
+        },
+
+        {
+            "name": "High Blood Pressure",
+            "id": 2
+        },
+
+        {
+            "name": "Low Blood Pressure",
+            "id": 3
+        },
+
+        {
+            "name": "Heart Palpitations",
+            "id": 4
+        },
+
+        {
+            "name": "Heartburn",
+            "id": 5
+        },
+
+        {
+            "name": ":Chest Pain",
+            "id": 6 
+
+        }
+    ]
+
+},
+
+{
+
+    "id": 8,
+    "name": "Abdomen",
+    "symptoms": [
+        {
+            "name": "Abdominal Pain",
+            "id": 1
+        },
+
+        {
+            "name": "Bloating",
+            "id": 2
+        },
+
+        {
+            "name": "Nausea",
+            "id": 3
+        },
+
+        {
+            "name": "Vomiting",
+            "id": 4
+        },
+
+        {
+            "name": "Diarrhea",
+            "id": 5
+        },
+
+        {
+            "name": "Constipation",
+            "id": 6
+        },
+
+        {
+            "name": "Indigestion",
+            "id": 7
+        },
+
+        {
+            "name": "Loss of Appetite",
+            "id": 8
+        },
+
+        {
+            "name": "Blood in Stool",
+            "id": 9
+        },
+
+        {
+            "name": "Cramping",
+            "id": 10
+        }
+
+    ]
+
+},
+
+{ 
+    "id": 9,
+    "name": "Back",
+    "symptoms": [
+        {
+            "name": "Back Pain",
+            "id": 1
+        },
+
+        {
+            "name": "Back Stiffness",
+            "id": 2
+        },
+
+        {
+            "name": "Limited Range of Motion",
+            "id": 3
+        },
+
+        {
+            "name": "Muscle Spasms",
+            "id": 4
+        },
+
+        {
+            "name": "Sharp Pain",
+            "id": 5
+        },
+
+        {
+            "name": "Shooting Pain",
+            "id": 6
+        },
+
+        {
+            "name": "Weakness",
+            "id": 7
+        },
+
+        {
+            "name": "Swelling",
+            "id": 8
+        },
+
+        {
+            "name": "Tenderness",
+            "id": 9
+        }
+
+    ]
+
+},
+
+{
+
+    "id": 10,
+    "name": "Arms",
+    "symptoms": [
+        {
+            "name": "Arm Pain",
+            "id": 1
+        },
+
+        {
+            "name": "Numbness",
+            "id": 2
+        },
+
+        {
+            "name": "Tingling",
+            "id": 3
+        },
+
+        {
+            "name": "Weakness",
+            "id": 4
+        },
+
+        {
+            "name": "Swelling",
+            "id": 5
+        },
+
+        {
+            "name": "Limited Range of Motion",
+            "id": 6
+        },
+
+        {
+            "name": "Stiffness",
+            "id": 7
+        },
+
+        {
+            "name": "Muscle Cramps",
+            "id": 8
+        },
+
+        {
+            "name": "Tremors",
+            "id": 9
+        }
+
+    ]
+
+},
+
+{
+
+    "id": 11,
+    "name": "Legs",
+    "symptoms": [
+        {
+            "name": "Leg Pain",
+            "id": 1
+        },
+
+        {
+            "name": "Leg Swelling",
+            "id": 2
+        },
+
+        {
+            "name": "Leg Numbness",
+            "id": 3
+        },
+
+        {
+            "name": "Leg Tingling", 
+            "id": 4
+        },
+            
+            {
+                "name": "Leg Cramping",
+                "id": 5
+            },
+    
+            {
+                "name": "Weakness",
+                "id": 6
+            },
+    
+            {
+                "name": "Joint Pain",
+                "id": 7
+            },
+    
+            {
+                "name": "Varicose Veins",
+                "id": 8
+            },
+    
+            {
+                "name": "Limited Mobility",
+                "id": 9
+            },
+        
+                {
+                    "name": "Muscle Spasms",
+                    "id": 10
+                },
+                {
+                    "name": "Restless Legs",
+                    "id": 11
+                }
+
+    ]
+
+},
+
+    
+{
+
+    "id": 16,
+    "name": "Skin",
+    "symptoms": [
+        {
+            "name": "Rash",
+            "id": 1
+        },
+
+        {
+            "name": "Itching",
+            "id": 2
+        },
+
+        {
+            "name": "Redness",
+            "id": 3
+        },
+
+        {
+            "name": "Dry Skin",
+            "id": 4
+        },
+
+        {
+            "name": "Blisters",
+            "id": 5
+        },
+
+        {
+            "name": "Swelling",
+            "id": 6
+        },
+
+        {
+            "name": "Hives",
+            "id": 7
+        },
+
+        {
+            "name": "Lumps",
+            "id": 8
+        },
+
+        {
+            "name": "Peeling Skin",
+            "id": 9
+        },
+
+        {
+            "name": "Ulcers",
+            "id": 10
+        }
+
+    ]
+
+},
+
+{
+
+    "id": 17,
+    "name": "Hands",
+    "symptoms": [
+        {
+            "name": "Numbness",
+            "id": 1
+        },
+
+        {
+            "name": "Tingling",
+            "id": 2
+        },
+
+        {
+            "name": "Pain",
+            "id": 3
+        },
+
+        {
+            "name": "Weakness",
+            "id": 4
+        },
+
+        {
+            "name": "Swelling",
+            "id": 5
+        },
+
+        {
+            "name": "Stiffness",
+            "id": 6
+        },
+
+        {
+            "name": "Cramping",
+            "id": 7
+        },
+
+        {
+            "name": "Limited Dexterity",
+            "id": 8
+        },
+
+        {
+            "name": "Blisters",
+            "id": 9
+        },
+
+        {
+            "name": "Cold Fingers",
+            "id": 10
+        },
+        {
+            "name": "Joint Pain",
+            "id": 11
+        },
+        {
+            "name": "Tremors",
+            "id": 12
+        }
+
+    ]
+
+},
+
+{
+
+    "id": 18,
+    "name": "Feet",
+    "symptoms": [
+        {
+            "name": "Numbness",
+            "id": 1
+        },
+
+        {
+            "name": "Tingling",
+            "id": 2
+        },
+
+        {
+            "name": "Pain",
+            "id": 3
+        },
+
+        {
+            "name": "Swelling",
+            "id": 4
+        },
+
+        {
+            "name": "Cold Feet",
+            "id": 5
+        },
+
+        {
+            "name": "Blisters",
+            "id": 6
+        },
+
+        {
+            "name": "Foot Cramps",
+            "id": 7
+        },
+
+        {
+            "name": "Flat Feet",
+            "id": 8
+        },
+
+        {
+            "name": "Heel Pain",
+            "id": 9
+        },
+
+        {
+            "name": "Bunions",
+            "id": 10
+        }
+
+    ]
+
+},
+
+{
+    
+        "id": 12,
+        "name": "Neck",
+        "symptoms": [
+            {
+                "name": "Neck Pain",
+                "id": 1
+            },
+    
+            {
+                "name": "Stiffness",
+                "id": 2
+            },
+    
+            {
+                "name": "Swelling",
+                "id": 3
+            },
+    
+            {
+                "name": "Limited Range of Motion",
+                "id": 4
+            },
+    
+            {
+                "name": "Tingling or Numbness",
+                "id": 5
+            },
+    
+            {
+                "name": "Muscle Spasms",
+                "id": 6
+            },
+    
+            {
+                "name": "Lumps in Neck",
+                "id": 7
+            },
+    
+            {
+                "name": "Sore Throat",
+                "id": 8
+            },
+    
+            {
+                "name": "Throat Clearing",
+                "id": 9
+            },
+    
+            {
+                "name": "Hoarseness",
+                "id": 10
+            }
+    
+        ]
+    
+    },
+    
+    {
+    
+        "id": 13,
+        "name": "Pelvis",
+        "symptoms": [
+            {
+                "name": "Pelvic Pain",
+                "id": 1
+            },
+    
+            {
+                "name": "Frequent Urination",
+                "id": 2
+            },
+    
+            {
+                "name": "Painful Urination",
+                "id": 3
+            },
+    
+            {
+                "name": "Lower Back Pain",
+                "id": 4
+            },
+    
+            {
+                "name": "Menstrual Cramps",
+                "id": 5
+            },
+    
+            {
+                "name": "Vaginal Discharge",
+                "id": 6
+            },
+    
+            {
+                "name": "Pain During Intercourse",
+                "id": 7
+            },
+    
+            {
+                "name": "Bloating",
+                "id": 8
+            },
+    
+            {
+                "name": "Blood in Urine",
+                "id": 9
+            },
+    
+            {
+                "name": "Incontinence",
+                "id": 10
+            }
+    
+        ]
+    
+    },
+    
+    {
+    
+        "id": 14,
+        "name": "Joints",
+        "symptoms": [
+            {
+                "name": "Joint Pain",
+                "id": 1
+
+            },{
+                "name": "Swelling",
+                "id": 2
+            },
+    
+            {
+                "name": "Stiffness",
+                "id": 3
+            },
+    
+            {
+                "name": "Limited Range of Motion",
+                "id": 4
+            },
+    
+            {
+                "name": "Warmth",
+                "id": 5
+            },
+    
+            {
+                "name": "Redness",
+                "id": 6
+            },
+    
+            {
+                "name": "Tenderness",
+                "id": 7
+            },
+    
+            {
+                "name": "Weakness",
+                "id": 8
+            },
+    
+            {
+                "name": "Cracking",
+                "id": 9
+            },
+    
+            {
+                "name": "Popping",
+                "id": 10
+            }
+    
+        ]
+    
+    },
+    
+    {
+    
+        "id": 15,
+        "name": "Muscles",
+        "symptoms": [
+            {
+                "name": "Muscle Pain",
+                "id": 1
+            },
+    
+            {
+                "name": "Weakness",
+                "id": 2
+            },
+    
+            {
+                "name": "Cramping",
+                "id": 3
+            },
+    
+            {
+                "name": "Twitching",
+                "id": 4
+            },
+    
+            {
+                "name": "Stiffness",
+                "id": 5
+            },
+    
+            {
+                "name": "Limited Range of Motion",
+                "id": 6
+            },
+    
+            {
+                "name": "Tenderness",
+                "id": 7
+            },
+    
+            {
+                "name": "Swelling",
+                "id": 8
+            },
+    
+            {
+                "name": "Muscle Spasms",
+                "id": 9
+            },
+    
+            {
+                "name": "Weakness",
+                "id": 10
+            }
+            ]
+        },
+
+        {
+            "id": 19,
+            "name": "Genitals",
+            "symptoms": [
+                {
+                    "name": "Pain",
+                    "id": 1
+                },
+        
+                {
+                    "name": "Itching",
+                    "id": 2
+                },
+        
+                {
+                    "name": "Swelling",
+                    "id": 3
+                },
+        
+                {
+                    "name": "Discharge",
+                    "id": 4
+                },
+        
+                {
+                    "name": "Bumps",
+                    "id": 5
+                },
+        
+                {
+                    "name": "Ulcers",
+                    "id": 6
+                },
+        
+                {
+                    "name": "Rash",
+                    "id": 7
+                },
+        
+                {
+                    "name": "Bleeding",
+                    "id": 8
+                },
+        
+                {
+                    "name": "Painful Urination",
+                    "id": 9
+                },
+        
+                {
+                    "name": "Frequent Urination",
+                    "id": 10
+                }
+        
+            ]
+        
+        },
+        
+        {
+        
+            "id": 20,
+            "name": "Mental Health",
+            "symptoms": [
+                {
+                    "name": "Anxiety",
+                    "id": 1
+                },
+        
+                {
+                    "name": "Depression",
+                    "id": 2
+                },
+        
+                {
+                    "name": "Mood Swings",
+                    "id": 3
+                },
+        
+                {
+                    "name": "Irritability",
+                    "id": 4
+                },
+        
+                {
+                    "name": "Fatigue",
+                    "id": 5
+                },
+        
+                {
+                    "name": "Insomnia",
+                    "id": 6
+                },
+        
+                {
+                    "name": "Memory Loss",
+                    "id": 7
+                },
+        
+                {
+                    "name": "Confusion",
+                    "id": 8
+                },
+        
+                {
+                    "name": "Hallucinations",
+                    "id": 9
+                },
+        
+                {
+                    "name": "Paranoia",
+                    "id": 10
+                }
+        
+            ]
+        
+        }
+      
+            
+      ]
+    }
+
+
+
+
+
+
+
+
+
