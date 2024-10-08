@@ -416,7 +416,7 @@
 
 {
 
-    "name": "Cardiovascular",
+    "name": "Cardio",
     "id": 7.5,
 
     "symptoms": [
@@ -448,7 +448,7 @@
         },
 
         {
-            "name": ":Chest Pain",
+            "name": "Chest Pain",
             "id": 6 
 
         }
@@ -681,6 +681,7 @@
                     "id": 11
                 }
 
+
     ]
 
 },
@@ -739,8 +740,73 @@
         {
             "name": "Ulcers",
             "id": 10
+        },
+        {
+            "name": "Bruising",
+            "id": 11
+        },
+        {
+            "name": "Bumps",
+            "id": 12
+        },
+    
+        {
+            "name": "Warts",
+            "id": 14
+        },
+        {
+            "name": "Cold Sores",
+            "id": 15
+        },
+        {
+            "name": "Pimples",
+            "id": 16
+        },
+        {
+            "name": "Cysts",
+            "id": 17
+        },
+        {
+            "name": "Moles",
+            "id": 18
+        },
+        {
+            "name": "Skin Tags",
+            "id": 20
+        },
+        {
+            "name": "Burns",
+            "id": 21
+        },
+        {
+            "name": "Sunburn",
+            "id": 22
+        },
+        {
+            "name": "Eczema",
+            "id": 23
+        },
+        {
+            "name": "Psoriasis",
+            "id": 24
+        },
+        {
+            "name": "Rosacea",
+            "id": 25
+        },
+        {
+            "name": "Acne",
+            "id": 26
+        },
+        {
+            "name": "Dermatitis",
+            "id": 27
+        },
+      
+        {
+            "name": "Boils",
+            "id": 38
         }
-
     ]
 
 },
@@ -997,51 +1063,36 @@
             {
                 "name": "Joint Pain",
                 "id": 1
+            },
+            {
 
-            },{
-                "name": "Swelling",
+                "name": "Joint Swelling",
                 "id": 2
             },
+                                
+                {
+                    "name": "Joint Stiffness",
+                    "id": 3
+                },
+        
+                {
+                    "name": "Limited Range of Motion",
+                    "id": 4
+                },
     
-            {
-                "name": "Stiffness",
-                "id": 3
-            },
-    
-            {
-                "name": "Limited Range of Motion",
-                "id": 4
-            },
-    
-            {
-                "name": "Warmth",
-                "id": 5
-            },
-    
-            {
-                "name": "Redness",
-                "id": 6
-            },
-    
-            {
-                "name": "Tenderness",
-                "id": 7
-            },
-    
-            {
-                "name": "Weakness",
-                "id": 8
-            },
-    
-            {
-                "name": "Cracking",
-                "id": 9
-            },
-    
-            {
-                "name": "Popping",
-                "id": 10
-            }
+        
+                {
+                    "name": "Joint Locking",
+                    "id": 5
+                },
+        
+                {
+                    "name": "Joint Clicking",
+                    "id": 6
+                }           
+
+
+           
     
         ]
     
@@ -1165,7 +1216,7 @@
         {
         
             "id": 20,
-            "name": "Mental Health",
+            "name": "Mental",
             "symptoms": [
                 {
                     "name": "Anxiety",
