@@ -7,22 +7,55 @@ const openai = new OpenAI({
 
 export async function POST(req) {
   try {
-    const { symptoms, age, gender } = await req.json();
+    const { symptoms, otherSymptoms, age, gender } = await req.json();
+
+    const symptomsWithBodyParts = symptoms.map(item => `${item.bodyPart}: ${item.symptom}`).join(', ');
+
+    const allSymptoms = otherSymptoms.trim()
+      ? `${symptomsWithBodyParts}, ${otherSymptoms}`
+      : symptomsWithBodyParts;
 
     const response = await openai.chat.completions.create({
       model: 'gpt-4o-mini',
       messages: [
         {
           role: 'system',
-          content: 'You are a medical assistant. The user will provide symptoms, along with patient age, gender, and relevant medical history. You will suggest the top 4 possible conditions, rank them based on likelihood, and provide a very brief explanation for each.',
+          content: `You are a medical assistant. The user will provide symptoms along with the associated body parts, patient age, gender, and relevant medical history.
+
+Your task is to:
+- Provide an opening response personalized to the user's input.
+- List the top 4 possible conditions, ranked by likelihood.
+- For each condition, provide:
+  - **Name**: The name of the condition.
+  - **Description**: A brief explanation.
+  - **Severity**: One of Low, Mild, Moderate, High.
+- Conclude with a personalized closing recommendation based on the most severe condition's severity.
+
+Format your response exactly like this:
+[Opening Response]
+
+Condition 1:
+Name: [Condition Name]
+Description: [Description]
+Severity: [Severity]
+
+Condition 2:
+Name: [Condition Name]
+Description: [Description]
+Severity: [Severity]
+
+Condition 3:
+...
+
+[Closing Response]`
         },
         {
           role: 'user',
-          content: `Hello, I have the following symptoms: ${symptoms}. I am ${age} years old and ${gender}.`,
+          content: `Hello, I have the following symptoms: ${allSymptoms}. I am ${age} years old and ${gender}.`,
         },
       ],
       temperature: 0.7,
-      max_tokens: 250,
+      max_tokens: 500,
     });
 
     const choices = response.choices;
@@ -31,9 +64,26 @@ export async function POST(req) {
     }
 
     const content = choices[0].message.content.trim();
-    const conditions = content.split('\n').map((condition) => condition.trim());
 
-    return NextResponse.json({ conditions });
+    // parse the response
+    const sections = content.split(/\n\n+/);
+    const openingResponse = sections.shift();
+    const closingResponse = sections.pop();
+
+    const conditions = sections.map((section) => {
+      const lines = section.split('\n');
+      const nameLine = lines.find(line => line.startsWith('Name:'));
+      const descriptionLine = lines.find(line => line.startsWith('Description:'));
+      const severityLine = lines.find(line => line.startsWith('Severity:'));
+
+      return {
+        name: nameLine ? nameLine.replace('Name:', '').trim() : '',
+        description: descriptionLine ? descriptionLine.replace('Description:', '').trim() : '',
+        severity: severityLine ? severityLine.replace('Severity:', '').trim() : '',
+      };
+    });
+
+    return NextResponse.json({ openingResponse, conditions, closingResponse });
   } catch (error) {
     console.error(error);
     return NextResponse.json({ error: 'Something went wrong' }, { status: 500 });

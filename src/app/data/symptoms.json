@@ -12,9 +12,6 @@
                     "id": 1
                 },
 
-                    
-                
-
                 {
                     "name": "Dizziness",
                     "id": 2
@@ -68,7 +65,273 @@
             ]
 
         },
-                        
+            
+            {
+                "id": 1.5,
+                "name": "Face",
+                "symptoms": [
+                    {
+                        "name": "Pain",
+                        "id": 1
+                    },
+    
+                    {
+                        "name": "Swelling",
+                        "id": 2
+                    },
+    
+                    {
+                        "name": "Numbness",
+                        "id": 3
+                    },
+    
+                    {
+                        "name": "Tingling",
+                        "id": 4
+                    },
+    
+                    {
+                        "name": "Drooping",
+                        "id": 5
+                    },
+    
+                    {
+                        "name": "Paralysis",
+                        "id": 6
+                    },
+    
+                    {
+                        "name": "Twitching",
+                        "id": 7
+                    },
+    
+                    {
+                        "name": "Rash",
+                        "id": 8
+                    },
+    
+                    {
+                        "name": "Cheek Pain",
+                        "id": 9
+                    },
+    
+                    {
+                        "name": "Itching",
+                        "id": 10
+                    },
+
+                    {
+                        "name": "In-grown Hairs",
+                        "id": 11
+                    },
+                    {
+                        "name": "Acne",
+                        "id": 12
+                    },
+                    {
+                        "name": "Loss of Facial Hair",
+                        "id": 13
+                    },
+                    {
+                        "name": "Sinus Pain",
+                        "id": 14
+                    }
+    
+                ]
+            },
+            {
+                "id": 1.75,
+                "name": "Teeth",
+                "symptoms": [
+                    {
+                        "name": "Toothache",
+                        "id": 1
+                    },
+    
+                    {
+                        "name": "Sensitivity",
+                        "id": 2
+                    },
+    
+                    {
+                        "name": "Bleeding Gums",
+                        "id": 3
+                    },
+    
+                    {
+                        "name": "Swelling",
+                        "id": 4
+                    },
+    
+                    {
+                        "name": "Loose Teeth",
+                        "id": 5
+                    },
+    
+                    {
+                        "name": "Jaw Pain",
+                        "id": 6
+                    },
+    
+                    {
+                        "name": "Bad Breath",
+                        "id": 7
+                    },
+    
+                    {
+                        "name": "Mouth Sores",
+                        "id": 8
+                    },
+    
+                    {
+                        "name": "Cavities",
+                        "id": 9
+                    },
+    
+                    {
+                        "name": "Gum Recession",
+                        "id": 10
+                    },
+                    {
+                        "name": "Gum Swelling",
+                        "id": 11
+                    },
+                    {
+                        "name": "Tooth Sensitivity",
+                        "id": 12
+                    },
+                    {
+                        "name": "Tooth Discoloration",
+                        "id": 13
+                    },
+                    {
+                        "name": "Tooth Loss",
+                        "id": 14
+                    },
+                    {
+                        "name": "Tooth Erosion",
+                        "id": 15
+                    },
+                    {
+                        "name": "Tooth Grinding",
+                        "id": 16
+                    },
+                    {
+                        "name": "Tooth Abscess",
+                        "id": 17
+                    },
+                    {
+                        "name": "Tooth Infection",
+                        "id": 18
+                    },
+                    {
+                        "name": "Tooth Decay",
+                        "id": 19
+                    },
+                    {
+                        "name": "Tooth Sensitivity to Heat",
+                        "id": 20
+                    },
+                    {
+                        "name": "Tooth Sensitivity to Sweets",
+                        "id": 21
+                    },
+                    {
+                        "name": "Tooth Sensitivity to Pressure",
+                        "id": 22
+                    },
+                    {
+                        "name": "Tooth Sensitivity to Cold",
+                        "id": 23
+                    }
+                ]
+
+
+            },
+            {
+                "id": 1.9,
+                "name": "Hair",
+                "symptoms": [
+                    {
+                        "name": "Hair Loss",
+                        "id": 1
+                    },
+    
+                    {
+                        "name": "Itching",
+                        "id": 2
+                    },
+    
+                    {
+                        "name": "Dry Scalp",
+                        "id": 3
+                    },
+    
+                    {
+                        "name": "Scalp tender to touch",
+                        "id": 4
+                    },
+    
+                    {
+                        "name": "Dandruff",
+                        "id": 5
+                    },
+    
+                    {
+                        "name": "Hair Breakage",
+                        "id": 6
+                    },
+    
+                    {
+                        "name": "Hair Thinning",
+                        "id": 7
+                    },
+    
+                    {
+                        "name": "Hair Shedding",
+                        "id": 8
+                    },
+    
+                    {
+                        "name": "Hair Knots",
+                        "id": 9
+                    },
+    
+                    {
+                        "name": "Hair Tangles",
+                        "id": 10
+                    },
+                    {
+                        "name": "Hair Split Ends",
+                        "id": 11
+                    },
+                    {
+                        "name": "Hair Dryness",
+                        "id": 12
+                    },
+                    {
+                        "name": "Hair Oiliness",
+                        "id": 13
+                    },
+                    {
+                        "name": "Hair Lice",
+                        "id": 14
+                    },
+                    {
+                        "name": "Widespread loss of hair",
+                        "id": 15
+                    },
+                    {
+                        "name": "Hair Loss on One Side",
+                        "id": 16
+                    },
+                    {
+                        "name": "Bald Patches",
+                        "id": 17
+                    }
+                ]
+            },
+                
         {
 
             "id": 2,
@@ -90,7 +353,7 @@
                 },
 
                 {
-                    "name": "Watery Eyes",
+                    "name": "Tearing",
                     "id": 4
                 },
 
@@ -98,34 +361,163 @@
                     "name": "Blurred Vision",
                     "id": 5
                 },
-
                 {
-                    "name": "Double Vision",
+                    "name": "Blurry Vision in One Eye",
                     "id": 6
                 },
 
                 {
-                    "name": "Light Sensitivity",
+                    "name": "Double Vision",
                     "id": 7
                 },
 
+
                 {
-                    "name": "Eye Pain",
+                    "name": "Pain",
                     "id": 8
                 },
 
                 {
-                    "name": "Eye Discharge",
+                    "name": "Discharge",
                     "id": 9
                 },
 
                 {
                     "name": "Floaters",
                     "id": 10
+                }, 
+                {
+                    "name": "Swelling",
+                    "id": 11
+                },
+                {
+                    "name": "Burning",
+                    "id": 12
+                },
+                 
+                {
+                    "name": "Black Eye",
+                    "id": 13
+                },
+                {
+                    "name": "Blind Spot",
+                    "id": 14
+                },
+                {
+                    "name": "Temporary Blindness",
+                    "id": 15
+                },
+                {
+                    "name": "Light Sensitivity",
+                    "id": 16
+                },
+                {
+                    "name": "Bruising Around Eyes",
+                    "id": 17
+                },
+                {
+                    "name": "Can't Look Up",
+                    "id": 18
+                },
+                {
+                    "name": "Central Vision Loss",
+                    "id": 19
+                },
+                {
+                    "name": "Decreased Vision",
+                    "id": 20
+                },
+                {
+                    "name": "Distorted Vision",
+                    "id": 21
+                },
+                {
+                    "name": "Drooping Eyelid",
+                    "id": 22
+                },
+                {
+                    "name": "Dry Eyes",
+                    "id": 23
+                },
+                {
+                    "name": "Discharge",
+                    "id": 24
+                },
+                {
+                    "name": "Pink Eye",
+                    "id": 25
+                },
+                {
+                    "name": "Redness",
+                    "id": 26
+                },
+                {
+                    "name": "Eye Socket Pain",
+                    "id": 27
+                },
+                {
+                    "name": "Strain",
+                    "id": 28
+                },
+                {
+                    "name": "Twitching",
+                    "id": 29
+                },
+                {
+                    "name": "Eyelid Pain",
+                    "id": 30
+                },
+                {
+                    "name": "Irritation",
+                    "id": 31
+                },
+                {
+                    "name": "Flashing Lights in Vision",
+                    "id": 32
+                },
+                {
+                    "name": "Flickering Lights in Vision",
+                    "id": 33
+                },
+                {
+                    "name": "Inner Corner of Eye is Swollen",
+                    "id": 34
+                },
+            
+                {
+                    "name": "Itchy Eye",
+                    "id": 36
+                },
+                {
+                    "name": "Itchy Eyelid",
+                    "id ": 37
+                },
+                {
+                    "name": "Seeing halos of light",
+                    "id": 38
+                },
+                {
+                    "name": "Pain in One Eye",
+                    "id": 39
+                },
+                {
+                    "name": "Pain When Looking Up",
+                    "id": 40
+                },
+                {
+                    "name": "Pain When Moving Eyes",
+                    "id": 41
+                },
+                {
+                "name": "Pain When Blinking",
+                "id": 42
+                },
+
+                {
+                "name": "Weak eye movement",
+                "id": 43
                 }
-
             ]
-
         },
             
             {
@@ -176,12 +568,76 @@
                     {
                         "name": "Ear Pressure",
                         "id": 9
-                    }
+                    },
     
+                    {
+                        "name": "Fullness in Ears",
+                        "id": 10
+                    },
+
+                    {
+                        "name": "Ear Infection",
+                        "id": 11
+                    },
+
+                   {
+                    "name": "Blocked Ear",
+                    "id": 12},
+                    {
+                    "name": "Can't Hear on One Side",
+                    "id": 13},
+                    {
+                    "name": "Constant Ear Ringing",
+                    "id": 14},
+                    {
+                    "name": "Bleeding",
+                    "id": 15},
+                    {
+                    "name": "Ear is Red",
+                    "id": 16},
+                    {
+                    "name": "Ear Tender to Touch",
+                    "id": 17},
+                    {
+                    "name": "Fluid Leaking from My Ear",
+                    "id": 18},
+                    {
+                    "name": "Headache Behind Ears",
+                    "id": 19},
+                    {
+                    "name": "Hearing is Getting Worse",
+                    "id": 20},
+                    {
+                    "name": "Itchy Ear",
+                    "id": 21},
+                    {
+                    "name": "Outside of Ear Hurts",
+                    "id": 22},
+                    {
+                    "name": "Pus Coming from My Ear",
+                    "id": 23},
+                    {
+                    "name": "Ringing in Both Ears",
+                    "id": 24},
+                    {
+                    "name": "Ringing in One Ear",
+                    "id": 25},
+                    {
+                    "name": "Sensitive to Noise",
+                    "id": 26},
+                    {
+                    "name": "Swollen Ear",
+                    "id": 27},
+                    {
+                    "name": "Swollen Ear Canal",
+                    "id": 28},
+                    {
+                    "name": "Trouble hearing",
+                    "id": 29} 
                 ]
     
             },
-    
+            
             {
     
                 "id": 4,
@@ -235,12 +691,84 @@
                     {
                         "name": "Sore Throat",
                         "id": 10
-                    }
-    
-                ]
+                    },
+                 {
+                    "name": "Bloody Nose",
+                    "id": 11
+                },
+                {
+                    "name": "Hay Fever",
+                    "id": 12
+                },
+                {
+                    "name": "Head Congestion",
+                    "id": 13
+                },
+                {
+                    "name": "Inside of Nose Feels Dry",
+                    "id": 14
+                },
+                {
+                    "name": "Itchy Nose",
+                    "id": 15
+                },
+                {
+                    "name": "Nasal Sinus Draining",
+                    "id": 16
+                },
+                {
+                    "name": "Nasal Sinus Feels Full",
+                    "id": 17
+                },
+                {
+                    "name": "Nasal Sinus Pain",
+                    "id": 18
+                },
+                {
+                    "name": "Nasal Sinus Sore",
+                    "id": 19
+                },
+                {
+                    "name": "Nose Discharge, Foul Smelling, Unilateral",
+                    "id": 20
+                },
+                {
+                    "name": "Nose Discharge, Purulent, Unilateral",
+                    "id": 21
+                },
+                {
+                    "name": "Pus Coming Out of Nose",
+                    "id": 22
+                },
+                {
+                    "name": "Sinusitis",
+                    "id": 23
+                },
+                {
+                    "name": "Smelly, Runny Nose",
+                    "id": 24
+                },
+                {
+                    "name": "Snotty, Runny Nose",
+                    "id": 25
+                },
+                {
+                    "name": "Stuffy Nose",
+                    "id": 26
+                },
+                {
+                    "name": "Trouble Smelling",
+                    "id": 27
+                },
+                {
+                    "name": "Using Decongestant Nose Drops",
+                    "id": 28
+                }
+
+            ]
     
             },
-    
+
             {
     
                 "id": 5,
@@ -294,11 +822,264 @@
                     {
                         "name": "Canker Sores",
                         "id": 10
-                    }
+                    },
+         
+                    {
+                        "name": "Bad Breath",
+                        "id": 11
+                    },
+                    {
+                        "name": "Bleeding Gums",
+                        "id": 12
+                    },
+                    {
+                        "name": "Breath has a fruity smell",
+                        "id": 13
+                    },
+                    {
+                        "name": "Breath smells like almonds",
+                        "id": 14
+                    },
+                    {
+                        "name": "Bulimia",
+                        "id": 15
+                    },
+                    {
+                        "name": "Cold Sore",
+                        "id": 16
+                    },
+                    {
+                        "name": "Cough",
+                        "id": 17
+                    },
+                    {
+                        "name": "Crack on Tongue",
+                        "id": 18
+                    },
+                    {
+                        "name": "Cracking at Corner of Mouth",
+                        "id": 19
+                    },
+                    {
+                        "name": "Dehydration",
+                        "id": 20
+                    },
+                    {
+                        "name": "Dental Caries",
+                        "id": 21
+                    },
+                    {
+                        "name": "Denture Pain",
+                        "id": 22
+                    },
+                    {
+                        "name": "Drooling",
+                        "id": 23
+                    },
+                    {
+                        "name": "Dry Mouth",
+                        "id": 24
+                    },
+                    {
+                        "name": "Gingival Erythema",
+                        "id": 25
+                    },
+                    {
+                        "name": "Gingival Tenderness",
+                        "id": 26
+                    },
     
+                    {
+                        "name": "Gingivitis",
+                        "id": 27
+                    },
+                    {
+                        "name": "Gums Hurt",
+                        "id": 28
+                    },
+                    {
+                        "name": "Hives on Lips",
+                        "id": 29
+                    },
+                    {
+                        "name": "Large Tongue",
+                        "id": 30
+                    },
+                    {
+                        "name": "Lip Hurts",
+                        "id": 31
+                    },
+                    {
+                        "name": "Lips Turning Blue",
+                        "id": 32
+                    },
+                    {
+                        "name": "Lower Lip Droops",
+                        "id": 33
+                    },
+                    {
+                        "name": "Malocclusion",
+                        "id": 34
+                    },
+                    {
+                        "name": "Metal Taste in Mouth",
+                        "id": 35
+                    },
+                    {
+                        "name": "More Thirst than Usual",
+                        "id": 36
+                    },
+                    {
+                        "name": "Mouth Bleeding",
+                        "id": 37
+                    },
+                    {
+                        "name": "Mouth Hurts",
+                        "id": 38
+                    },
+                    {
+                        "name": "Mouth is Swollen",
+                        "id": 39
+                    },
+                    {
+                        "name": "Mouth Mucous Membrane Bleeding",
+                        "id": 40
+                    },
+                    {
+                        "name": "Open Sore(s) in Mouth",
+                        "id": 41
+                    },
+                    {
+                        "name": "Open Sore(s) on Lip",
+                        "id": 42
+                    },
+                    {
+                        "name": "Self Induced Vomiting",
+                        "id": 43
+                    },
+                    {
+                        "name": "Severely Bad Breath",
+                        "id": 44
+                    },
+                    {
+                        "name": "Snoring",
+                        "id": 45
+                    },
+                    {
+                        "name": "Swelling Around the Mouth",
+                        "id": 46
+                    },
+                    {
+                        "name": "Swollen Gums",
+                        "id": 47
+                    },
+                    {
+                        "name": "Swollen Lips",
+                        "id": 48
+                    },
+                    {
+                        "name": "Swollen Throat",
+                        "id": 49
+                    },
+                    {
+                        "name": "Swollen Tonsils",
+                        "id": 50
+                    },
+                    {
+                        "name": "Throat is Dry",
+                        "id": 51
+                    },
+                    {
+                        "name": "Thrush",
+                        "id": 52
+                    },
+                    {
+                        "name": "Tonsil Inflammation",
+                        "id": 53
+                    },
+                    {
+                        "name": "Tooth Discoloration",
+                        "id": 54
+                    },
+                    {
+                        "name": "Tooth Erosion",
+                        "id": 55
+                    },
+                    {
+                        "name": "Tooth Heat Sensitivity",
+                        "id": 56
+                    },
+                    {
+                        "name": "Tooth Hurts with Cold Liquids or Food",
+                        "id": 57
+                    }
+                
                 ]
     
             },
+            {
+            "id": 5.5,
+            "name": "Jaw",
+            "symptoms": [
+                {
+                    "name": "Pain",
+                    "id": 1
+                },
+                {
+                    "name": "Stiffness",
+                    "id": 2
+                },
+                {
+                    "name": "Swelling",
+                    "id": 3
+                },
+                {
+                    "name": "Clicking",
+                    "id": 4
+                },
+                {
+                    "name": "Popping",
+                    "id": 5
+                },
+                {
+                    "name": "Locking",
+                    "id": 6
+                },
+                {
+                    "name": "Tenderness",
+                    "id": 7
+                },
+                {
+                    "name": "Jaw feels out of place",
+                    "id": 8
+                },
+                {
+                    "name": "Lower Jaw Hurts",
+                    "id": 9
+                },
+                {
+                    "name": "Upper Jaw Hurts",
+                    "id": 10
+                },
+                {
+                    "name": "Cheek Swollen",
+                    "id": 11
+                },
+                {
+                    "name": "Jaw Angle Tenderness",
+                    "id": 12
+                },
+                {
+                    "name": "Lymph Node Under Jaw Enlarged",
+                    "id": 13
+                },
+                {
+                    "name": "Pain in Jaw When Chewing",
+                    "id": 14
+                }
+            ]
+        },
+
     
             {
     
@@ -353,6 +1134,54 @@
                     {
                         "name": "Throat Ulcers",
                         "id": 10
+                    },
+                    {
+                        "name": "Choking Sensation",
+                        "id": 11
+                    },
+                    {
+                        "name": "Epiglottis Swelling",
+                        "id": 12
+                    },
+                    {
+                        "name": "Food Comes Back Up",
+                        "id": 13
+                    },
+                    {
+                        "name": "Food or Liquid Goes Down Wrong Pipe",
+                        "id": 14
+                    },
+                    {
+                        "name": "High Pitched Breathing",
+                        "id": 15
+                    },
+                    {
+                        "name": "Laryngeal Pain",
+                        "id": 16
+                    },
+                    {
+                        "name": "Laryngeal Spasm",
+                        "id": 17
+                    },
+                    {
+                        "name": "Laryngeal Stridor",
+                        "id": 18
+                    },
+                    {
+                        "name": "Laryngeal Swelling",
+                        "id": 19
+                    },
+                    {
+                        "name": "Laryngitis",
+                        "id": 20
+                    },
+                    {
+                        "name": "Lump in Throat",
+                        "id": 21
+                    },
+                    {
+                        "name": "Mouth Breathing",
+                        "id": 22
                     }
     
                 ]
@@ -408,17 +1237,459 @@
         {
             "name": "Sputum Production",
             "id": 9
+        },
+
+        { 
+            "name": "Abnormal breast enlargement",
+            "id": 10
+        },
+        {
+            "name": "Pulmonary embolism",
+            "id": 11
+        },
+        {
+            "name": "Bloody discharge from the nipple",
+            "id": 12
+        },
+        {
+            "name": "Breast enlargement",
+            "id": 13
+        },
+        {
+            "name": "Breast pain",
+            "id": 14
+        },
+        {
+            "name": "Breast redness",
+            "id": 15
+        },
+        {
+            "name": "Breast skin with a peau d’orange appearance",
+            "id": 16
+        },
+        {
+            "name": "Tenderness in the breastbone",
+            "id": 17
+        },
+        {
+            "name": "Underdeveloped breasts",
+            "id": 18
+        },
+        {
+            "name": "Rapid breathing",
+            "id": 19
+        },
+
+    {  
+        "name": "Fluid buildup in the lungs",
+        "id": 20
+    },
+    {
+        "name": "Inability to expel mucus or phlegm",
+        "id": 21
+    },
+    {
+        "name": "Chest bones caving in",
+        "id": 22
+    },
+    {
+        "name": "Chest bones protruding",
+        "id": 23
+    },
+    {
+        "name": "Loss of chest hair",
+        "id": 24
+    },
+    {
+        "name": "Chest infection",
+        "id": 25
+    },
+    {
+        "name": "Chest pain worsened by breathing",
+        "id": 26
+    },
+    {
+        "name": "Chest pain exacerbated by physical exertion or exercise",
+        "id": 27
+    },
+    {
+        "name": "Chest tightness",
+        "id": 28
+    },
+    {
+        "name": "Chest wall pain",
+        "id": 29
+    },
+    {
+        "name": "Chest wall swelling",
+        "id": 30
+    },
+    {
+        "name": "Congestive heart failure",
+        "id": 31
+    },
+    {
+        "name": "Cough",
+        "id": 32
+    },
+    {
+        "name": "Cough with mucus production",
+        "id": 33
+    },
+    {
+        "name": "Coughing up blood",
+        "id": 34
+    },
+    {
+        "name": "Cyanosis",
+        "id": 35
+    },
+    {
+        "name": "Difficulty breathing",
+        "id": 36
+    },
+    {
+        "name": "Difficulty swallowing",
+        "id": 37
+    },
+
+
+    {
+        "name": "Persistent Cough",
+        "id": 38
+    },
+    { 
+        "name": "Coughing at Night",
+        "id": 39
+    },
+    {
+        "name": "Coughing Attacks",
+        "id": 40
+    },
+    {
+        "name": "Foul-smelling Mucus with Cough",
+        "id": 41
+    },
+    {
+        "name": "Coughing up Blood",
+        "id": 42
+    },
+    {
+        "name": "Barking Cough",
+        "id": 43
+    },
+    {
+        "name": "Crushing Chest Pain",
+        "id": 44
+    },
+    {
+        "name": "Dry Cough",
+        "id": 45
+    },
+    {
+        "name": "Emphysema",
+        "id": 46
+    },
+    {
+        "name": "Fatty Accumulation Above the Collarbone",
+        "id": 47
+    },
+    {
+        "name": "Pressure in the Esophagus",
+        "id": 48
+    },
+    {
+        "name": "Nipple Discharge",
+        "id": 49
+    },
+    {
+        "name": "Difficulty Swallowing Food",
+        "id": 50
+    },
+    {
+        "name": "Forceful Cough",
+        "id": 51
+    },
+    {
+        "name": "Nipple Growth",
+        "id": 52
+    },
+    {
+        "name": "Persistent Cough",
+        "id": 53
+    },
+    {
+        "name": "Difficulty Swallowing",
+        "id": 54
+    },
+    {
+        "name": "Hard Breast Lump",
+        "id": 55
+    },
+    {
+        "name": "Heartburn",
+        "id": 56
+    },
+    {
+        "name": "Uncontrolled Hiccups",
+        "id": 57
+    },
+   
+
+    {
+        "name": "Esophagitis",
+        "id": 58
+    },
+    {
+        "name": "Breast Lump",
+        "id": 59
+    },
+    {
+        "name": "Lung Disease",
+        "id": 60
+    },
+    {
+        "name": "Lung Infection",
+        "id": 61
+    },
+    {
+        "name": "Whooping Noise When Inhaling",
+        "id": 62
+    },
+    {
+        "name": "Trunk Muscle Cramp",
+        "id": 63
+    },
+    {
+        "name": "Nipple Retraction",
+        "id": 64
+    },
+    {
+        "name": "Nipple Redness",
+        "id": 65
+    },
+    {
+        "name": "Nipple Tenderness",
+        "id": 66
+    },
+    {
+        "name": "Upper Body Obesity",
+        "id": 67
+    },
+    {
+        "name": "Upper Body Pain",
+        "id": 68
+    },
+    {
+        "name": "Heart Palpitations",
+        "id": 69
+    },
+    {
+        "name": "Breast Skin Retraction",
+        "id": 70
+    },
+    {
+        "name": "Pneumonia",
+        "id": 71
+    },
+    {
+        "name": "Cardiac Tamponade",
+        "id": 72
+    },
+    {
+        "name": "Rapid Breathing",
+        "id": 73
+    },
+    {
+        "name": "Rash Confined to the Chest",
+        "id": 74
+    },
+    {
+        "name": "Rash Under the Breast",
+        "id": 75
+    },
+    {
+        "name": "Red, Irritated Nipple",
+        "id": 76
+    },
+    {
+        "name": "Severe Chest Pain",
+        "id": 77
+    },
+    {
+        "name": "Sharp Chest Pain",
+        "id": 78
+    },
+    {
+        "name": "Shortness of Breath When Leaning Forward",
+        "id": 79
+    },
+    {
+        "name": "Shortness of Breath",
+        "id": 80
+    },
+    {
+        "name": "Shortness of Breath When Lying Flat",
+        "id": 81
+    },
+
+
+    {
+        "name": "Shortness of breath with activity",
+        "id": 82
+    },
+    {
+        "name": "Abnormal chest movement",
+        "id": 83
+    },
+    {
+        "name": "Visible sternal pulsation",
+        "id": 84
+    },
+    {
+        "name": "Supraclavicular fossa bruit",
+        "id": 85
+    },
+    {
+        "name": "Enlarged supraclavicular lymph node",
+        "id": 86
+    },
+    {
+        "name": "Breast swelling",
+        "id": 87
+    },
+    {
+        "name": "Esophageal spasm",
+        "id": 88
+    },
+    {
+        "name": "Tingling or prickling sensation in the upper body",
+        "id": 89
+    },
+    {
+        "name": "Upper body muscle atrophy",
+        "id": 90
+    },
+    {
+        "name": "Vomiting following a cough",
+        "id": 91
+    },
+    {
+        "name": "Wet cough",
+        "id": 92
+    }
+
+    ]
+
+
+},
+
+{
+   "id": 7.2, 
+    "name": "Breasts",
+
+    "symptoms": [
+        {
+            "name": "Pain",
+            "id": 1
+        },
+
+        {
+            "name": "Swelling",
+            "id": 2
+        },
+
+        {
+            "name": "Lumps",
+            "id": 3
+        },
+        {
+            "name": "Bloody Nipple Discharge",
+            "id": 4
+        },
+        {
+            "name": "Breast Enlargement",
+            "id": 5
+        },
+        {
+            "name": "Breast Pain",
+            "id": 6
+        },
+        {
+            "name": "Breast Redness",
+            "id": 7
+        },
+        {
+            "name": "Breast Skin with a Peau d'Orange Appearance",
+            "id": 8
+        },
+        {
+            "name": "Breasts Not Developing",
+            "id": 9
+        },
+        {
+            "name": "Fluid Leaking from My Breast",
+            "id": 10
+        },
+        {
+            "name": "Growth on Nipple",
+            "id": 11
+        },
+        {
+            "name": "Hard Lump in Breast",
+            "id": 12
+        },
+        {
+            "name": "Infected Lump or Sore on Breast",
+            "id": 13
+        },
+        {
+            "name": "Lump in Breast",
+            "id": 14
+        },
+        {
+            "name": "Milk Coming from Breast",
+            "id": 15
+        },
+        {
+            "name": "Nipple Pulling to One Side",
+            "id": 16
+        },
+        {
+            "name": "Nipple Redness",
+            "id": 17
+        },
+        {
+            "name": "Nipple Tender to Touch",
+            "id": 18
+        },
+        {
+            "name": "Part of Breast Skin Appears Pulled Inward",
+            "id": 19
+        },
+        {
+            "name": "Rash Limited to Under the Breast",
+            "id": 20
+        },
+        {
+            "name": "Red, Irritated Nipple",
+            "id": 21
+        },
+        {
+            "name": "Swollen Breast",
+            "id": 22
         }
 
     ]
 
 },
 
+
 {
 
-    "name": "Cardio",
+   
     "id": 7.5,
-
+    "name": "Cardio",
     "symptoms": [
         
         {
@@ -509,6 +1780,71 @@
         {
             "name": "Cramping",
             "id": 10
+
+        },
+         { 
+            "name": "Burping",
+            "id": 11
+        },
+        {
+            "name": "Can't Digest Fatty Foods",
+            "id": 12
+        },
+        {
+            "name": "Diarrhea After Meals",
+            "id": 13
+        },
+        {
+            "name": "Gallbladder Inflammation",
+            "id": 14
+        },
+        {
+            "name": "Gallstones",
+            "id": 15
+        },
+        {
+            "name": "Inflammation of Stomach and Intestines",
+            "id": 16
+        },
+        {
+            "name": "Liver Disease",
+            "id": 17
+        },
+        {
+            "name": "Nausea",
+            "id": 18
+        },
+        {
+            "name": "Pancreas Inflammation",
+            "id": 19
+        },
+        {
+            "name": "Reflux",
+            "id": 20
+        },
+        {
+            "name": "Scarring of the Liver",
+            "id": 21
+        },
+        {
+            "name": "Stomach Pain Upper Left Side",
+            "id": 22
+        },
+        {
+            "name": "Stomach Pain Upper Right Side",
+            "id": 23
+        },
+        {
+            "name": "Ulcer in Muscle Connecting Stomach to Duodenum",
+            "id": 24
+        },
+        {
+            "name": "Upper Belly Bloating",
+            "id": 25
+        },
+        {
+            "name": "Upper Stomach Pain",
+            "id": 26
         }
 
     ]
@@ -520,12 +1856,12 @@
     "name": "Back",
     "symptoms": [
         {
-            "name": "Back Pain",
+            "name": "Pain",
             "id": 1
         },
 
         {
-            "name": "Back Stiffness",
+            "name": "Stiffness",
             "id": 2
         },
 
@@ -562,11 +1898,152 @@
         {
             "name": "Tenderness",
             "id": 9
+        },
+
+        {
+            "name": "Back Muscle Spasm",
+            "id": 10
+        },
+        {
+            "name": "Pain When Bending Forward",
+            "id": 11
+        },
+        {
+            "name": "Can't Bend Backwards",
+            "id": 12
+        },
+        {
+            "name": "Extreme Curve in Low Back",
+            "id": 13
+        },
+        {
+            "name": "Flank Tenderness",
+            "id": 14
+        },
+        {
+            "name": "Hunched or Stooped Posture",
+            "id": 15
+        },
+        {
+            "name": "Kidney Disease",
+            "id": 16
+        },
+        {
+            "name": "Kidney Stone",
+            "id": 17
+        },
+        {
+            "name": "Kidney, Polycystic",
+            "id": 18
+        },
+        {
+            "name": "Kyphoscoliosis",
+            "id": 19
+        },
+        {
+            "name": "Low Back Pain",
+            "id": 20
+        },
+        {
+            "name": "Low Back Tenderness",
+            "id": 21
+        },
+        {
+            "name": "Lower Back Muscle Spasm",
+            "id": 22
+        },
+        {
+            "name": "One Side of Low Back Hurts",
+            "id": 23
+        },
+        {
+            "name": "One Side of Low Back is Red",
+            "id": 24
+        },
+        {
+            "name": "Opisthotonos",
+            "id": 25
+        },
+        {
+            "name": "Pain in Tailbone",
+            "id": 26
+        },
+        {
+            "name": "Pain When Sitting",
+            "id": 27
+        },
+        {
+            "name": "Rash Limited to Back",
+            "id": 28
+        },
+        {
+            "name": "Sacroiliac Pain",
+            "id": 29
+        },
+        {
+            "name": "Severe Back Pain",
+            "id": 30
+        },
+        {
+            "name": "Shoulder Blade is Higher on One Side",
+            "id": 31
+        },
+        {
+            "name": "Solitary Patch, Rough, Raised, Lumbosacral",
+            "id": 32
         }
+
 
     ]
 
 },
+
+{
+    "id": 9.5,
+    "name": "Spine",
+    "symptoms": [
+      {
+        "name": "Back Pain",
+        "id": 1
+      },
+      {
+        "name": "Stiffness in the Spine",
+        "id": 2
+      },
+      {
+        "name": "Spinal Curvature",
+        "id": 3
+      },
+      {
+        "name": "Shooting Pain Down the Leg",
+        "id": 4
+      },
+      {
+        "name": "Numbness or Tingling in the Extremities",
+        "id": 5
+      },
+      {
+        "name": "Weakness in the Legs or Arms",
+        "id": 6
+      },
+      {
+        "name": "Herniated Disc",
+        "id": 7
+      },
+      {
+        "name": "Spinal Stenosis",
+        "id": 8
+      },
+      {
+        "name": "Sharp Pain",
+        "id": 9
+      },
+      {
+        "name": "Loss of Bladder or Bowel Control",
+        "id": 10
+      }
+    ]
+  },
 
 {
 
@@ -943,7 +2420,7 @@
         "name": "Neck",
         "symptoms": [
             {
-                "name": "Neck Pain",
+                "name": "Pain",
                 "id": 1
             },
     
@@ -997,104 +2474,138 @@
     },
     
     {
-    
         "id": 13,
         "name": "Pelvis",
         "symptoms": [
-            {
-                "name": "Pelvic Pain",
-                "id": 1
-            },
-    
-            {
-                "name": "Frequent Urination",
-                "id": 2
-            },
-    
-            {
-                "name": "Painful Urination",
-                "id": 3
-            },
-    
-            {
-                "name": "Lower Back Pain",
-                "id": 4
-            },
-    
-            {
-                "name": "Menstrual Cramps",
-                "id": 5
-            },
-    
-            {
-                "name": "Vaginal Discharge",
-                "id": 6
-            },
-    
-            {
-                "name": "Pain During Intercourse",
-                "id": 7
-            },
-    
-            {
-                "name": "Bloating",
-                "id": 8
-            },
-    
-            {
-                "name": "Blood in Urine",
-                "id": 9
-            },
-    
-            {
-                "name": "Incontinence",
-                "id": 10
-            }
-    
+          {
+            "name": "Pelvic Pain",
+            "id": 1
+          },
+          {
+            "name": "Frequent Urination",
+            "id": 2
+          },
+          {
+            "name": "Painful Urination",
+            "id": 3
+          },
+          {
+            "name": "Abnormal Vaginal Bleeding",
+            "id": 4
+          },
+          {
+            "name": "Menstrual Cramps",
+            "id": 5
+          },
+          {
+            "name": "Abnormal Vaginal Discharge",
+            "id": 6
+          },
+          {
+            "name": "Pain During Intercourse",
+            "id": 7
+          },
+          {
+            "name": "Bloating",
+            "id": 8
+          },
+          {
+            "name": "Blood in Urine",
+            "id": 9
+          },
+          {
+            "name": "Urinary Incontinence",
+            "id": 10
+          },
+          {
+            "name": "Testicular Pain or Swelling",
+            "id": 11
+          },
+          {
+            "name": "Erectile Dysfunction",
+            "id": 12
+          },
+          {
+            "name": "Pelvic Pressure or Heaviness",
+            "id": 13
+          },
+          {
+            "name": "Difficulty Urinating",
+            "id": 14
+          },
+          {
+            "name": "Painful Bowel Movements",
+            "id": 15
+          },
+          {
+            "name": "Lower Abdominal Pain",
+            "id": 16
+          },
+          {
+            "name": "Constipation",
+            "id": 17
+          },
+          {
+            "name": "Rectal Pain or Bleeding",
+            "id": 18
+          }
         ]
-    
-    },
+      },
     
     {
-    
         "id": 14,
         "name": "Joints",
         "symptoms": [
-            {
-                "name": "Joint Pain",
-                "id": 1
-            },
-            {
-
-                "name": "Joint Swelling",
-                "id": 2
-            },
-                                
-                {
-                    "name": "Joint Stiffness",
-                    "id": 3
-                },
-        
-                {
-                    "name": "Limited Range of Motion",
-                    "id": 4
-                },
-    
-        
-                {
-                    "name": "Joint Locking",
-                    "id": 5
-                },
-        
-                {
-                    "name": "Joint Clicking",
-                    "id": 6
-                }           
-
-
-           
-    
+          {
+            "name": "Pain",
+            "id": 1
+          },
+          {
+            "name": "Swelling",
+            "id": 2
+          },
+          {
+            "name": "Stiffness",
+            "id": 3
+          },
+          {
+            "name": "Limited Range of Motion",
+            "id": 4
+          },
+          {
+            "name": "Locking",
+            "id": 5
+          },
+          {
+            "name": "Clicking",
+            "id": 6
+          },
+          {
+            "name": "Warmth",
+            "id": 7
+          },
+          {
+            "name": "Redness",
+            "id": 8
+          },
+          {
+            "name": "Instability",
+            "id": 9
+          },
+          {
+            "name": "Tenderness",
+            "id": 10
+          },
+          {
+            "name": "Crepitus (Cracking Sound)",
+            "id": 11
+          },
+          {
+            "name": "Deformity",
+            "id": 12
+          }
         ]
+
     
     },
     
@@ -1104,7 +2615,7 @@
         "name": "Muscles",
         "symptoms": [
             {
-                "name": "Muscle Pain",
+                "name": "Pain",
                 "id": 1
             },
     
@@ -1144,13 +2655,17 @@
             },
     
             {
-                "name": "Muscle Spasms",
+                "name": "Spasms",
                 "id": 9
             },
     
             {
                 "name": "Weakness",
                 "id": 10
+            },
+            {
+                "name": "Atrophy",
+                "id": 11
             }
             ]
         },
@@ -1207,7 +2722,23 @@
                 {
                     "name": "Frequent Urination",
                     "id": 10
-                }
+                },
+                {
+                    "name": "Genital Sores or Ulcers",
+                    "id": 11
+                },
+                {
+                    "name": "Pain During Intercourse",
+                    "id": 12
+                },
+                {
+                    "name": "Blood in Semen",
+                    "id": 13
+                },
+                {
+                    "name": "Painful Ejaculation",
+                    "id": 14
+                    }
         
             ]
         
@@ -1270,10 +2801,180 @@
         
             ]
         
+        },
+
+        {
+            "id": 21,
+            "name": "Emotional",
+            "symptoms": [
+                {
+                    "name": "Feeling sad or down",
+                    "id": 1
+                },
+                {
+                    "name": "Confused thinking or reduced ability to concentrate",
+                    "id": 2
+                },
+                {
+                    "name": "Excessive fears or worries",
+                    "id": 3
+                },
+                {
+                    "name": "Extreme mood changes (highs and lows)",
+                    "id": 4
+                },
+                {
+                    "name": "Withdrawal from friends and activities",
+                    "id": 5
+                },
+                {
+                    "name": "Significant tiredness or low energy",
+                    "id": 6
+                },
+                {
+                    "name": "Problems with sleeping (insomnia or oversleeping)",
+                    "id": 7
+                },
+                {
+                    "name": "Trouble relating to people or understanding situations",
+                    "id": 8
+                },
+                {
+                    "name": "Changes in eating habits",
+                    "id": 9
+                },
+                {
+                    "name": "Changes in sex drive",
+                    "id": 10
+                },
+                {
+                    "name": "Increased anger or hostility",
+                    "id": 11
+                },
+                {
+                    "name": "Loss of interest or pleasure in activities",
+                    "id": 12
+                },
+                {
+                    "name": "Difficulty making decisions",
+                    "id": 13
+                },
+                {
+                    "name": "Frequent irritability or frustration",
+                    "id": 14
+                },
+                {
+                    "name": "Feeling overwhelmed or unable to cope",
+                    "id": 15
+                },
+                {
+                    "name": "Unexplained aches or physical pains",
+                    "id": 16
+                },
+                {
+                    "name": "Increased or decreased appetite",
+                    "id": 17
+                },
+                {
+                    "name": "Frequent feelings of guilt or worthlessness",
+                    "id": 18
+                },
+                {
+                    "name": "Difficulty concentrating or staying focused",
+                    "id": 19
+                },
+                {
+                    "name": "Social isolation or avoiding social interactions",
+                    "id": 20
+                },
+                {
+                    "name": "Low self-esteem or feelings of inadequacy",
+                    "id": 21
+                },
+                {
+                    "name": "Increased dependence on substances (alcohol, drugs, etc.)",
+                    "id": 22
+                },
+                {
+                    "name": "Frequent crying spells",
+                    "id": 23
+                },
+                {
+                    "name": "Feelings of hopelessness or despair",
+                    "id": 24
+                },
+                {
+                    "name": "Restlessness or feeling on edge",
+                    "id": 25
+                },
+                {
+                    "name": "Chronic procrastination or avoidance",
+                    "id": 26
+                },
+                {
+                    "name": "Recurrent nightmares or disturbing dreams",
+                    "id": 27
+                },
+                {
+                    "name": "Hypervigilance or being easily startled",
+                    "id": 28
+                },
+                {
+                    "name": "Compulsive behaviors or rituals (e.g., washing hands repeatedly)",
+                    "id": 29
+                },
+                {
+                    "name": "Difficulty forming or maintaining close relationships",
+                    "id": 30
+                },
+                {
+                    "name": "Fear of abandonment or being alone",
+                    "id": 31
+                },
+                {
+                    "name": "Panic attacks",
+                    "id": 32
+                },
+                {
+                    "name": "Feeling detached from yourself or your surroundings",
+                    "id": 33
+                },
+                {
+                    "name": "Intrusive thoughts or images",
+                    "id": 34
+                },
+                {
+                    "name": "Excessive guilt or self-blame",
+                    "id": 35
+                },
+                {
+                    "name": "Feeling on edge or restless",
+                    "id": 36
+                },
+                {
+                    "name": "Feeling numb or emotionally detached",
+                    "id": 37
+                },
+                {
+                    "name": "Feeling disconnected from reality",
+                    "id": 38
+                },
+                {
+                    "name": "Feeling like you are a burden to others",
+                    "id": 39
+                },
+                {
+                    "name": "Feeling like you are a failure or have let yourself or others down",
+                    "id": 40
+                },
+                {
+                    "name": "Feeling like you are not good enough or that you don't measure up",
+                    "id": 41
+                }
+            ]
         }
-      
             
-      ]
+    ]
     }
 
 
