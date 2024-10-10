@@ -17,13 +17,22 @@ function HomePage() {
   const [openingResponse, setOpeningResponse] = useState('');
   const [closingResponse, setClosingResponse] = useState('');
   
-  const handleCheckboxChange = (event, categoryName) => {
-    event.preventDefault();
-    const { value, checked } = event.target;
-    if (checked) {
-      setSelectedSymptoms([...selectedSymptoms, { symptom: value, bodyPart: categoryName }]);
+  const handleSymptomClick = (symptomName, categoryName) => {
+    const isSelected = selectedSymptoms.some(
+      (item) => item.symptom === symptomName && item.bodyPart === categoryName
+    );
+
+    if (isSelected) {
+      setSelectedSymptoms(
+        selectedSymptoms.filter(
+          (item) => !(item.symptom === symptomName && item.bodyPart === categoryName)
+        )
+      );
     } else {
-      setSelectedSymptoms(selectedSymptoms.filter(item => item.symptom !== value || item.bodyPart !== categoryName));
+      setSelectedSymptoms([
+        ...selectedSymptoms,
+        { symptom: symptomName, bodyPart: categoryName },
+      ]);
     }
   };
 
@@ -124,7 +133,7 @@ function HomePage() {
 
   return (
     <div className="container mx-auto px-4 min-h-screen">
-      <header className="bg-header text-white py-4 w-full fixed top-0 left-0 z-10">
+      <header className="bg-header text-white py-4 w-full fixed top-0 left-0 z-20">
         <div className="flex justify-center items-center"> 
           <img src="/static/icon.png" alt="Icon" className="h-10 w-10 mr-3" />
           <h1 className="text-4xl font-bold">Diagnoself</h1>
@@ -168,19 +177,21 @@ function HomePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {symptomsData.symptoms
-            .sort((a, b) => a.name.localeCompare(b.name)) 
-            .map((category) => (
-              <div key={category.id}>
-                <CategoryDropdown
-                  category={category}
-                  selectedSymptoms={selectedSymptoms}
-                  handleCheckboxChange={handleCheckboxChange}
-                  className={`${category.name.toLowerCase().replace(/\s+/g, '-')}-dropdown`}
-                  isOpen={openDropdown === category.id}
-                  toggleDropdown={toggleDropdown}
-                  closeDropdown={closeDropdown}
-                />
-              </div>
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((category) => (
+                <div key={category.id}>
+                  <CategoryDropdown
+                    category={category}
+                    selectedSymptoms={selectedSymptoms}
+                    handleSymptomClick={handleSymptomClick}
+                    className={`${category.name
+                      .toLowerCase()
+                      .replace(/\s+/g, '-')}-dropdown`}
+                    isOpen={openDropdown === category.id}
+                    toggleDropdown={toggleDropdown}
+                    closeDropdown={closeDropdown}
+                  />
+                </div>
             ))}
           </div>
 
