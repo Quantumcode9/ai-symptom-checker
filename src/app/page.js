@@ -1,8 +1,12 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
-import CategoryDropdown from './components/CategoryDropdown';
+import CategoryDropdown from './components/CategorySidebar';
 import symptomsData from './data/symptoms.json';
+import BodyDiagram from './components/BodyDiagram';
+import SymptomsSidebar from './components/Sidebar';
+import CategoryButtons from './components/CategoryButtons';
+import CategorySidebar from './components/CategorySidebar';
 
 function HomePage() {
   const [selectedSymptoms, setSelectedSymptoms] = useState([]);
@@ -16,6 +20,12 @@ function HomePage() {
   const [showResults, setShowResults] = useState(false); 
   const [openingResponse, setOpeningResponse] = useState('');
   const [closingResponse, setClosingResponse] = useState('');
+  const [selectedBodyPart, setSelectedBodyPart] = useState(null);
+  const [sidebarOpen, setSidebarOpen] = useState(false); 
+  const [isCategorySidebarOpen, setIsCategorySidebarOpen] = useState(true);
+
+
+
   
   const handleSymptomClick = (symptomName, categoryName) => {
     const isSelected = selectedSymptoms.some(
@@ -34,6 +44,12 @@ function HomePage() {
         { symptom: symptomName, bodyPart: categoryName },
       ]);
     }
+  };
+
+  const handleCategoryClick = (event, category) => {
+    event.preventDefault();
+    setSelectedBodyPart(category); 
+    setSidebarOpen(true); 
   };
 
   const handleTextAreaChange = (event) => {
@@ -107,14 +123,18 @@ function HomePage() {
     setShowResults(false); 
   };
 
-  const toggleDropdown = (id) => {
-    setOpenDropdown(openDropdown === id ? null : id);
+  const handleCategorySelect = (categoryName) => {
+    setSelectedBodyPart(categoryName);
+    setIsCategorySidebarOpen(false); 
+    setSidebarOpen(true);   
   };
 
-  const closeDropdown = () => {
-    setOpenDropdown(null);
+  const closeCategorySidebar = () => {
+    setSidebarOpen(false);
+    setSelectedBodyPart(null);
   };
 
+  
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (openDropdown) {
@@ -171,29 +191,56 @@ function HomePage() {
             </div>
           </div>
 
-    
+
+
+      {isCategorySidebarOpen && (
+        <CategorySidebar
+          symptomsData={symptomsData.symptoms}
+          onCategorySelect={handleCategorySelect}
+          onClose={() => setIsCategorySidebarOpen(false)}
+        />
+      )}
+      
 
           <hr className="my-6 border-t border-gray-300" />
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            {symptomsData.symptoms
-              .sort((a, b) => a.name.localeCompare(b.name))
-              .map((category) => (
-                <div key={category.id}>
-                  <CategoryDropdown
-                    category={category}
-                    selectedSymptoms={selectedSymptoms}
-                    handleSymptomClick={handleSymptomClick}
-                    className={`${category.name
-                      .toLowerCase()
-                      .replace(/\s+/g, '-')}-dropdown`}
-                    isOpen={openDropdown === category.id}
-                    toggleDropdown={toggleDropdown}
-                    closeDropdown={closeDropdown}
-                  />
-                </div>
-            ))}
-          </div>
+
+
+          <div className="layout-container">
+            
+
+          <div className="category-container">
+        <CategoryButtons handleCategoryClick={handleCategoryClick} />
+      </div>
+      
+        <div className="diagram-container">
+          <BodyDiagram
+          selectedSymptoms={selectedSymptoms}
+          handleSymptomClick={handleSymptomClick}
+          setSelectedBodyPart={setSelectedBodyPart} 
+        />
+
+
+<button
+        type="button"
+        onClick={() => setIsCategorySidebarOpen(true)}
+        className="bg-none border border-white text-white text-lg px-2 hover:bg-diagnoseButton rounded"
+      >
+       ≡
+      </button>
+        </div>
+
+          {selectedBodyPart && (
+          <SymptomsSidebar
+            bodyPart={selectedBodyPart}
+            symptomsData={symptomsData}
+            onClose={() => setSelectedBodyPart(null)}
+            selectedSymptoms={selectedSymptoms}
+            handleSymptomClick={handleSymptomClick}
+          />
+        )}
+
+      </div>
 
           <section className="selected-symptoms text-center mt-8">
             <h2 className="text-xl font-semibold">Selected Symptoms</h2>

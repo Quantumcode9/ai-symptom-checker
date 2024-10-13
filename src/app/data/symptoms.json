@@ -246,8 +246,74 @@
                     }
                 ]
 
+            },
+
+            {
+                "id": 1.76,
+                "name": "Cheeks",
+                "symptoms": [
+                    {
+                        "name": "Pain",
+                        "id": 1
+                    },
+    
+                    {
+                        "name": "Swelling",
+                        "id": 2
+                    },
+    
+                    {
+                        "name": "Numbness",
+                        "id": 3
+                    },
+    
+                    {
+                        "name": "Tingling",
+                        "id": 4
+                    },
+    
+                    {
+                        "name": "Drooping",
+                        "id": 5
+                    },
+    
+                    {
+                        "name": "Paralysis",
+                        "id": 6
+                    },
+    
+                    {
+                        "name": "Twitching",
+                        "id": 7
+                    },
+    
+                    {
+                        "name": "Rash",
+                        "id": 8
+                    },
+    
+                    {
+                        "name": "Cheek Pain",
+                        "id": 9
+                    },
+    
+                    {
+                        "name": "Itching",
+                        "id": 10
+                    },
+                    {
+                        "name": "In-grown Hairs",
+                        "id": 11
+                    },
+                    {
+                        "name": "Acne",
+                        "id": 12
+                    }
+    
+                ]
 
             },
+
             {
                 "id": 1.9,
                 "name": "Hair",
@@ -298,7 +364,7 @@
                     },
     
                     {
-                        "name": "Hair Tangles",
+                        "name": "Tangles",
                         "id": 10
                     },
                     {
@@ -306,15 +372,15 @@
                         "id": 11
                     },
                     {
-                        "name": "Hair Dryness",
+                        "name": "Rash limited to scalp",
                         "id": 12
                     },
                     {
-                        "name": "Hair Oiliness",
+                        "name": "Scalp Pain",
                         "id": 13
                     },
                     {
-                        "name": "Hair Lice",
+                        "name": "Lice",
                         "id": 14
                     },
                     {
@@ -332,31 +398,26 @@
                 ]
             },
                 
-        {
-
-            "id": 2,
-            "name": "Eyes",
-            "symptoms": [
+            {
+                "id": 2,
+                "name": "Eyes",
+                "symptoms": [
                 {
                     "name": "Redness",
                     "id": 1
                 },
-
                 {
                     "name": "Itching",
                     "id": 2
                 },
-
                 {
                     "name": "Dry Eyes",
                     "id": 3
                 },
-
                 {
                     "name": "Tearing",
                     "id": 4
                 },
-
                 {
                     "name": "Blurred Vision",
                     "id": 5
@@ -365,27 +426,22 @@
                     "name": "Blurry Vision in One Eye",
                     "id": 6
                 },
-
                 {
                     "name": "Double Vision",
                     "id": 7
                 },
-
-
                 {
                     "name": "Pain",
                     "id": 8
                 },
-
                 {
                     "name": "Discharge",
                     "id": 9
                 },
-
                 {
                     "name": "Floaters",
                     "id": 10
-                }, 
+                },
                 {
                     "name": "Swelling",
                     "id": 11
@@ -394,7 +450,6 @@
                     "name": "Burning",
                     "id": 12
                 },
-                 
                 {
                     "name": "Black Eye",
                     "id": 13
@@ -436,89 +491,79 @@
                     "id": 22
                 },
                 {
-                    "name": "Dry Eyes",
+                    "name": "Sensitivity",
                     "id": 23
                 },
                 {
-                    "name": "Discharge",
+                    "name": "Pink Eye",
                     "id": 24
                 },
                 {
-                    "name": "Pink Eye",
+                    "name": "Eye Socket Pain",
                     "id": 25
                 },
                 {
-                    "name": "Redness",
+                    "name": "Strain",
                     "id": 26
                 },
                 {
-                    "name": "Eye Socket Pain",
+                    "name": "Twitching",
                     "id": 27
                 },
                 {
-                    "name": "Strain",
+                    "name": "Watery Eyes",
                     "id": 28
                 },
                 {
-                    "name": "Twitching",
+                    "name": "Irritation",
                     "id": 29
                 },
                 {
-                    "name": "Eyelid Pain",
+                    "name": "Flashing Lights in Vision",
                     "id": 30
                 },
                 {
-                    "name": "Irritation",
+                    "name": "Flickering Lights in Vision",
                     "id": 31
                 },
                 {
-                    "name": "Flashing Lights in Vision",
+                    "name": "Inner Corner of Eye is Swollen",
                     "id": 32
                 },
                 {
-                    "name": "Flickering Lights in Vision",
+                    "name": "Itchy Eye",
                     "id": 33
                 },
                 {
-                    "name": "Inner Corner of Eye is Swollen",
-                    "id": 34
-                },
-            
-                {
-                    "name": "Itchy Eye",
-                    "id": 36
-                },
-                {
                     "name": "Itchy Eyelid",
-                    "id ": 37
+                    "id": 34
                 },
                 {
                     "name": "Seeing halos of light",
-                    "id": 38
+                    "id": 35
                 },
                 {
                     "name": "Pain in One Eye",
-                    "id": 39
+                    "id": 36
                 },
                 {
                     "name": "Pain When Looking Up",
-                    "id": 40
+                    "id": 37
                 },
                 {
                     "name": "Pain When Moving Eyes",
-                    "id": 41
+                    "id": 38
                 },
                 {
-                "name": "Pain When Blinking",
-                "id": 42
+                    "name": "Pain When Blinking",
+                    "id": 39
                 },
-
                 {
-                "name": "Weak eye movement",
-                "id": 43
+                    "name": "Weak eye movement",
+                    "id": 40
                 }
-            ]
-        },
+                ]
+            },
             
             {
     
@@ -692,7 +737,7 @@
                         "name": "Sore Throat",
                         "id": 10
                     },
-                 {
+                {
                     "name": "Bloody Nose",
                     "id": 11
                 },
@@ -823,7 +868,7 @@
                         "name": "Canker Sores",
                         "id": 10
                     },
-         
+
                     {
                         "name": "Bad Breath",
                         "id": 11
@@ -1195,7 +1240,7 @@
     "name": "Chest",
     "symptoms": [
         {
-            "name": "Chest Pain",
+            "name": "Pain",
             "id": 1
         },
 
@@ -1264,7 +1309,7 @@
             "id": 15
         },
         {
-            "name": "Breast skin with a peau d’orange appearance",
+            "name": "Breast skin changes",
             "id": 16
         },
         {
@@ -1309,7 +1354,7 @@
         "id": 26
     },
     {
-        "name": "Chest pain exacerbated by physical exertion or exercise",
+        "name": "Chest pain with physical exertion or exercise",
         "id": 27
     },
     {
@@ -1431,15 +1476,14 @@
         "id": 56
     },
     {
-        "name": "Uncontrolled Hiccups",
+        "name": "Hemoptysis",
         "id": 57
     },
-   
-
     {
-        "name": "Esophagitis",
+        "name": "High-pitched Wheezing",
         "id": 58
     },
+
     {
         "name": "Breast Lump",
         "id": 59
@@ -1585,6 +1629,55 @@
 },
 
 {
+    "id": 7.1,
+    "name": "Sternum",
+    "symptoms": [
+        {
+            "name": "Pain",
+            "id": 1
+        },
+        {
+            "name": "Swelling",
+            "id": 2
+        },
+        {
+            "name": "Bruising",
+            "id": 3
+        },
+        {
+            "name": "Deformity",
+            "id": 4
+        },
+        {
+            "name": "Tenderness",
+            "id": 5
+        },
+        {
+            "name": "Pain",
+            "id": 6
+        },
+        {
+            "name": "Swelling",
+            "id": 7
+        },
+        {
+            "name": "Tenderness",
+            "id": 8
+        },
+        {
+            "name": "Pressure",
+            "id": 9
+        }
+
+    ]
+
+
+},
+
+
+
+
+{
    "id": 7.2, 
     "name": "Breasts",
 
@@ -1608,19 +1701,19 @@
             "id": 4
         },
         {
-            "name": "Breast Enlargement",
+            "name": "Enlargement",
             "id": 5
         },
         {
-            "name": "Breast Pain",
+            "name": "Nipple Discharge",
             "id": 6
         },
         {
-            "name": "Breast Redness",
+            "name": "Redness",
             "id": 7
         },
         {
-            "name": "Breast Skin with a Peau d'Orange Appearance",
+            "name": "Skin Changes",
             "id": 8
         },
         {
@@ -1628,7 +1721,7 @@
             "id": 9
         },
         {
-            "name": "Fluid Leaking from My Breast",
+            "name": "Fluid Leaking",
             "id": 10
         },
         {
@@ -1636,19 +1729,19 @@
             "id": 11
         },
         {
-            "name": "Hard Lump in Breast",
+            "name": "Hard Lump",
             "id": 12
         },
         {
-            "name": "Infected Lump or Sore on Breast",
+            "name": "Infected Lump or Sore",
             "id": 13
         },
         {
-            "name": "Lump in Breast",
+            "name": "Soft Lump",
             "id": 14
         },
         {
-            "name": "Milk Coming from Breast",
+            "name": "Nipple Growth",
             "id": 15
         },
         {
@@ -1689,7 +1782,7 @@
 
    
     "id": 7.5,
-    "name": "Cardio",
+    "name": "Heart",
     "symptoms": [
         
         {
@@ -1989,7 +2082,7 @@
             "id": 31
         },
         {
-            "name": "Solitary Patch, Rough, Raised, Lumbosacral",
+            "name": "Solitary Patch",
             "id": 32
         }
 
@@ -2097,6 +2190,485 @@
 
     ]
 
+},
+
+{
+
+    "id": 10.5,
+    "name": "Elbows",
+    "symptoms": [
+        {
+            "name": "Pain",
+            "id": 1
+        },
+        {
+            "name": "Swelling",
+            "id": 2
+        },
+        {
+            "name": "Stiffness",
+            "id": 3
+        },
+        {
+            "name": "Limited Range of Motion",
+            "id": 4
+        },
+        {
+            "name": "Weakness",
+            "id": 5
+        },
+        {
+            "name": "Tingling",
+            "id": 6
+        },
+        {
+            "name": "Numbness",
+            "id": 7
+        },
+        {
+            "name": "Redness",
+            "id": 8
+        },
+        {
+            "name": "Bruising",
+            "id": 9
+        },
+        {
+            "name": "Deformity",
+            "id": 10
+        }
+    ]
+},
+
+{ 
+    "id": 10.6,
+    "name": "Forearms",
+    "symptoms": [
+        {
+            "name": "Pain",
+            "id": 1
+        },
+        {
+            "name": "Swelling",
+            "id": 2
+        },
+        {
+            "name": "Stiffness",
+            "id": 3
+        },
+        {
+            "name": "Limited Range of Motion",
+            "id": 4
+        },
+        {
+            "name": "Weakness",
+            "id": 5
+        },
+        {
+            "name": "Tingling",
+            "id": 6
+        },
+        {
+            "name": "Numbness",
+            "id": 7
+        },
+        {
+            "name": "Redness",
+            "id": 8
+        },
+        {
+            "name": "Bruising",
+            "id": 9
+        },
+        {
+            "name": "Deformity",
+            "id": 10
+        }
+    ]
+},
+
+{
+
+    "id": 10.7,
+    "name": "Wrists",
+    "symptoms": [
+        {
+            "name": "Pain",
+            "id": 1
+        },
+        {
+            "name": "Swelling",
+            "id": 2
+        },
+        {
+            "name": "Stiffness",
+            "id": 3
+        },
+        {
+            "name": "Limited Range of Motion",
+            "id": 4
+        },
+        {
+            "name": "Weakness",
+            "id": 5
+        },
+        {
+            "name": "Tingling",
+            "id": 6
+        },
+        {
+            "name": "Numbness",
+            "id": 7
+        },
+        {
+            "name": "Redness",
+            "id": 8
+        },
+        {
+            "name": "Bruising",
+            "id": 9
+        },
+        {
+            "name": "Deformity",
+            "id": 10
+        }
+    ]
+},
+
+{
+
+    "id": 10.8,
+    "name": "Hands",
+    "symptoms": [
+        {
+            "name": "Numbness",
+            "id": 1
+        },
+        {
+            "name": "Tingling",
+            "id": 2
+        },
+        {
+            "name": "Pain",
+            "id": 3
+        },
+        {
+            "name": "Weakness",
+            "id": 4
+        },
+        {
+            "name": "Swelling",
+            "id": 5
+        },
+        {
+            "name": "Stiffness",
+            "id": 6
+        },
+        {
+            "name": "Cramping",
+            "id": 7
+        },
+        {
+            "name": "Limited Dexterity",
+            "id": 8
+        },
+        {
+            "name": "Blisters",
+            "id": 9
+        },
+        {
+            "name": "Cold Fingers",
+            "id": 10
+        },
+        {
+            "name": "Joint Pain",
+            "id": 11
+        },
+        {
+            "name": "Tremors",
+            "id": 12
+        }
+    ]
+},
+
+{
+   "id":10.81,
+    "name": "Fingers",
+    "symptoms": [
+        {
+            "name": "Numbness",
+            "id": 1
+        },
+        {
+            "name": "Tingling",
+            "id": 2
+        },
+        {
+            "name": "Pain",
+            "id": 3
+        },
+        {
+            "name": "Weakness",
+            "id": 4
+        },
+        {
+            "name": "Swelling",
+            "id": 5
+        },
+        {
+            "name": "Stiffness",
+            "id": 6
+        },
+        {
+            "name": "Cramping",
+            "id": 7
+        },
+        {
+            "name": "Limited Dexterity",
+            "id": 8
+        },
+        {
+            "name": "Blisters",
+            "id": 9
+        },
+        {
+            "name": "Cold Fingers",
+            "id": 10
+        },
+        {
+            "name": "Joint Pain",
+            "id": 11
+        },
+        {
+            "name": "Tremors",
+            "id": 12
+        }
+    ]
+
+},
+
+{
+   "id":10.82,
+    "name": "Thumb",
+    "symptoms": [
+        {
+            "name": "Numbness",
+            "id": 1
+        },
+        {
+            "name": "Tingling",
+            "id": 2
+        },
+        {
+            "name": "Pain",
+            "id": 3
+        },
+        {
+            "name": "Weakness",
+            "id": 4
+        },
+        {
+            "name": "Swelling",
+            "id": 5
+        },
+        {
+            "name": "Stiffness",
+            "id": 6
+        },
+        {
+            "name": "Cramping",
+            "id": 7
+        },
+        {
+            "name": "Limited Dexterity",
+            "id": 8
+        },
+        {
+            "name": "Blisters",
+            "id": 9
+        },
+        {
+            "name": "Cold Fingers",
+            "id": 10
+        },
+        {
+            "name": "Joint Pain",
+            "id": 11
+        },
+        {
+            "name": "Tremors",
+            "id": 12
+        }
+    ]
+
+},
+
+{
+
+    "id": 10.1,
+    "name": "Shoulders",
+    "symptoms": [
+        {
+            "name": "Pain",
+            "id": 1
+        },
+        {
+            "name": "Stiffness",
+            "id": 2
+        },
+        {
+            "name": "Weakness",
+            "id": 3
+        },
+        {
+            "name": "Swelling",
+            "id": 4
+        },
+        {
+            "name": "Tenderness",
+            "id": 5
+        },
+        {
+            "name": "Limited Range of Motion",
+            "id": 6
+        },
+        {
+            "name": "Muscle Spasms",
+            "id": 7
+        },
+        {
+            "name": "Tingling",
+            "id": 8
+        },
+        {
+            "name": "Numbness",
+            "id": 9
+        },
+        {
+            "name": "Redness",
+            "id": 10
+        },
+        {
+            "name": "Bruising",
+            "id": 11
+        },
+        {
+            "name": "Deformity",
+            "id": 12
+        }
+    ]
+},
+
+{
+
+    "id": 10.2,
+    "name": "Triceps",
+    "symptoms": [
+        {
+            "name": "Pain",
+            "id": 1
+        },
+        {
+            "name": "Stiffness",
+            "id": 2
+        },
+        {
+            "name": "Weakness",
+            "id": 3
+        },
+        {
+            "name": "Swelling",
+            "id": 4
+        },
+        {
+            "name": "Tenderness",
+            "id": 5
+        },
+        {
+            "name": "Limited Range of Motion",
+            "id": 6
+        },
+        {
+            "name": "Muscle Spasms",
+            "id": 7
+        },
+        {
+            "name": "Tingling",
+            "id": 8
+        },
+        {
+            "name": "Numbness",
+            "id": 9
+        },
+        {
+            "name": "Redness",
+            "id": 10
+        },
+        {
+            "name": "Bruising",
+            "id": 11
+        },
+        {
+            "name": "Strain",
+            "id": 12
+        }
+    ]
+},
+
+{
+
+    "id": 10.3,
+    "name": "Biceps",
+    "symptoms": [
+        {
+            "name": "Pain",
+            "id": 1
+        },
+        {
+            "name": "Stiffness",
+            "id": 2
+        },
+        {
+            "name": "Weakness",
+            "id": 3
+        },
+        {
+            "name": "Swelling",
+            "id": 4
+        },
+        {
+            "name": "Tenderness",
+            "id": 5
+        },
+        {
+            "name": "Limited Range of Motion",
+            "id": 6
+        },
+        {
+            "name": "Muscle Spasms",
+            "id": 7
+        },
+        {
+            "name": "Tingling",
+            "id": 8
+        },
+        {
+            "name": "Numbness",
+            "id": 9
+        },
+        {
+            "name": "Redness",
+            "id": 10
+        },
+        {
+            "name": "Bruising",
+            "id": 11
+        },
+        {
+            "name": "Strain",
+            "id": 12
+        }
+    ]
 },
 
 {
@@ -2972,8 +3544,510 @@
                     "id": 41
                 }
             ]
-        }
+        },
+
+        {
+
+            "id": 23,
+            "name": "Hips",
+            "symptoms" : [
+                {
+                    "name": "Hip Pain",
+                    "id": 1
+                },
+                {
+                    "name": "Hip Swelling",
+                    "id": 2
+                },
+                {
+                    "name": "Hip Stiffness",
+                    "id": 3
+                },
+                {
+                    "name": "Limited Range of Motion",
+                    "id": 4
+                },
+                {
+                    "name": "Hip Clicking",
+                    "id": 5
+                },
+                {
+                    "name": "Hip Locking",
+                    "id": 6
+                },
+                {
+                    "name": "Hip Weakness",
+                    "id": 7
+                },
+                {
+                    "name": "Hip Instability",
+                    "id": 8
+                },
+                {
+                    "name": "Hip Tenderness",
+                    "id": 9
+                },
+                {
+                    "name": "Hip Deformity",
+                    "id": 10
+                }
+            ]
+        },
             
+          
+    
+            {
+                "id": 25,
+                "name": "Knees",
+                "symptoms": [
+                    {
+                        "name": "Pain",
+                        "id": 1
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 2
+                    },
+                    {
+                        "name": "Stiffness",
+                        "id": 3
+                    },
+                    {
+                        "name": "Limited Range of Motion",
+                        "id": 4
+                    },
+                    {
+                        "name": "Clicking",
+                        "id": 5
+                    },
+                    {
+                        "name": "Locking",
+                        "id": 6
+                    },
+                    {
+                        "name": " Weakness",
+                        "id": 7
+                    },
+                    {
+                        "name": "Instability",
+                        "id": 8
+                    },
+                    {
+                        "name": "Tenderness",
+                        "id": 9
+                    },
+                    {
+                        "name": "Deformity",
+                        "id": 10
+                    }
+                ]
+            },
+    
+            {
+                "id": 26,
+                "name": "Ankles",
+                "symptoms": [
+                    {
+                        "name": "Pain",
+                        "id": 1 
+                    },
+                    {
+                        "name": "Sprain",
+                        "id": 2
+                    },
+                    {
+                        "name": "Stiffness",
+                        "id": 3
+                    },
+                    {
+                        "name": "Limited Range of Motion",
+                        "id": 4
+                    },
+                    {
+                        "name": "Clicking",
+                        "id": 5
+                    },
+                    {
+                        "name": "Sharp Pain",
+                        "id": 6
+                    },
+                    {
+                        "name": "Instability",
+                        "id": 7
+                    },
+                    {
+                        "name": "Tenderness",
+                        "id": 8
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 9
+                    }
+                ]
+            },
+
+            {
+                "id": 27,
+                "name": "Elbows",
+                "symptoms": [
+                    {
+                        "name": "Pain",
+                        "id": 1
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 2
+                    },
+                    {
+                        "name": "Stiffness",
+                        "id": 3
+                    },
+                    {
+                        "name": "Limited Range of Motion",
+                        "id": 4
+                    },
+                    {
+                        "name": "Clicking",
+                        "id": 5
+                    },
+                    {
+                        "name": "Weakness",
+                        "id": 6
+                    },
+                    {
+                        "name": "Instability",
+                        "id": 7
+                    },
+                    {
+                        "name": "Tenderness",
+                        "id": 8
+                    },
+                    {
+                        "name": "Deformity",
+                        "id": 9
+                    }
+                ]
+            },
+
+
+            {
+                "id": 28,
+                "name": "Wrists",
+                "symptoms": [
+                    {
+                        "name": "Pain",
+                        "id": 1
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 2
+                    },
+                    {
+                        "name": "Stiffness",
+                        "id": 3
+                    },
+                    {
+                        "name": "Limited Range of Motion",
+                        "id": 4
+                    },
+                    {
+                        "name": "Clicking",
+                        "id": 5
+                    },
+                    {
+                        "name": "Weakness",
+                        "id": 6
+                    },
+                    {
+                        "name": "Instability",
+                        "id": 7
+                    },
+                    {
+                        "name": "Tenderness",
+                        "id": 8
+                    },
+                    {
+                        "name": "Deformity",
+                        "id": 9
+                    }
+                ]
+            },
+
+            {
+                "id": 29,
+                "name": "Toes",
+                "symptoms": [
+                    {
+                        "name": "Pain",
+                        "id": 1
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 2
+                    },
+                    {
+                        "name": "Stiffness",
+                        "id": 3
+                    },
+                    {
+                        "name": "Limited Range of Motion",
+                        "id": 4
+                    },
+                    {
+                        "name": "Clicking",
+                        "id": 5
+                    },
+                    {
+                        "name": "Weakness",
+                        "id": 6
+                    },
+                    {
+                        "name": "Instability",
+                        "id": 7
+                    },
+                    {
+                        "name": "Tenderness",
+                        "id": 8
+                    },
+                    {
+                        "name": "Deformity",
+                        "id": 9
+                    }
+                ]
+            },
+            {
+
+                "id": 29.5,
+                "name": "Hallux",
+                "symptoms": [
+                    {
+                        "name": "Pain",
+                        "id": 1
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 2
+                    },
+                    {
+                        "name": "Stiffness",
+                        "id": 3
+                    },
+                    {
+                        "name": "Limited Range of Motion",
+                        "id": 4
+                    },
+                    {
+                        "name": "Weakness",
+                        "id": 5
+                    },
+                    {
+                        "name": "Cramping",
+                        "id": 6
+                    },
+                    {
+                        "name": "Tenderness",
+                        "id": 7
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 8
+                    }
+                ]
+            },
+
+            {
+                "id": 30,
+                "name": "Calves",
+                "symptoms": [
+                    {
+                        "name": "Pain",
+                        "id": 1
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 2
+                    },
+                    {
+                        "name": "Stiffness",
+                        "id": 3
+                    },
+                    {
+                        "name": "Limited Range of Motion",
+                        "id": 4
+                    },
+                    {
+                        "name": "Weakness",
+                        "id": 5
+                    },
+                    {
+                        "name": "Cramping",
+                        "id": 6
+                    },
+                    {
+                        "name": "Tenderness",
+                        "id": 7
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 8
+                    },
+                    {
+                        "name": "Muscle Spasms",
+                        "id": 9
+                    },
+                    {
+                        "name": "Weakness",
+                        "id": 10
+                    },
+                    {
+                        "name": "Atrophy",
+                        "id": 11
+                    },
+                    {
+                        "name": "Twitching",
+                        "id": 12
+                    }
+
+                ]
+            },
+
+            {
+                "id": 31,
+                "name": "Thighs",
+                "symptoms": [
+                    {
+                        "name": "Pain",
+                        "id": 1
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 2
+                    },
+                    {
+                        "name": "Stiffness",
+                        "id": 3
+                    },
+                    {
+                        "name": "Limited Range of Motion",
+                        "id": 4
+                    },
+                    {
+                        "name": "Weakness",
+                        "id": 5
+                    },
+                    {
+                        "name": "Cramping",
+                        "id": 6
+                    },
+                    {
+                        "name": "Tenderness",
+                        "id": 7
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 8
+                    },
+                    {
+                        "name": "Muscle Spasms",
+                        "id": 9
+                    },
+                    {
+                        "name": "Weakness",
+                        "id": 10
+                    },
+                    {
+                        "name": "Atrophy",
+                        "id": 11
+                    },
+                    {
+                        "name": "Twitching",
+                        "id": 12
+                    }
+                ]
+            },
+                
+                {
+                    "id": 31.5,
+                    "name": "Inner Thighs",
+                    "symptoms": [
+                        {
+                            "name": "Pain",
+                            "id": 1
+                        },
+                        {
+                            "name": "Swelling",
+                            "id": 2
+                        },
+                        {
+                            "name": "Stiffness",
+                            "id": 3
+                        },
+                        {
+                            "name": "Itching",
+                            "id": 4
+                        },
+                        {
+                            "name": "Weakness",
+                            "id": 5
+                        },
+                        {
+                            "name": "Cramping",
+                            "id": 6
+                        },
+                        {
+                            "name": "Tenderness",
+                            "id": 7
+                        },
+                        {
+                            "name": "Swelling",
+                            "id": 8
+                        }
+    
+                    ]
+                },
+
+            {
+                "id": 32,
+                "name": "Groin",
+                "symptoms": [
+                    {
+                        "name": "Pain",
+                        "id": 1
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 2
+                    },
+                    {
+                        "name": "Stiffness",
+                        "id": 3
+                    },
+                    {
+                        "name": "Limited Range of Motion",
+                        "id": 4
+                    },
+                    {
+                        "name": "Burning",
+                        "id": 5
+                    },
+                    {
+                        "name": "Cramping",
+                        "id": 6
+                    },
+                    {
+                        "name": "Tenderness",
+                        "id": 7
+                    },
+                    {
+                        "name": "Swelling",
+                        "id": 8
+                    }
+
+                ]
+            }
+
+
+
     ]
     }
 

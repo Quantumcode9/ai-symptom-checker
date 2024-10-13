@@ -20,6 +20,8 @@ module.exports = {
         cardText: "var(--card-text)",
         header: "var(--header)",
         blueText: "var(--blue-text)",
+        sideBar: "var(--sidebar)", 
+        sideBarText: "var(--sidebar-text)",
       },
     },
   },
