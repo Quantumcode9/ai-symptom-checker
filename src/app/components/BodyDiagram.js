@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
+import React, { useEffect, useState } from 'react';
+// import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 
 const BodyDiagram = ({
 selectedSymptoms,
@@ -8,6 +8,33 @@ setSelectedBodyPart,
 }) => {
 const [hoveredPart, setHoveredPart] = useState(null);
 const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
+const [tapPart, setTapPart] = useState(null); 
+const [isTouchDevice, setIsTouchDevice] = useState(false); 
+
+useEffect(() => {
+    const isTouchDevice = 
+      'ontouchstart' in window || window.matchMedia('(hover: none)').matches;
+    setIsTouchDevice(isTouchDevice);
+  }, []);
+
+
+  const handlePartTap = (part) => {
+    if (isTouchDevice) {
+      if (tapPart === part) {
+        // Second tap, open the sidebar
+        setSelectedBodyPart(part);
+        setTapPart(null); 
+      } else {
+        // First tap, show tooltip or highlight
+        setTapPart(part);
+        setHoveredPart(part);
+      }
+    } else {
+      // For non-touch devices (like desktop), just open the sidebar immediately
+      setSelectedBodyPart(part);
+    }
+  };
+
 
 
 const handleMouseEnter = (part) => {
@@ -15,9 +42,6 @@ setHoveredPart(part);
 setTooltipPosition({ x: event.clientX, y: event.clientY });
 };
 
-const handleMouseMove = (event) => {
-    setTooltipPosition({ x: event.clientX, y: event.clientY });
-  };
 
 const handleMouseLeave = () => {
 setHoveredPart(null);
@@ -51,7 +75,7 @@ return (
     <g
           id="Hips"
           className="clickable"
-          onClick={() => setSelectedBodyPart('Hips')}
+          onClick={() => handlePartTap('Hips')}
           onMouseEnter={() => handleMouseEnter('Hips')}
           onMouseLeave={handleMouseLeave}
         >
@@ -80,7 +104,7 @@ return (
 <g 
     id="Neck"
     className="clickable"
-    onClick={() => setSelectedBodyPart('Neck')}
+    onClick={() => handlePartTap('Neck')}
     onMouseEnter={() => handleMouseEnter('Neck')}
     onMouseLeave={handleMouseLeave}
 >
@@ -141,7 +165,7 @@ return (
 <g 
     id="Throat"
     className="clickable"
-    onClick={() => setSelectedBodyPart('Throat')}
+    onClick={() => handlePartTap('Throat')}
     onMouseEnter={() => handleMouseEnter('Throat')}
     onMouseLeave={handleMouseLeave}
     >
@@ -161,7 +185,7 @@ return (
 <g
 id="Calves"
 className={`st1 ${isSymptomSelected('Calves', 'Legs') ? 'selected' : ''} ${hoveredPart === 'Calves' ? 'hovered' : ''}`}
-onClick={() => setSelectedBodyPart('Calves', 'Legs')}
+onClick={() => handlePartTap('Calves', 'Legs')}
 onMouseEnter={() => handleMouseEnter('Calves')}
 onMouseLeave={handleMouseLeave}
 >
@@ -192,7 +216,7 @@ onMouseLeave={handleMouseLeave}
     <path
         id="Left_Knee"
         className={`st1 ${isSymptomSelected('Knee', 'Legs') ? 'selected' : ''} ${hoveredPart === 'Knee' ? 'hovered' : ''}`}
-        onClick={() => setSelectedBodyPart('Knees', 'Legs')}
+        onClick={() => handlePartTap('Knees', 'Legs')}
         onMouseEnter={() => handleMouseEnter('Knee')}
         onMouseLeave={handleMouseLeave}
     d="M229.32,586.34c-0.42-1.14-1.06-2.26-1.22-3.44c-1.29-9.79-2.32-19.61-3.77-29.37
@@ -202,7 +226,7 @@ onMouseLeave={handleMouseLeave}
     <path id="Right_Knee" 
     className={`st1 ${isSymptomSelected('Knee', 'Legs') ? 'selected' : ''} 
     ${hoveredPart === 'Knee' ? 'hovered' : ''}`}
-    onClick={() => setSelectedBodyPart('Knees', 'Legs')}
+    onClick={() => handlePartTap('Knees', 'Legs')}
     onMouseEnter={() => handleMouseEnter('Knee')}
     onMouseLeave={handleMouseLeave}
     d="M180.29,586.87c-0.8-1.42-1.56-2.22-1.71-3.11c-0.93-5.62-1.71-11.27-2.58-16.9
@@ -216,7 +240,7 @@ onMouseLeave={handleMouseLeave}
         className={`st1 ${
             isSymptomSelected('Foot', 'Legs') ? 'selected' : ''
             } ${hoveredPart === 'Feet' ? 'hovered' : ''}`}
-            onClick={() => setSelectedBodyPart('Feet')}
+            onClick={() => handlePartTap('Feet')}
             onMouseEnter={() => handleMouseEnter('Feet')}
             onMouseLeave={handleMouseLeave}
 
@@ -227,7 +251,7 @@ onMouseLeave={handleMouseLeave}
         className={`st1 ${
         isSymptomSelected('Toes') ? 'selected' : ''
         } ${hoveredPart === 'Toes' ? 'hovered' : ''}`}
-        onClick={() => setSelectedBodyPart('Toes')}
+        onClick={() => handlePartTap('Toes')}
         onMouseEnter={() => handleMouseEnter('Toes')}
         onMouseLeave={handleMouseLeave}
         d="M242.64,714.59c-0.02,0.3-0.12,0.62-0.06,0.91c1.7,7.99-4.79,10.11-9.6,13.41c-0.49,0.34-1.16,0.4-1.68,0.7
