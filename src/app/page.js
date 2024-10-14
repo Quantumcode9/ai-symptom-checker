@@ -223,7 +223,7 @@ function HomePage() {
           <button
         type="button"
         onClick={() => setIsCategorySidebarOpen(true)}
-        className="bg-none border border-white text-white text-lg px-2 hover:bg-diagnoseButton rounded"
+        className=" bg-symptomButtons dark:bg-background border border-white text-white text-lg px-2 hover:bg-diagnoseButton rounded"
         title="All Categories"
         
       >≡

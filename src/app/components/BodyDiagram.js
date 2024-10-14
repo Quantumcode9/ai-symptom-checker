@@ -526,7 +526,7 @@ onMouseLeave={handleMouseLeave}
         className={`st1 ${
             isSymptomSelected('Chest Area') ? 'selected' : ''
             } ${hoveredPart === 'Chest Area' ? 'hovered' : ''}`}
-            onClick={() => handlePartTap('Chest')}
+            onClick={() => handlePartTap('Chest Area')}
             onMouseEnter={() => handleMouseEnter('Chest Area')}
             onMouseLeave={handleMouseLeave}
         d="M166.63,219.36c1.38-6.15,2.54-11.44,3.77-16.72c0.25-1.06,0.99-2.03,1.12-3.09c0.79-6.12,4.45-9.75,9.99-11.77
@@ -537,7 +537,7 @@ onMouseLeave={handleMouseLeave}
         className={`st1 ${
             isSymptomSelected('Upper Abdomen') ? 'selected' : ''
             } ${hoveredPart === 'Upper Abdomen' ? 'hovered' : ''}`}
-            onClick={() => handlePartTap('Abdomen')}
+            onClick={() => handlePartTap('Upper Abdomen')}
             onMouseEnter={() => handleMouseEnter('Upper Abdomen')}
             onMouseLeave={handleMouseLeave}
         
@@ -562,7 +562,7 @@ onMouseLeave={handleMouseLeave}
         className={`st1 ${
             isSymptomSelected('Upper Abdomen') ? 'selected' : ''
             } ${hoveredPart === 'Upper Abdomen' ? 'hovered' : ''}`}
-            onClick={() => handlePartTap('Abdomen')}
+            onClick={() => handlePartTap('Upper Abdomen')}
             onMouseEnter={() => handleMouseEnter('Upper Abdomen')}
             onMouseLeave={handleMouseLeave}
 
@@ -575,7 +575,7 @@ onMouseLeave={handleMouseLeave}
     className={`st1 ${
         isSymptomSelected('Chest Area') ? 'selected' : ''
         } ${hoveredPart === 'Chest Area' ? 'hovered' : ''}`}
-        onClick={() => handlePartTap('Chest')}
+        onClick={() => handlePartTap('Chest Areat')}
         onMouseEnter={() => handleMouseEnter('Chest Area')}
         onMouseLeave={handleMouseLeave}
 
@@ -588,7 +588,7 @@ onMouseLeave={handleMouseLeave}
     className={`st1 ${
         isSymptomSelected('Chest Area') ? 'selected' : ''
         } ${hoveredPart === 'Chest Area' ? 'hovered' : ''}`}
-        onClick={() => handlePartTap('Chest')}
+        onClick={() => handlePartTap('Chest Area')}
         onMouseEnter={() => handleMouseEnter('Chest Area')}
         onMouseLeave={handleMouseLeave}
     
@@ -612,7 +612,7 @@ onMouseLeave={handleMouseLeave}
         className={`st1 ${
             isSymptomSelected('Ribs') ? 'selected' : ''
             } ${hoveredPart === 'Ribs' ? 'hovered' : ''}`}
-            onClick={() => handlePartTap('Chest')}
+            onClick={() => handlePartTap('Ribs')}
             onMouseEnter={() => handleMouseEnter('Ribs')}
             onMouseLeave={handleMouseLeave}
             d="M277.07,216.14c0-2.18,0-4.37,0-6.55c0-3.67,0.21-7.37-0.09-11.02c-0.51-6.22-1.17-12.45-2.1-18.62
@@ -622,7 +622,7 @@ onMouseLeave={handleMouseLeave}
         className={`st1 ${
             isSymptomSelected('Ribs') ? 'selected' : ''
             } ${hoveredPart === 'Ribs' ? 'hovered' : ''}`}
-            onClick={() => handlePartTap('Chest')}
+            onClick={() => handlePartTap('Ribs')}
             onMouseEnter={() => handleMouseEnter('Ribs')}
             onMouseLeave={handleMouseLeave}
         d="M130.37,216.58c-0.32-1.07-0.85-2.13-0.93-3.22c-0.68-9.11-1.42-18.21-1.8-27.33
@@ -887,10 +887,10 @@ d="M87.05,254.45c-2.04,0.76-2.91-0.25-2.94-2.13c-0.15-10.79-0.45-21.59-0.3-32.38
     c-0.68,0.97-1.21,2.05-1.8,3.08c-0.7,1.35-1.41,2.7-2.11,4.04L87.05,254.45z"/>
 <path id="Right_Shoulder" 
     className={`st1 ${
-        isSymptomSelected('Shoulder') ? 'selected' : ''
-        } ${hoveredPart === 'Shoulder' ? 'hovered' : ''}`}
+        isSymptomSelected('Shoulders') ? 'selected' : ''
+        } ${hoveredPart === 'Shoulders' ? 'hovered' : ''}`}
         onClick={() => handlePartTap('Shoulders')}
-        onMouseEnter={() => handleMouseEnter('Shoulder')}
+        onMouseEnter={() => handleMouseEnter('Shoulders')}
         onMouseLeave={handleMouseLeave}
 
 d="M137.99,118.03c0.47,0.11,0.94,0.23,1.41,0.34c1.57,1.09,3.1,2.23,4.71,3.25
@@ -938,10 +938,10 @@ d="M137.99,118.03c0.47,0.11,0.94,0.23,1.41,0.34c1.57,1.09,3.1,2.23,4.71,3.25
 </g>
 <path id="Right_Hand" 
     className={`st1 ${
-        isSymptomSelected('Hand') ? 'selected' : ''
-        } ${hoveredPart === 'Hand' ? 'hovered' : ''}`}
+        isSymptomSelected('Hands') ? 'selected' : ''
+        } ${hoveredPart === 'Hands' ? 'hovered' : ''}`}
         onClick={() => handlePartTap('Hands')}
-        onMouseEnter={() => handleMouseEnter('Hand')}
+        onMouseEnter={() => handleMouseEnter('Hands')}
         onMouseLeave={handleMouseLeave}
 
 d="M39.47,373.12c2.14,3.34-0.34,5.7-1.64,8.16c-2.45,4.65-5.26,9.1-7.8,13.7c-1.36,2.46-3.14,4.06-6.07,4.1
@@ -1014,10 +1014,10 @@ d="M47.29,371.8c0.15-0.15,0.3-0.29,0.45-0.44c0.77,0.05,1.53,0.09,3.24,0.2
 
 <path id="Rght_Elbow" 
     className={`st1 ${
-        isSymptomSelected('Elbow') ? 'selected' : ''
-        } ${hoveredPart === 'Elbow' ? 'hovered' : ''}`}
+        isSymptomSelected('Elbows') ? 'selected' : ''
+        } ${hoveredPart === 'Elbows' ? 'hovered' : ''}`}
         onClick={() => handlePartTap('Elbows')}
-        onMouseEnter={() => handleMouseEnter('Elbow')}
+        onMouseEnter={() => handleMouseEnter('Elbows')}
     d="M104.18,254.7c0,0,7-6.84,5.97-18.71s-15.05,9.35-15.05,9.35L104.18,254.7L104.18,254.7z"/>
 </g>
 
@@ -1037,10 +1037,10 @@ d="M323.97,254.44c2.04,0.76,2.91-0.25,2.94-2.13c0.15-10.79,0.45-21.59,0.3-32.38
     c3.5,7.13,9,13.29,13.58,19.9c0.68,0.97,1.21,2.05,1.8,3.08C322.57,251.74,323.28,253.09,323.97,254.44L323.97,254.44z"/>
 <path id="Left_Shoulder" 
     className={`st1 ${
-        isSymptomSelected('Shoulder') ? 'selected' : ''
-        } ${hoveredPart === 'Shoulder' ? 'hovered' : ''}`}
+        isSymptomSelected('Shoulders') ? 'selected' : ''
+        } ${hoveredPart === 'Shoulders' ? 'hovered' : ''}`}
         onClick={() => handlePartTap('Shoulders')}
-        onMouseEnter={() => handleMouseEnter('Shoulder')}
+        onMouseEnter={() => handleMouseEnter('Shoulders')}
         onMouseLeave={handleMouseLeave}
 d="M273.04,118.02c-0.47,0.11-0.94,0.23-1.41,0.34c-1.57,1.09-3.1,2.23-4.71,3.25
     c-2.49,1.59-3.6,3.67-3.01,6.7c1.83,9.31,6.27,17.16,12.85,23.91c6.94,7.11,15.93,10.57,24.93,13.91
@@ -1088,10 +1088,10 @@ d="M273.04,118.02c-0.47,0.11-0.94,0.23-1.41,0.34c-1.57,1.09-3.1,2.23-4.71,3.25
 </g>
 <path id="Left_Hand" 
     className={`st1 ${ 
-        isSymptomSelected('Hand') ? 'selected' : ''
-        } ${hoveredPart === 'Hand' ? 'hovered' : ''}`}
+        isSymptomSelected('Hands') ? 'selected' : ''
+        } ${hoveredPart === 'Hands' ? 'hovered' : ''}`}
         onClick={() => handlePartTap('Hands')}
-        onMouseEnter={() => handleMouseEnter('Hand')}
+        onMouseEnter={() => handleMouseEnter('Hands')}
         onMouseLeave={handleMouseLeave}
 d="M363.73,365.77c-0.88-3.9-0.21-8.27,0.38-12.34c0.24-1.66,1.58-4.36,4.17-3.04
     c3.75,1.91,7.03,0.56,10.58-0.32c1.21-0.3,3.14,0.36,4.05,1.27c1.13,1.14,1.56,2.98,2.23,4.54c0.22,0.5,0.12,1.2,0.43,1.6
@@ -1164,10 +1164,10 @@ d="M303.26,229.14c-1.05-3.84-1.84-6.97-2.77-10.06c-1.95-6.42-3.93-12.84-6.01-19.
     C374.01,382.07,371.5,375.06,363.74,371.8z"/>
 <path id="Left_Elbow" 
     className={`st1 ${
-        isSymptomSelected('Elbow') ? 'selected' : ''
-        } ${hoveredPart === 'Elbow' ? 'hovered' : ''}`}
+        isSymptomSelected('Elbows') ? 'selected' : ''
+        } ${hoveredPart === 'Elbows' ? 'hovered' : ''}`}
         onClick={() => handlePartTap('Elbows')}
-        onMouseEnter={() => handleMouseEnter('Elbow')}
+        onMouseEnter={() => handleMouseEnter('Elbows')}
     d="M306.84,254.7c0,0-7-6.84-5.97-18.71s15.05,9.35,15.05,9.35L306.84,254.7L306.84,254.7z"/>
 </g>
 

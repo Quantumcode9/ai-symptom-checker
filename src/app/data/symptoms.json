@@ -1237,7 +1237,7 @@
 {
 
     "id": 7,
-    "name": "Chest",
+    "name": "Chest Area",
     "symptoms": [
         {
             "name": "Pain",
@@ -1823,7 +1823,7 @@
 {
 
     "id": 8,
-    "name": "Abdomen",
+    "name": "Abdomen", 
     "symptoms": [
         {
             "name": "Abdominal Pain",
@@ -1943,6 +1943,131 @@
     ]
 
 },
+
+{
+
+    "id": 8.5,
+    "name": "Upper Abdomen", 
+    "symptoms": [
+        {
+            "name": "Abdominal Pain",
+            "id": 1
+        },
+
+        {
+            "name": "Bloating",
+            "id": 2
+        },
+
+        {
+            "name": "Nausea",
+            "id": 3
+        },
+
+        {
+            "name": "Vomiting",
+            "id": 4
+        },
+
+        {
+            "name": "Diarrhea",
+            "id": 5
+        },
+
+        {
+            "name": "Constipation",
+            "id": 6
+        },
+
+        {
+            "name": "Indigestion",
+            "id": 7
+        },
+
+        {
+            "name": "Loss of Appetite",
+            "id": 8
+        },
+
+        {
+            "name": "Blood in Stool",
+            "id": 9
+        },
+
+        {
+            "name": "Cramping",
+            "id": 10
+
+        },
+         { 
+            "name": "Burping",
+            "id": 11
+        },
+        {
+            "name": "Can't Digest Fatty Foods",
+            "id": 12
+        },
+        {
+            "name": "Diarrhea After Meals",
+            "id": 13
+        },
+        {
+            "name": "Gallbladder Inflammation",
+            "id": 14
+        },
+        {
+            "name": "Gallstones",
+            "id": 15
+        },
+        {
+            "name": "Inflammation of Stomach and Intestines",
+            "id": 16
+        },
+        {
+            "name": "Liver Disease",
+            "id": 17
+        },
+        {
+            "name": "Liver Inflammation",
+            "id": 18
+        },
+        {
+            "name": "Pancreas Inflammation",
+            "id": 19
+        },
+        {
+            "name": "Reflux",
+            "id": 20
+        },
+        {
+            "name": "Scarring of the Liver",
+            "id": 21
+        },
+        {
+            "name": "Stomach Pain Upper Left Side",
+            "id": 22
+        },
+        {
+            "name": "Stomach Pain Upper Right Side",
+            "id": 23
+        },
+        {
+            "name": "Ulcer",
+            "id": 24
+        },
+        {
+            "name": "Upper Belly Bloating",
+            "id": 25
+        },
+        {
+            "name": "Upper Stomach Pain",
+            "id": 26
+        }
+
+    ]
+
+},
+
 
 { 
     "id": 9,
