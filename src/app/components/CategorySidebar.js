@@ -20,7 +20,7 @@ return (
     <div ref={sidebarRef} className="fixed top-20 right-0 w-64 h-auto max-h-[70vh] bg-sideBar shadow-lg z-50 mb-10">
     <div className="p-4">
         <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">Select a Body Part</h2>
+        <h2 className="text-xl font-semibold">All Body Parts</h2>
         <button onClick={onClose} className="text-red-500">
             X
         </button>

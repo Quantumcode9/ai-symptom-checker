@@ -14,6 +14,7 @@
   --header: #3498db;
   --bluetext: #3498db;
   --sidebar: rgba(128, 128, 128, 0.5);
+  --model-color: #5e5e5e; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,7 +30,12 @@
     --header: #194a7a;
     --bluetext: #3498db;
     --sidebar: rgba(0, 0, 0, 0.5);
+    --model-color: #d4d4d4;
   }
+}
+
+.blueText {
+  color: #3498db;
 }
 
 body {
@@ -44,6 +50,9 @@ body {
   }
 }
 
+.category-container {
+  display: none; 
+}
 
 .h-60vh {
   height: 60vh;
@@ -57,11 +66,7 @@ body {
   padding: 20px;
 }
 
-.category-container {
-  display: grid;
-  grid-template-columns:  1fr;
-  gap: 20px;
-}
+
 
 .diagram-container {
   justify-self: center;
@@ -95,6 +100,16 @@ body {
   background-color: #2f855a; 
 }
 
+
+@media (min-width: 1024px) {
+  .diagram-container {
+    width: 60%; 
+  }
+  .selected-symptoms-container {
+    width: 30%; 
+  }
+}
+
 @media (min-width: 640px) {
   .category-btn {
     width: 12rem; 
@@ -116,6 +131,13 @@ body {
   .layout-container {
     display: flex;
     flex-direction: column;
+  }
+  .diagram-container, .selected-symptoms-container {
+    width: 100%;
+  }
+
+  .category-container {
+    display: flex; 
   }
 
   .diagram-container {

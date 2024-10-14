@@ -6,7 +6,7 @@ import React from 'react';
 const CategoryButtons = ({ handleCategoryClick }) => {
   return (
     <div className="flex items-center justify-center w-full mx-auto">
-      <div className="grid grid-cols-4 md:grid-cols-1 gap-2 w-full">
+      <div className="grid grid-cols-4 md:grid-cols-1 gap-2">
         <button
           type="button"
           className="category-btn dark:bg-background"
@@ -33,7 +33,7 @@ const CategoryButtons = ({ handleCategoryClick }) => {
           className="category-btn dark:bg-background"
           onClick={(event) => handleCategoryClick(event, 'Emotional')}
         >
-          Emotional
+          Lifestyle
         </button>
       </div>
     </div>

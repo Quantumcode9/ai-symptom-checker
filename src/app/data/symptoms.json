@@ -1904,7 +1904,7 @@
             "id": 17
         },
         {
-            "name": "Nausea",
+            "name": "Liver Inflammation",
             "id": 18
         },
         {
@@ -1928,7 +1928,7 @@
             "id": 23
         },
         {
-            "name": "Ulcer in Muscle Connecting Stomach to Duodenum",
+            "name": "Ulcer",
             "id": 24
         },
         {
@@ -2095,48 +2095,48 @@
     "id": 9.5,
     "name": "Spine",
     "symptoms": [
-      {
+    {
         "name": "Back Pain",
         "id": 1
-      },
-      {
+    },
+    {
         "name": "Stiffness in the Spine",
         "id": 2
-      },
-      {
+    },
+    {
         "name": "Spinal Curvature",
         "id": 3
-      },
-      {
+    },
+    {
         "name": "Shooting Pain Down the Leg",
         "id": 4
-      },
-      {
+    },
+    {
         "name": "Numbness or Tingling in the Extremities",
         "id": 5
-      },
-      {
+    },
+    {
         "name": "Weakness in the Legs or Arms",
         "id": 6
-      },
-      {
+    },
+    {
         "name": "Herniated Disc",
         "id": 7
-      },
-      {
+    },
+    {
         "name": "Spinal Stenosis",
         "id": 8
-      },
-      {
+    },
+    {
         "name": "Sharp Pain",
         "id": 9
-      },
-      {
+    },
+    {
         "name": "Loss of Bladder or Bowel Control",
         "id": 10
-      }
+    }
     ]
-  },
+},
 
 {
 
@@ -2863,64 +2863,56 @@
 {
 
     "id": 17,
-    "name": "Hands",
+    "name": "Ribs",
     "symptoms": [
         {
-            "name": "Numbness",
+            "name": "Pain",
             "id": 1
         },
 
         {
-            "name": "Tingling",
+            "name": "Swelling",
             "id": 2
         },
 
         {
-            "name": "Pain",
+            "name": "Bruising",
             "id": 3
         },
 
         {
-            "name": "Weakness",
+            "name": "Deformity",
             "id": 4
         },
 
         {
-            "name": "Swelling",
+            "name": "Tenderness",
             "id": 5
         },
 
         {
-            "name": "Stiffness",
+            "name": "Pressure",
             "id": 6
         },
 
         {
-            "name": "Cramping",
+            "name": "Pain",
             "id": 7
         },
 
         {
-            "name": "Limited Dexterity",
+            "name": "Swelling",
             "id": 8
         },
 
         {
-            "name": "Blisters",
+            "name": "Tenderness",
             "id": 9
         },
 
         {
-            "name": "Cold Fingers",
+            "name": "Pressure",
             "id": 10
-        },
-        {
-            "name": "Joint Pain",
-            "id": 11
-        },
-        {
-            "name": "Tremors",
-            "id": 12
         }
 
     ]
@@ -3049,133 +3041,133 @@
         "id": 13,
         "name": "Pelvis",
         "symptoms": [
-          {
+        {
             "name": "Pelvic Pain",
             "id": 1
-          },
-          {
+        },
+        {
             "name": "Frequent Urination",
             "id": 2
-          },
-          {
+        },
+        {
             "name": "Painful Urination",
             "id": 3
-          },
-          {
+        },
+        {
             "name": "Abnormal Vaginal Bleeding",
             "id": 4
-          },
-          {
+        },
+        {
             "name": "Menstrual Cramps",
             "id": 5
-          },
-          {
+        },
+        {
             "name": "Abnormal Vaginal Discharge",
             "id": 6
-          },
-          {
+        },
+        {
             "name": "Pain During Intercourse",
             "id": 7
-          },
-          {
+        },
+        {
             "name": "Bloating",
             "id": 8
-          },
-          {
+        },
+        {
             "name": "Blood in Urine",
             "id": 9
-          },
-          {
+        },
+        {
             "name": "Urinary Incontinence",
             "id": 10
-          },
-          {
+        },
+        {
             "name": "Testicular Pain or Swelling",
             "id": 11
-          },
-          {
+        },
+        {
             "name": "Erectile Dysfunction",
             "id": 12
-          },
-          {
+        },
+        {
             "name": "Pelvic Pressure or Heaviness",
             "id": 13
-          },
-          {
+        },
+        {
             "name": "Difficulty Urinating",
             "id": 14
-          },
-          {
+        },
+        {
             "name": "Painful Bowel Movements",
             "id": 15
-          },
-          {
+        },
+        {
             "name": "Lower Abdominal Pain",
             "id": 16
-          },
-          {
+        },
+        {
             "name": "Constipation",
             "id": 17
-          },
-          {
+        },
+        {
             "name": "Rectal Pain or Bleeding",
             "id": 18
-          }
+        }
         ]
-      },
+    },
     
     {
         "id": 14,
         "name": "Joints",
         "symptoms": [
-          {
+        {
             "name": "Pain",
             "id": 1
-          },
-          {
+        },
+        {
             "name": "Swelling",
             "id": 2
-          },
-          {
+        },
+        {
             "name": "Stiffness",
             "id": 3
-          },
-          {
+        },
+        {
             "name": "Limited Range of Motion",
             "id": 4
-          },
-          {
+        },
+        {
             "name": "Locking",
             "id": 5
-          },
-          {
+        },
+        {
             "name": "Clicking",
             "id": 6
-          },
-          {
+        },
+        {
             "name": "Warmth",
             "id": 7
-          },
-          {
+        },
+        {
             "name": "Redness",
             "id": 8
-          },
-          {
+        },
+        {
             "name": "Instability",
             "id": 9
-          },
-          {
+        },
+        {
             "name": "Tenderness",
             "id": 10
-          },
-          {
+        },
+        {
             "name": "Crepitus (Cracking Sound)",
             "id": 11
-          },
-          {
+        },
+        {
             "name": "Deformity",
             "id": 12
-          }
+        }
         ]
 
     
@@ -4044,6 +4036,77 @@
                     }
 
                 ]
+            },
+            {
+                "id": 33,
+                "name": "Lungs",
+                "symptoms" : [
+                    {
+                        "name": "Shortness of Breath",
+                        "id": 1
+                    },
+                    {
+                        "name": "Cough",
+                        "id": 2
+                    },
+                    {
+                        "name": "Pain",
+                        "id": 3
+                    },
+                    {
+                        "name": "Wheezing",
+                        "id": 4
+                    },
+                    {
+                        "name": "Coughing Up Blood",
+                        "id": 5
+                    },
+                    {
+                        "name": "Fatigue",
+                        "id": 6
+                    },
+                    {
+                        "name": "Fever",
+                        "id": 7
+                    },
+                    {
+                        "name": "Chills",
+                        "id": 8
+                    },
+                    {
+                        "name": "Night Sweats",
+                        "id": 9
+                    },
+                    {
+                        "name": "Weight Loss",
+                        "id": 10
+                    },
+                    {
+                        "name": "Burning",
+                        "id": 11
+                    },
+                    {
+                        "name": "Tightness",
+                        "id": 12
+                    },
+                    {
+                        "name": "Congestion",
+                        "id": 13
+                    },
+                    {
+                        "name": "Difficulty Breathing",
+                        "id": 14
+                    },
+                    {
+                        "name": "Rapid Breathing",
+                        "id": 15
+                    },
+                    {
+                        "name": "Pressure",
+                        "id": 16
+                    }
+                ]
+
             }
 
 

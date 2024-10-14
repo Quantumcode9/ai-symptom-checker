@@ -1,7 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
-import CategoryDropdown from './components/CategorySidebar';
+
 import symptomsData from './data/symptoms.json';
 import BodyDiagram from './components/BodyDiagram';
 import SymptomsSidebar from './components/Sidebar';
@@ -22,7 +21,7 @@ function HomePage() {
   const [closingResponse, setClosingResponse] = useState('');
   const [selectedBodyPart, setSelectedBodyPart] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(false); 
-  const [isCategorySidebarOpen, setIsCategorySidebarOpen] = useState(true);
+  const [isCategorySidebarOpen, setIsCategorySidebarOpen] = useState(false); 
 
 
 
@@ -152,7 +151,7 @@ function HomePage() {
   }, [openDropdown]);
 
   return (
-    <div className="container mx-auto px-4 min-h-screen">
+    <div className="container mx-auto px-4 min-h-screen mb-10">
       <header className="bg-header text-white py-4 w-full fixed top-0 left-0 z-20">
         <div className="flex justify-center items-center"> 
           <img src="/static/icon.png" alt="Icon" className="h-10 w-10 mr-3" />
@@ -206,28 +205,35 @@ function HomePage() {
 
 
 
-          <div className="layout-container">
-            
+        <div className="layout-container">
 
-          <div className="category-container">
+
+        <div className="category-container">
         <CategoryButtons handleCategoryClick={handleCategoryClick} />
+    
       </div>
-      
-        <div className="diagram-container">
+      <div className="layout-container lg:flex lg:justify-between lg:space-x-4">
+      <div className="diagram-container lg:w-2/3">
           <BodyDiagram
           selectedSymptoms={selectedSymptoms}
           handleSymptomClick={handleSymptomClick}
           setSelectedBodyPart={setSelectedBodyPart} 
         />
-
-
-<button
+        <div className="mt-4 flex justify-center">
+          <button
         type="button"
         onClick={() => setIsCategorySidebarOpen(true)}
         className="bg-none border border-white text-white text-lg px-2 hover:bg-diagnoseButton rounded"
-      >
-       ≡
+        title="All Categories"
+        
+      >≡
       </button>
+      </div>
+
+        
+
+
+
         </div>
 
           {selectedBodyPart && (
@@ -242,10 +248,11 @@ function HomePage() {
 
       </div>
 
+          <div className="selected-symptoms-container lg:w-2/3 p-4 bg-resultsCard shadow-lg">
           <section className="selected-symptoms text-center mt-8">
             <h2 className="text-xl font-semibold">Selected Symptoms</h2>
             {selectedSymptoms.length > 0 ? (
-              <div className="list-disc text-symptomButtons">
+              <div className="list-disc text-sm text-symptomButtons">
                 {selectedSymptoms.map((item, index) => (
                   <p key={index}>{item.bodyPart}: {item.symptom}</p>
                 ))}
@@ -254,6 +261,9 @@ function HomePage() {
               <p className="text-foreground">No symptoms selected.</p>
             )}
           </section>
+          </div>
+        </div>
+      
 
           <div className="mt-6">
             <label htmlFor="formOtherSymptoms" className="block text-sm text-center font-medium text-foreground">
@@ -339,9 +349,9 @@ function HomePage() {
       <p>No conditions found.</p>
     )}
     <div className="bg-resultsCard shadow-lg rounded-lg p-6 mt-6">
-  <h3 className="text-xl font-semibold text-blueText mb-4">Recommendation:</h3>
+  <h3 className="text-xl font-semibold blueText mb-4">Recommendation:</h3>
   <hr className="border-gray-300 my-4" />
-  <p className="text-blueText mt-4">{closingResponse}</p>
+  <p className="mt-4">{closingResponse}</p>
 </div>
   </section>
 )}
