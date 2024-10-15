@@ -215,19 +215,20 @@ onMouseLeave={handleMouseLeave}
     </g>
     <path
         id="Left_Knee"
-        className={`st1 ${isSymptomSelected('Knee', 'Legs') ? 'selected' : ''} ${hoveredPart === 'Knee' ? 'hovered' : ''}`}
+        className={`st1 ${isSymptomSelected('Knees', 'Legs') ? 'selected' : ''} 
+        ${hoveredPart === 'Knees' ? 'hovered' : ''}`}
         onClick={() => handlePartTap('Knees', 'Legs')}
-        onMouseEnter={() => handleMouseEnter('Knee')}
+        onMouseEnter={() => handleMouseEnter('Knees')}
         onMouseLeave={handleMouseLeave}
     d="M229.32,586.34c-0.42-1.14-1.06-2.26-1.22-3.44c-1.29-9.79-2.32-19.61-3.77-29.37
         c-0.99-6.68-1.77-13.56-4.09-19.81c-1.91-5.16-2.07-10.38-1.07-15.03c2.07-9.65,1.88-19.91,6.88-28.85
         c0.45-0.8,1.39-2.09,1.82-1.99c0.88,0.21,1.91,1.07,2.29,1.93c3.24,7.29,4.56,15.1,6.24,22.85c2.06,9.49,2.47,18.93,1.23,28.48
         c-1.33,10.17-2.71,20.34-4.33,30.47c-0.79,4.94-2.17,9.78-3.28,14.66c-0.24,0.03-0.47,0.07-0.71,0.1L229.32,586.34z"/>
     <path id="Right_Knee" 
-    className={`st1 ${isSymptomSelected('Knee', 'Legs') ? 'selected' : ''} 
-    ${hoveredPart === 'Knee' ? 'hovered' : ''}`}
+    className={`st1 ${isSymptomSelected('Knees', 'Legs') ? 'selected' : ''} 
+    ${hoveredPart === 'Knees' ? 'hovered' : ''}`}
     onClick={() => handlePartTap('Knees', 'Legs')}
-    onMouseEnter={() => handleMouseEnter('Knee')}
+    onMouseEnter={() => handleMouseEnter('Knees')}
     onMouseLeave={handleMouseLeave}
     d="M180.29,586.87c-0.8-1.42-1.56-2.22-1.71-3.11c-0.93-5.62-1.71-11.27-2.58-16.9
         c-0.85-5.48-1.88-10.93-2.61-16.43c-1.28-9.69-2.65-19.44-1.56-29.19c1.14-10.25,3.3-20.36,6.7-30.15c0.23-0.66,0.54-1.35,1-1.87

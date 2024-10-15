@@ -151,7 +151,7 @@ function HomePage() {
   }, [openDropdown]);
 
   return (
-    <div className="container mx-auto px-4 min-h-screen mb-10">
+    <div className="container mx-auto px-4 min-h-screen mb-6">
       <header className="bg-header text-white py-4 w-full fixed top-0 left-0 z-20">
         <div className="flex justify-center items-center"> 
           <img src="/static/icon.png" alt="Icon" className="h-10 w-10 mr-3" />
@@ -163,7 +163,7 @@ function HomePage() {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="formAge" className="block text-sm font-medium text-gray-500">Age</label>
+              <label htmlFor="formAge" className="block text-sm font-medium text-foreground">Age</label>
               <input
                 id="formAge"
                 type="number"
@@ -175,7 +175,7 @@ function HomePage() {
             </div>
 
             <div>
-              <label htmlFor="formGender" className="block text-sm font-medium text-gray-500">Gender</label>
+              <label htmlFor="formGender" className="block text-sm font-medium text-foreground">Gender</label>
               <select
                 id="formGender"
                 value={gender}
@@ -214,6 +214,9 @@ function HomePage() {
       </div>
       <div className="layout-container lg:flex lg:justify-between lg:space-x-4">
       <div className="diagram-container lg:w-2/3">
+      <div className='flex justify-center'>
+        <h2 className="text-xl font-semibold mb-10">What&apos;s bothering you?</h2>
+      </div>
           <BodyDiagram
           selectedSymptoms={selectedSymptoms}
           handleSymptomClick={handleSymptomClick}
