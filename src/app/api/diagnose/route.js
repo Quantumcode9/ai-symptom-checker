@@ -29,7 +29,7 @@ Your task is to:
   - **Name**: The name of the condition.
   - **Description**: A brief explanation.
   - **Severity**: One of Low, Mild, Moderate, High.
-- Conclude with a personalized closing recommendation based on the most severe condition's severity.
+- Conclude with a personalized closing recommendation.
 
 Format your response exactly like this:
 [Opening Response]
@@ -47,7 +47,7 @@ Severity: [Severity]
 Condition 3:
 ...
 
-[Closing Response]`
+[Closing recommendation]`, 
         },
         {
           role: 'user',
@@ -55,7 +55,7 @@ Condition 3:
         },
       ],
       temperature: 0.7,
-      max_tokens: 500,
+      max_tokens: 450,
     });
 
     const choices = response.choices;

@@ -1900,7 +1900,7 @@
             "id": 16
         },
         {
-            "name": "Liver Disease",
+            "name": "Growling Stomach",
             "id": 17
         },
         {
@@ -1916,7 +1916,7 @@
             "id": 20
         },
         {
-            "name": "Scarring of the Liver",
+            "name": "Gassy",
             "id": 21
         },
         {
@@ -1938,6 +1938,11 @@
         {
             "name": "Upper Stomach Pain",
             "id": 26
+        },
+
+        { 
+            "name": "Frequent bowel movements", 
+            "id": 27
         }
 
     ]
@@ -4045,7 +4050,7 @@
                         "id": 3
                     },
                     {
-                        "name": "Limited Range of Motion",
+                        "name": "Itching",
                         "id": 4
                     },
                     {
@@ -4061,7 +4066,7 @@
                         "id": 7
                     },
                     {
-                        "name": "Swelling",
+                        "name": "Numbness",
                         "id": 8
                     },
                     {
@@ -4069,17 +4074,14 @@
                         "id": 9
                     },
                     {
-                        "name": "Weakness",
+                        "name": "Twitching",
                         "id": 10
                     },
                     {
-                        "name": "Atrophy",
+                        "name": "Burning feeling ",
                         "id": 11
-                    },
-                    {
-                        "name": "Twitching",
-                        "id": 12
                     }
+             
                 ]
             },
                 
