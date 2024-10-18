@@ -150,6 +150,11 @@ function HomePage() {
     };
   }, [openDropdown]);
 
+
+  const handleRemoveSymptom = (index) => {
+    setSelectedSymptoms(selectedSymptoms.filter((_, i) => i !== index));
+  };
+
   return (
     <div className="container mx-auto px-4 min-h-screen mb-6">
       <header className="bg-header text-white py-4 w-full fixed top-0 left-0 z-20">
@@ -233,10 +238,6 @@ function HomePage() {
       </button>
       </div>
 
-        
-
-
-
         </div>
 
           {selectedBodyPart && (
@@ -251,20 +252,28 @@ function HomePage() {
 
       </div>
 
-          <div className="selected-symptoms-container lg:w-2/3 p-4 bg-resultsCard shadow-lg">
-          <section className="selected-symptoms text-center mt-8">
-            <h2 className="text-xl font-semibold">Selected Symptoms</h2>
-            {selectedSymptoms.length > 0 ? (
-              <div className="list-disc text-sm text-symptomButtons">
-                {selectedSymptoms.map((item, index) => (
-                  <p key={index}>{item.bodyPart}: {item.symptom}</p>
-                ))}
-              </div>
-            ) : (
-              <p className="text-foreground">No symptoms selected.</p>
-            )}
-          </section>
+      <div className="selected-symptoms-container lg:w-2/3 p-4 bg-resultsCard shadow-lg">
+  <section className="selected-symptoms text-center mt-8">
+    <h2 className="text-xl font-semibold">Selected Symptoms</h2>
+    {selectedSymptoms.length > 0 ? (
+      <div className="list-disc sm:text-sm md:text-lg text-symptomButtons">
+        {selectedSymptoms.map((item, index) => (
+          <div key={index} className="flex justify-between items-center">
+            <p>{item.bodyPart}: {item.symptom}</p>
+            <button
+              onClick={() => handleRemoveSymptom(index)}
+              className="text-red-500 hover:text-red-700 ml-4"
+            >
+              X
+            </button>
           </div>
+        ))}
+      </div>
+    ) : (
+      <p className="text-foreground">No symptoms selected.</p>
+    )}
+  </section>
+</div>
         </div>
       
 

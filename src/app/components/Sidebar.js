@@ -33,7 +33,7 @@ if (!bodyPartData) {
 return (
     <div
     ref={sidebarRef}
-    className="fixed top-20 right-0 w-64 h-auto max-h-[70vh] bg-sideBar shadow-lg z-50 mb-10"
+    className="fixed top-20 right-0 w-64 sm:w-80 md:w-96 lg:w-[28rem] xl:w-[32rem] h-auto max-h-[70vh] bg-sideBar shadow-lg z-50 mb-10"
     >
     <div className="p-4">
         <div className="flex justify-between items-center mb-2">
@@ -55,7 +55,7 @@ return (
                 return (
                 <li
                     key={symptom.id}
-                    className={`mb-2 p-2 cursor-pointer text-sm sm:text-base transition-colors duration-200 ease-in-out ${
+                    className={`mb-2 p-2 cursor-pointer text-sm sm:text-base md:text-lg transition-colors duration-200 ease-in-out ${
                     isSelected
                         ? 'bg-blue-200 text-blue-800 font-semibold'
                         : 'bg-gray-100 text-gray-800'

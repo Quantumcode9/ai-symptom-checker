@@ -576,7 +576,7 @@ onMouseLeave={handleMouseLeave}
     className={`st1 ${
         isSymptomSelected('Chest Area') ? 'selected' : ''
         } ${hoveredPart === 'Chest Area' ? 'hovered' : ''}`}
-        onClick={() => handlePartTap('Chest Areat')}
+        onClick={() => handlePartTap('Chest Area')}
         onMouseEnter={() => handleMouseEnter('Chest Area')}
         onMouseLeave={handleMouseLeave}
 
