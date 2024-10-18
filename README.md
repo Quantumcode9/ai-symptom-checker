@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Diagnoself: AI Symptom Checker
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Diagnoself is a web application that allows users to select symptoms from different body parts and enter additional symptoms manually. The app then provides possible conditions based on the selected symptoms, age, and gender. It uses the OpenAI API to generate responses and recommendations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Check out the [live demo](https://diagnoself.vercel.app/) here. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Select symptoms from different body parts
+- Enter additional symptoms manually
+- Provide age and gender for more accurate results
+- Get possible conditions based on the entered information
+- View recommendations and additional information
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
 
-## Learn More
+- React
+- Next.js
+- Tailwind CSS
+- OpenAI API
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/Quantumcode9/ai-symptom-checker 
+   cd symptom-checker
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Install dependencies:
+
+- npm install
+
+3. Create a .env.local file in the root directory and add your OpenAI API key:
+
+- OPENAI_API_KEY=your_openai_api_key
+
+
+Usage
+1. Select symptoms from the available body parts.
+2. Enter any additional symptoms manually in the provided textarea.
+3. Provide your age and gender.
+4. Click the "Diagnose" button to get possible conditions.
+5. View the recommendations and additional information provided by the app.
+Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
