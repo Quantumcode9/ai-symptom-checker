@@ -60,6 +60,41 @@
                                 {
                                     "name": "Blurred Vision",
                                     "id": 11
+                                },
+
+                                {
+                                    "name": "Tingling",
+                                    "id": 12
+                                },
+
+                                {
+                                    "name": "Numbness",
+                                    "id": 13
+                                },
+
+                                {
+                                     "name": "Fainting",
+                                        "id": 14
+                                },
+
+                                {
+                                    "name": "Headache with Fever",
+                                    "id": 15
+                                },
+
+                                {
+                                    "name": "Headache with Stiff Neck",
+                                    "id": 16
+                                },
+
+                                {
+                                    "name": "Headache with Vision Changes",
+                                    "id": 17
+                                },
+
+                                {
+                                    "name": "Sensitivity to Light",
+                                    "id": 18
                                 }
 
             ]
@@ -229,19 +264,19 @@
                         "id": 19
                     },
                     {
-                        "name": "Tooth Sensitivity to Heat",
+                        "name": "Sensitivity to Heat",
                         "id": 20
                     },
                     {
-                        "name": "Tooth Sensitivity to Sweets",
+                        "name": "Sensitivity to Sweets",
                         "id": 21
                     },
                     {
-                        "name": "Tooth Sensitivity to Pressure",
+                        "name": "Sensitivity to Pressure",
                         "id": 22
                     },
                     {
-                        "name": "Tooth Sensitivity to Cold",
+                        "name": "Sensitivity to Cold",
                         "id": 23
                     }
                 ]
@@ -308,6 +343,11 @@
                     {
                         "name": "Acne",
                         "id": 12
+                    },
+
+                    {
+                        "name": "Loss of Facial Hair",
+                        "id": 13
                     }
     
                 ]
@@ -868,9 +908,8 @@
                         "name": "Canker Sores",
                         "id": 10
                     },
-
                     {
-                        "name": "Bad Breath",
+                        "name": "Cavities",
                         "id": 11
                     },
                     {
@@ -884,10 +923,6 @@
                     {
                         "name": "Breath smells like almonds",
                         "id": 14
-                    },
-                    {
-                        "name": "Bulimia",
-                        "id": 15
                     },
                     {
                         "name": "Cold Sore",
@@ -967,7 +1002,7 @@
                         "id": 34
                     },
                     {
-                        "name": "Metal Taste in Mouth",
+                        "name": "Metal Taste",
                         "id": 35
                     },
                     {
@@ -985,10 +1020,6 @@
                     {
                         "name": "Mouth is Swollen",
                         "id": 39
-                    },
-                    {
-                        "name": "Mouth Mucous Membrane Bleeding",
-                        "id": 40
                     },
                     {
                         "name": "Open Sore(s) in Mouth",
@@ -1041,22 +1072,6 @@
                     {
                         "name": "Tonsil Inflammation",
                         "id": 53
-                    },
-                    {
-                        "name": "Tooth Discoloration",
-                        "id": 54
-                    },
-                    {
-                        "name": "Tooth Erosion",
-                        "id": 55
-                    },
-                    {
-                        "name": "Tooth Heat Sensitivity",
-                        "id": 56
-                    },
-                    {
-                        "name": "Tooth Hurts with Cold Liquids or Food",
-                        "id": 57
                     }
                 
                 ]

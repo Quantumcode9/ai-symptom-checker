@@ -285,8 +285,8 @@ function HomePage() {
               id="formOtherSymptoms"
               value={otherSymptoms}
               onChange={handleTextAreaChange}
-              placeholder="If you have any other symptoms, please enter them here."
-              className="mt-1 block w-full p-2 bg-background border border-gray-300 rounded-md shadow-sm focus:ring-blue-200 focus:border-blue-200 sm:text-sm"
+              placeholder="If you have any other symptoms, or additional details, please enter them here."
+              className="mt-1 block w-full p-2 bg-background border border-gray-300 rounded-md shadow-sm focus:ring-blue-200 focus:border-blue-200 sm:text-base"
             />
           </div>
 

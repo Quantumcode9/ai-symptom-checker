@@ -24,12 +24,13 @@ export async function POST(req) {
 
 Your task is to:
 - Provide an opening response personalized to the user's input.
+- Prioritize common, less severe conditions, especially for younger users, before listing more severe possibilities.
 - List the top 4 possible conditions, ranked by likelihood.
 - For each condition, provide:
   - **Name**: The name of the condition.
   - **Description**: A brief explanation.
   - **Severity**: One of Low, Mild, Moderate, High.
-- Conclude with a personalized closing recommendation.
+- Conclude with a personalized closing recommendation that includes actionable advice, and encourages the user to seek professional medical advice if symptoms persist or worsen, without causing undue alarm.
 
 Format your response exactly like this:
 [Opening Response]
@@ -55,7 +56,7 @@ Condition 3:
         },
       ],
       temperature: 0.7,
-      max_tokens: 450,
+      max_tokens: 550,
     });
 
     const choices = response.choices;
