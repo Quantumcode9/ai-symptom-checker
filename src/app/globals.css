@@ -68,7 +68,7 @@ body {
 
 
 
-.diagram-container {
+.body-diagram-container {
   justify-self: center;
   width: 100%; 
   max-width: 500px; 
@@ -102,7 +102,7 @@ body {
 
 
 @media (min-width: 1024px) {
-  .diagram-container {
+  .body-diagram-container {
     width: 60%; 
   }
   .selected-symptoms-container {
@@ -116,7 +116,7 @@ body {
   }
 }
 
-.diagram-container svg {
+.body-diagram-container svg {
   width: 100%;
   height: auto; 
 }
@@ -132,7 +132,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .diagram-container, .selected-symptoms-container {
+  .body-diagram-container, .selected-symptoms-container {
     width: 100%;
   }
 
@@ -140,9 +140,10 @@ body {
     display: flex; 
   }
 
-  .diagram-container {
+  .body-diagram-container {
     margin: 0 auto;
     max-width: 90vw;
+
   }
 
   .category-btn {
@@ -151,6 +152,7 @@ body {
   }
 
 }
+
 
 
 
