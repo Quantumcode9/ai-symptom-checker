@@ -4,100 +4,177 @@
 
     "symptoms" : [
         {
-            "id": 1,
-            "name": "Head",
-            "symptoms": [
+        "id": 1,
+        "name": "Head",
+        "symptoms": [
+            {
+                "name": "Headache",
+                "id": 1
+            },
+
+            {
+                "name": "Dizziness",
+                "id": 2
+            },
+                
                 {
-                    "name": "Headache",
-                    "id": 1
+                    "name": "Lightheadedness",
+                    "id": 3
                 },
 
                 {
-                    "name": "Dizziness",
-                    "id": 2
+                    "name": "Confusion",
+                    "id": 4
                 },
                     
                     {
-                        "name": "Lightheadedness",
-                        "id": 3
+                        "name": "Memory Loss",
+                        "id": 5
                     },
 
                     {
-                        "name": "Confusion",
-                        "id": 4
+                        "name": "Ringing in Ears",
+                        "id": 6
+                    },
+
+                    {
+                        "name": "Sinus Pain",
+                        "id": 7
                     },
                         
                         {
-                            "name": "Memory Loss",
-                            "id": 5
-                        },
-
-                        {
-                            "name": "Ringing in Ears",
-                            "id": 6
-                        },
-
-                        {
-                            "name": "Sinus Pain",
-                            "id": 7
+                            "name": "Nausea",
+                            "id": 8
                         },
                             
                             {
-                                "name": "Nausea",
-                                "id": 8
+                                "name": "Migraine",
+                                "id": 9
                             },
-                                
-                                {
-                                    "name": "Migraine",
-                                    "id": 9
-                                },
 
-                                {
-                                    "name": "Vertigo",
-                                    "id": 10
-                                },
+                            {
+                                "name": "Vertigo",
+                                "id": 10
+                            },
 
-                                {
-                                    "name": "Blurred Vision",
-                                    "id": 11
-                                },
+                            {
+                                "name": "Blurred Vision",
+                                "id": 11
+                            },
 
-                                {
-                                    "name": "Tingling",
-                                    "id": 12
-                                },
+                            {
+                                "name": "Tingling",
+                                "id": 12
+                            },
 
-                                {
-                                    "name": "Numbness",
-                                    "id": 13
-                                },
+                            {
+                                "name": "Numbness",
+                                "id": 13
+                            },
 
-                                {
-                                     "name": "Fainting",
-                                        "id": 14
-                                },
+                            {
+                                "name": "Fainting",
+                                    "id": 14
+                            },
 
-                                {
-                                    "name": "Headache with Fever",
-                                    "id": 15
-                                },
+                            {
+                                "name": "Headache with Fever",
+                                "id": 15
+                            },
 
-                                {
-                                    "name": "Headache with Stiff Neck",
-                                    "id": 16
-                                },
+                            {
+                                "name": "Headache with Stiff Neck",
+                                "id": 16
+                            },
 
-                                {
-                                    "name": "Headache with Vision Changes",
-                                    "id": 17
-                                },
+                            {
+                                "name": "Headache with Vision Changes",
+                                "id": 17
+                            },
 
-                                {
-                                    "name": "Sensitivity to Light",
-                                    "id": 18
-                                }
+                            {
+                                "name": "Sensitivity to Light",
+                                "id": 18
+                            },
 
-            ]
+                            {
+                                "name": "Sensitivity to Noise",
+                                "id": 19
+                            },
+
+                            {
+                                "name": "Headache with Nausea",
+                                "id": 20
+                            },
+
+                            {
+                                "name": "Headache with Vomiting",
+                                "id": 21
+                            },
+
+                            {
+                                "name": "Headache with Dizziness",
+                                "id": 22
+                            },
+
+                            {
+                                "name": "Headache with Weakness",
+                                "id": 23
+                            },
+
+                            {
+                                "name": "Headache with Tingling",
+                                "id": 24
+                            },
+
+                            {
+                                "name": "Headache with Numbness",
+                                "id": 25
+                            },
+
+                            {
+                                "name": "Headache with Confusion",
+                                "id": 26
+                            },
+
+                            {
+                                "name": "Headache with Memory Loss",
+                                "id": 27
+                            },
+
+                            {
+                                "name": "Headache with Ringing in Ears",
+                                "id": 28
+                            },
+
+                            {
+                                "name": "Headache with Sinus Pain",
+                                "id": 29
+                            },
+
+                            {
+                                "name": "Headache with Vertigo",
+                                "id": 30
+                            },
+
+                            {
+                                "name": "Headache with Blurred Vision",
+                                "id": 31
+                            },
+                            {
+                                "name": "Migraine with Aura",
+                                "id": 31
+                            },
+
+                            {
+                                "name": "Headache with Fainting",
+                                "id": 32
+                            }
+
+
+            ]              
+
+
 
         },
             
@@ -1252,7 +1329,7 @@
 {
 
     "id": 7,
-    "name": "Chest Area",
+    "name": "Upper Chest",
     "symptoms": [
         {
             "name": "Pain",
@@ -1644,6 +1721,85 @@
 },
 
 {
+    "id": 7.4, 
+    "name": "Lower Chest",
+    "symptoms": [
+        {
+            "name": "Pain When Breathing",
+            "id": 1
+        },
+        {
+            "name": "Sharp or Stabbing Pain",
+            "id": 2
+        },
+        {
+            "name": "Tenderness to Touch",
+            "id": 3
+        },
+        {
+            "name": "Burning Sensation",
+            "id": 4
+        },
+        {
+            "name": "Bruising",
+            "id": 5
+        },
+        {
+            "name": "Cracking or Popping Sensation",
+            "id": 6
+        },
+        {
+            "name": "Pressure or Tightness",
+            "id": 7
+        },
+        {
+            "name": "Pain Radiating to the Upper Abdomen",
+            "id": 8
+        },
+        {
+            "name": "Difficulty Expanding the Chest When Breathing",
+            "id": 9
+        },
+        {
+            "name": "Muscle Spasms",
+            "id": 10
+        },
+        {
+            "name": "Rib Fracture",
+            "id": 11
+        },
+        {
+            "name": "Pain When Twisting the Torso",
+            "id": 12
+        },
+        {
+            "name": "Costochondritis (Inflammation of Rib Cartilage)",
+            "id": 13
+        },
+        {
+            "name": "Diaphragmatic Pain",
+            "id": 14
+        },
+        {
+            "name": "Pain When Lying Down",
+            "id": 15
+        },
+        {
+            "name": "Acid Reflux or Heartburn Sensation",
+            "id": 16
+        },
+        {
+            "name": "Shortness of Breath",
+            "id": 17
+        },
+        {
+            "name": "Pain with Deep Inhalation",
+            "id": 18
+        }
+    ]
+},
+
+{
     "id": 7.1,
     "name": "Sternum",
     "symptoms": [
@@ -1660,7 +1816,7 @@
             "id": 3
         },
         {
-            "name": "Deformity",
+            "name": "Pressure",
             "id": 4
         },
         {
@@ -1668,20 +1824,48 @@
             "id": 5
         },
         {
-            "name": "Pain",
-            "id": 6
-        },
-        {
-            "name": "Swelling",
-            "id": 7
-        },
-        {
-            "name": "Tenderness",
-            "id": 8
-        },
-        {
-            "name": "Pressure",
+            "name": "Cracking or Popping Sensation",
             "id": 9
+        },
+        {
+            "name": "Pain When Pressed",
+            "id": 10
+        },
+        {
+            "name": "Pain When Breathing",
+            "id": 11
+        },
+        {
+            "name": "Sharp or Stabbing Pain",
+            "id": 12
+        },
+        {
+            "name": "Pain Worsening with Movement",
+            "id": 13
+        },
+        {
+            "name": "Pain Radiating to the Upper Chest",
+            "id": 14
+        },
+        {
+            "name": "Discomfort When Lying Down",
+            "id": 15
+        },
+        {
+            "name": "Inflammation (Costochondritis)",
+            "id": 16
+        },
+        {
+            "name": "Pain After Physical Activity",
+            "id": 17
+        },
+        {
+            "name": "Difficulty Expanding Chest When Breathing",
+            "id": 18
+        },
+        {
+            "name": "Popping or Clicking When Moving the Upper Body",
+            "id": 19
         }
 
     ]
@@ -1695,6 +1879,7 @@
 {
    "id": 7.2, 
     "name": "Breasts",
+    "gender": "Women",
 
     "symptoms": [
         {
@@ -2240,46 +2425,86 @@
     "id": 9.5,
     "name": "Spine",
     "symptoms": [
-    {
-        "name": "Back Pain",
-        "id": 1
-    },
-    {
-        "name": "Stiffness in the Spine",
-        "id": 2
-    },
-    {
-        "name": "Spinal Curvature",
-        "id": 3
-    },
-    {
-        "name": "Shooting Pain Down the Leg",
-        "id": 4
-    },
-    {
-        "name": "Numbness or Tingling in the Extremities",
-        "id": 5
-    },
-    {
-        "name": "Weakness in the Legs or Arms",
-        "id": 6
-    },
-    {
-        "name": "Herniated Disc",
-        "id": 7
-    },
-    {
-        "name": "Spinal Stenosis",
-        "id": 8
-    },
-    {
-        "name": "Sharp Pain",
-        "id": 9
-    },
-    {
-        "name": "Loss of Bladder or Bowel Control",
-        "id": 10
-    }
+        {
+            "name": "Sharp Pain",
+            "id": 1
+        },
+        {
+            "name": "Stiffness",
+            "id": 2
+        },
+        {
+            "name": "Spinal Curvature",
+            "id": 3
+        },
+        {
+            "name": "Shooting Pain Down the Leg",
+            "id": 4
+        },
+        {
+            "name": "Numbness or Tingling in the Extremities",
+            "id": 5
+        },
+        {
+            "name": "Weakness in the Legs or Arms",
+            "id": 6
+        },
+        {
+            "name": "Herniated Disc",
+            "id": 7
+        },
+        {
+            "name": "Spinal Stenosis",
+            "id": 8
+        },
+        {
+            "name": "Chronic Lower Back Pain",
+            "id": 9
+        },
+        {
+            "name": "Pain Radiating to the Buttocks",
+            "id": 10
+        },
+        {
+            "name": "Muscle Spasms",
+            "id": 11
+        },
+        {
+            "name": "Loss of Bladder or Bowel Control",
+            "id": 12
+        },
+        {
+            "name": "Pain Worsening with Movement",
+            "id": 13
+        },
+        {
+            "name": "Difficulty Standing for Long Periods",
+            "id": 14
+        },
+        {
+            "name": "Burning Sensation in the Spine",
+            "id": 15
+        },
+        {
+            "name": "Pain When Bending or Twisting",
+            "id": 16
+        },
+        {
+            "name": "Hunched Posture",
+            "id": 17
+        },
+        {
+            "name": "Pain After Prolonged Sitting",
+            "id": 18
+        },
+        {
+            "name": "Neck Pain Radiating to Shoulders",
+            "id": 19
+        },
+        {
+            "name": "Cracking or Popping Sounds",
+            "id": 20 
+        }
     ]
 },
 
@@ -2381,6 +2606,46 @@
         {
             "name": "Deformity",
             "id": 10
+        },
+        {
+            "name": "Muscle Spasms",
+            "id": 11
+        },
+        {
+            "name": "Burning Sensation",
+            "id": 12
+        },
+        {
+            "name": "Pain Worsening with Movement",
+            "id": 13
+        },
+        {
+            "name": "Cracking or Popping Sounds",
+            "id": 14
+        },
+        {
+            "name": "Hunched Posture",
+            "id": 15
+        },
+        {
+            "name": "Difficulty Extending the Arm",
+            "id": 16
+        },
+        {
+            "name": "Pain When Gripping Objects",
+            "id": 17
+        },
+        {
+            "name": "Sharp Pain on Outer Elbow (Tennis Elbow)",
+            "id": 18
+        },
+        {
+            "name": "Pain on Inner Elbow (Golfer’s Elbow)",
+            "id": 19
+        },
+        {
+            "name": "Locking or Catching Sensation",
+            "id": 20
         }
     ]
 },
@@ -2476,6 +2741,10 @@
         {
             "name": "Deformity",
             "id": 10
+        }, 
+        {
+            "name": "Sprain",
+            "id": 11
         }
     ]
 },
@@ -3009,55 +3278,70 @@
 
     "id": 17,
     "name": "Ribs",
-    "symptoms": [
+  "symptoms": [
         {
-            "name": "Pain",
+            "name": "Rib Pain",
             "id": 1
         },
-
-        {
-            "name": "Swelling",
-            "id": 2
-        },
-
         {
             "name": "Bruising",
-            "id": 3
+            "id": 2
         },
-
-        {
-            "name": "Deformity",
-            "id": 4
-        },
-
-        {
-            "name": "Tenderness",
-            "id": 5
-        },
-
-        {
-            "name": "Pressure",
-            "id": 6
-        },
-
-        {
-            "name": "Pain",
-            "id": 7
-        },
-
         {
             "name": "Swelling",
+            "id": 3
+        },
+        {
+            "name": "Sharp or Stabbing Pain",
+            "id": 4
+        },
+        {
+            "name": "Pain When Breathing",
+            "id": 5
+        },
+        {
+            "name": "Tenderness to Touch",
+            "id": 6
+        },
+        {
+            "name": "Popping or Clicking Sensation",
+            "id": 7
+        },
+        {
+            "name": "Pain When Coughing or Sneezing",
             "id": 8
         },
-
         {
-            "name": "Tenderness",
+            "name": "Fractured or Broken Rib",
             "id": 9
         },
-
         {
-            "name": "Pressure",
+            "name": "Rib Dislocation",
             "id": 10
+        },
+        {
+            "name": "Muscle Spasms Around Ribs",
+            "id": 11
+        },
+        {
+            "name": "Costochondritis (Inflammation of Rib Cartilage)",
+            "id": 12
+        },
+        {
+            "name": "Difficulty Expanding Chest When Breathing",
+            "id": 13
+        },
+        {
+            "name": "Pain Radiating to the Back",
+            "id": 14
+        },
+        {
+            "name": "Pain When Lying on Side",
+            "id": 15
+        },
+        {
+            "name": "Rib Cage Stiffness",
+            "id": 16
         }
 
     ]
@@ -3689,15 +3973,15 @@
             "name": "Hips",
             "symptoms" : [
                 {
-                    "name": "Hip Pain",
+                    "name": "Pain",
                     "id": 1
                 },
                 {
-                    "name": "Hip Swelling",
+                    "name": "Swelling",
                     "id": 2
                 },
                 {
-                    "name": "Hip Stiffness",
+                    "name": "Stiffness",
                     "id": 3
                 },
                 {
@@ -3705,29 +3989,71 @@
                     "id": 4
                 },
                 {
-                    "name": "Hip Clicking",
+                    "name": "Clicking",
                     "id": 5
                 },
                 {
-                    "name": "Hip Locking",
+                    "name": "Locking",
                     "id": 6
                 },
                 {
-                    "name": "Hip Weakness",
+                    "name": "Weakness",
                     "id": 7
                 },
                 {
-                    "name": "Hip Instability",
+                    "name": "Instability",
                     "id": 8
                 },
                 {
-                    "name": "Hip Tenderness",
+                    "name": "Tenderness",
                     "id": 9
                 },
                 {
-                    "name": "Hip Deformity",
+                    "name": "Deformity",
                     "id": 10
+                },
+                {
+                    "name": "Grinding Sensation",
+                    "id": 11
+                },
+                {
+                    "name": "Bursitis (Inflamed Bursa)",
+                    "id": 12
+                },
+                {
+                    "name": "Popping Sounds",
+                    "id": 13
+                },
+                {
+                    "name": "Hip Buckling",
+                    "id": 14
+                },
+                {
+                    "name": "Heat or Warmth",
+                    "id": 15
+                },
+                {
+                    "name": "Pain When Walking",
+                    "id": 16
+                },
+                {
+                    "name": "Pain When Sitting",
+                    "id": 17
+                },
+                {
+                    "name": "Pain When Lying Down",
+                    "id": 18
+                },
+                {
+                    "name": "Pain When Climbing Stairs",
+                    "id": 19
+                },
+                {
+                    "name": "Pain When Running",
+                    "id": 20
                 }
+             
+              
             ]
         },
             
@@ -3776,6 +4102,46 @@
                     {
                         "name": "Deformity",
                         "id": 10
+                    },
+                    {
+                        "name": "Grinding Sensation",
+                        "id": 11
+                    },
+                    {
+                        "name": "Bursitis (Inflamed Bursa)",
+                        "id": 12
+                    },
+                    {
+                        "name": "Popping Sounds",
+                        "id": 13
+                    },
+                    {
+                        "name": "Knee Buckling",
+                        "id": 14
+                    },
+                    {
+                        "name": "Heat or Warmth",
+                        "id": 15
+                    },
+                    {
+                        "name": "Pain When Bending",
+                        "id": 16
+                    },
+                    {
+                        "name": "Pain When Kneeling",
+                        "id": 17
+                    },
+                    {
+                        "name": "Pain When Walking Upstairs",
+                        "id": 18
+                    },
+                    {
+                        "name": "Pain Behind the Knee",
+                        "id": 19
+                    },
+                    {
+                        "name": "Fluid Buildup",
+                        "id": 20
                     }
                 ]
             },
@@ -3819,96 +4185,33 @@
                     {
                         "name": "Swelling",
                         "id": 9
-                    }
-                ]
-            },
-
-            {
-                "id": 27,
-                "name": "Elbows",
-                "symptoms": [
-                    {
-                        "name": "Pain",
-                        "id": 1
                     },
                     {
-                        "name": "Swelling",
-                        "id": 2
+                        "name": "Numbness",
+                        "id": 10
                     },
                     {
-                        "name": "Stiffness",
-                        "id": 3
+                        "name": "Redness",
+                        "id": 11
                     },
                     {
-                        "name": "Limited Range of Motion",
-                        "id": 4
-                    },
-                    {
-                        "name": "Clicking",
-                        "id": 5
+                        "name": "Burning Sensation",
+                        "id": 12
                     },
                     {
                         "name": "Weakness",
-                        "id": 6
+                        "id": 13
                     },
                     {
-                        "name": "Instability",
-                        "id": 7
-                    },
-                    {
-                        "name": "Tenderness",
-                        "id": 8
-                    },
-                    {
-                        "name": "Deformity",
-                        "id": 9
+                        "name": "Difficulty Walking",
+                        "id": 14
                     }
                 ]
             },
 
 
-            {
-                "id": 28,
-                "name": "Wrists",
-                "symptoms": [
-                    {
-                        "name": "Pain",
-                        "id": 1
-                    },
-                    {
-                        "name": "Swelling",
-                        "id": 2
-                    },
-                    {
-                        "name": "Stiffness",
-                        "id": 3
-                    },
-                    {
-                        "name": "Limited Range of Motion",
-                        "id": 4
-                    },
-                    {
-                        "name": "Clicking",
-                        "id": 5
-                    },
-                    {
-                        "name": "Weakness",
-                        "id": 6
-                    },
-                    {
-                        "name": "Instability",
-                        "id": 7
-                    },
-                    {
-                        "name": "Tenderness",
-                        "id": 8
-                    },
-                    {
-                        "name": "Deformity",
-                        "id": 9
-                    }
-                ]
-            },
+
+    
 
             {
                 "id": 29,
@@ -3931,7 +4234,7 @@
                         "id": 4
                     },
                     {
-                        "name": "Clicking",
+                        "name": "Tingling ",
                         "id": 5
                     },
                     {
@@ -3949,6 +4252,14 @@
                     {
                         "name": "Deformity",
                         "id": 9
+                    },
+                    {
+                        "name": "Cramping",
+                        "id": 10
+                    },
+                    {
+                        "name": "Numbness",
+                        "id": 11
                     }
                 ]
             },
@@ -4216,7 +4527,7 @@
                         "id": 8
                     },
                     {
-                        "name": "Night Sweats",
+                        "name": "Sharp Pain with Breathing",
                         "id": 9
                     },
                     {
