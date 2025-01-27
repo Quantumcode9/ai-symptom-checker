@@ -7,6 +7,7 @@ import SymptomsSidebar from './components/Sidebar';
 import CategoryButtons from './components/CategoryButtons';
 import CategorySidebar from './components/CategorySidebar';
 import Chat from './components/chat/Chat';
+import PDFGenerator from './components/PDFGenerator';
 
 function HomePage() {
   const [selectedSymptoms, setSelectedSymptoms] = useState([]);
@@ -503,11 +504,20 @@ const [highlightCondition, setHighlightCondition] = useState(null);
             )}
           </div>
         )}
+<div className="mt-6">
+{showResults && 
+<PDFGenerator 
+  conditions={conditions}
+  openingResponse={openingResponse}
+  closingResponse={closingResponse}
+  doctorsNotes={doctorsNotes}
+  symptoms={selectedSymptoms}
 
-
-    
+/>}
+</div>
   </section>
 )}
+
       </main>
 
          {/* Sidebars */}
