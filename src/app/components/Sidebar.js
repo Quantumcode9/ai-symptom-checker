@@ -33,7 +33,7 @@ if (!bodyPartData) {
 return (
     <div
     ref={sidebarRef}
-    className="fixed top-20 right-0 w-64 sm:w-80 md:w-96 lg:w-[28rem] xl:w-[32rem] h-auto max-h-[70vh] bg-sideBar shadow-lg z-50 mb-10"
+    className="fixed top-20 left-0 w-64 sm:w-80 md:w-96 lg:w-[28rem] xl:w-[32rem] h-auto max-h-[70vh] bg-sideBar shadow-lg z-50 mb-10"
     >
     <div className="p-4">
         <div className="flex justify-between items-center mb-2">

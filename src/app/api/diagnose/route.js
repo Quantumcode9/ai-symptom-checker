@@ -7,12 +7,12 @@ const openai = new OpenAI({
 
 export async function POST(req) {
   try {
-    const { symptoms, otherSymptoms, age, gender } = await req.json();
+    const { symptoms, otherSymptoms, age, gender, doctorsNotes } = await req.json();
 
     const symptomsWithBodyParts = symptoms.map(item => `${item.bodyPart}: ${item.symptom}`).join(', ');
 
     const allSymptoms = otherSymptoms.trim()
-      ? `${symptomsWithBodyParts}, ${otherSymptoms}`
+      ? `${symptomsWithBodyParts}, ${otherSymptoms},  ${doctorsNotes}`
       : symptomsWithBodyParts;
 
     const response = await openai.chat.completions.create({

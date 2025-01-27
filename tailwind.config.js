@@ -22,6 +22,8 @@ module.exports = {
         blueText: "var(--blue-text)",
         sideBar: "var(--sidebar)", 
         sideBarText: "var(--sidebar-text)",
+        categoryBtn: "var(--category-btn)",
+        textArea: "var(--textarea)",
       },
     },
   },

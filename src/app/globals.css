@@ -14,7 +14,9 @@
   --header: #3498db;
   --bluetext: #3498db;
   --sidebar: rgba(128, 128, 128, 0.5);
-  --model-color: #5e5e5e; 
+  --model-color: #4A4A4A; 
+  --hover-color: #1E88E5;
+  --textarea: #f0f8ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,7 +32,9 @@
     --header: #194a7a;
     --bluetext: #3498db;
     --sidebar: rgba(0, 0, 0, 0.5);
-    --model-color: #d4d4d4;
+    --model-color: #BBBBBB;
+    --hover-color: #5faff1;
+    --textarea: #2a2a2a;
   }
 }
 
@@ -152,7 +156,6 @@ body {
   }
 
 }
-
 
 
 

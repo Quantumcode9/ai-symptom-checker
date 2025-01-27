@@ -72,9 +72,9 @@ return (
     .st0 { stroke: #231F20; stroke-width: 0.25; stroke-miterlimit: 10; }
     .st1 { fill: var(--model-color); } 
     .clickable { cursor: pointer; }
-    .selected { fill: #FFD700; } 
-    .hovered { fill: #3498db; } 
-    `}
+    .selected { fill:#FFA726; } 
+    .hovered{ fill: var(--hover-color); }
+    `}    
     </style>
     <g
         id="Hips"

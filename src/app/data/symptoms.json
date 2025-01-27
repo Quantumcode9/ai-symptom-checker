@@ -163,12 +163,12 @@
                             },
                             {
                                 "name": "Migraine with Aura",
-                                "id": 31
+                                "id": 32
                             },
 
                             {
                                 "name": "Headache with Fainting",
-                                "id": 32
+                                "id": 33
                             }
 
 
@@ -1473,10 +1473,7 @@
         "name": "Cough with mucus production",
         "id": 33
     },
-    {
-        "name": "Coughing up blood",
-        "id": 34
-    },
+
     {
         "name": "Cyanosis",
         "id": 35
@@ -1490,11 +1487,6 @@
         "id": 37
     },
 
-
-    {
-        "name": "Persistent Cough",
-        "id": 38
-    },
     { 
         "name": "Coughing at Night",
         "id": 39
@@ -1556,16 +1548,12 @@
         "id": 53
     },
     {
-        "name": "Difficulty Swallowing",
+        "name": "Persistent Wheezing",
         "id": 54
     },
     {
         "name": "Hard Breast Lump",
         "id": 55
-    },
-    {
-        "name": "Heartburn",
-        "id": 56
     },
     {
         "name": "Hemoptysis",
@@ -1633,7 +1621,7 @@
         "id": 72
     },
     {
-        "name": "Rapid Breathing",
+        "name": "Pleurisy",
         "id": 73
     },
     {
@@ -1661,7 +1649,7 @@
         "id": 79
     },
     {
-        "name": "Shortness of Breath",
+        "name": "Shortness of Breath When Lying Down",
         "id": 80
     },
     {

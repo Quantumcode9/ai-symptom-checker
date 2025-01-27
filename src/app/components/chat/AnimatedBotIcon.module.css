@@ -1,0 +1,26 @@
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-2px); }
+  }
+  
+  @keyframes float-medium {
+    0%, 100% { transform: translateY(-1px); }
+    50% { transform: translateY(-3px); }
+  }
+  
+  @keyframes float-fast {
+    0%, 100% { transform: translateY(-2px); }
+    50% { transform: translateY(-4px); }
+  }
+  
+  .animateFloatSlow {
+    animation: float-slow 3s ease-in-out infinite;
+  }
+  
+  .animateFloatMedium {
+    animation: float-medium 2.5s ease-in-out infinite;
+  }
+  
+  .animateFloatFast {
+    animation: float-fast 2s ease-in-out infinite;
+  }
