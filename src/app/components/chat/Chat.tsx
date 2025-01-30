@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { ResizableBox, ResizeHandleAxis } from 'react-resizable';
+import { ResizableBox, ResizeHandle} from 'react-resizable';
 import 'react-resizable/css/styles.css';
 import styles from './Chatbot.module.css';
 import NurseChat from '../NurseChat';
@@ -120,7 +120,7 @@ const Chatbot: React.FC<ChatbotProps> = ({
         <ResizableBox
           axis="both"
           handleSize={[20, 20]}
-          resizeHandles={['nw', 'n'] as ResizeHandleAxis[]}
+          resizeHandles={['nw', 'n'] as ResizeHandle[]}
           width={isFullScreen ? window.innerWidth : 400}
           height={isFullScreen ? window.innerHeight : 500}
           minConstraints={[300, 400]}

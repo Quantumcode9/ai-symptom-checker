@@ -1,6 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Loader } from 'lucide-react';
 import { selectNurse } from '../utils/nurseUtils';
+import ReactMarkdown from 'react-markdown';
+import ChatPrompts from './chat/ChatPrompts';
+
+
 // import ChatPrompts from './ChatPrompts';
 const LOCAL_STORAGE_KEY = 'nurseChatHistory';
 
@@ -33,6 +37,7 @@ const NurseChat = ({
     const [openingResponse, setOpeningResponse] = useState('');
     const [updatedConditions, setUpdatedConditions] = useState([]);
     const [highlightCondition, setHighlightCondition] = useState('');
+    const [suggestedPrompts, setSuggestedPrompts] = useState([]);
 
 
       // Format date helper
@@ -53,6 +58,12 @@ const NurseChat = ({
       console.error('Date formatting error:', error);
       return '';
     }
+  };
+
+
+  const handlePromptClick = (prompt) => {
+    setInputValue(prompt);
+    handleSubmit(new Event('submit'));
   };
 
   
@@ -159,7 +170,10 @@ const NurseChat = ({
         if (data.openingResponse) {
           setOpeningResponse(data.openingResponse);
         }
-  
+      
+        if (data.suggestedPrompts?.length > 0) {
+          setSuggestedPrompts(data.suggestedPrompts);
+        }
 
       } catch (error) {
         console.error('Error:', error);
@@ -193,13 +207,16 @@ const NurseChat = ({
                     : 'bg-gray-100 text-gray-800 rounded-bl-none'
                 }`}
                 >
-                <p className="text-sm">{message.content}</p>
-                <span className="text-xs opacity-70 mt-1 block">
+                   {/* Render message content as Markdown */}
+                   <div className="text-sm">
+                <ReactMarkdown>{message.content}</ReactMarkdown>
+              </div>
+              <span className="text-xs opacity-70 mt-1 block">
                 {formatTimestamp(message.timestamp)}
-                </span>
-                </div>
+              </span>
             </div>
-            ))}
+          </div>
+        ))}
             {isLoading && (
             <div className="flex justify-start">
                 <div className="bg-gray-100 p-3 rounded-lg rounded-bl-none">
@@ -208,19 +225,36 @@ const NurseChat = ({
             </div>
             )}
             <div ref={messagesEndRef} />
+
         </div>
+
+           {/* Action Bar */}
+      <div className="sticky bottom-0 bg-betterGray p-2 rounded-t-lg shadow-lg">
+
+      {!isLoading && suggestedPrompts.length > 0 && (
+          <ChatPrompts 
+          prompts={suggestedPrompts} 
+          onPromptClick={handlePromptClick} 
+          isLoading={false}
+        />
+        )}
+
+      </div>
+        
     
         {/* Input Form */}
         <form onSubmit={handleSubmit} className="p-4 bg-background border-t">
-            <div className="flex space-x-2">
-            <input
-                type="text"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                placeholder="Type your message..."
-                className="flex-1 p-2 border bg-background rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                disabled={isLoading}
-            />
+            
+          
+        <div className="flex space-x-2">
+  <textarea
+    value={inputValue}
+    onChange={(e) => setInputValue(e.target.value)}
+    placeholder="Type your message..."
+    className="flex-1 p-2 border bg-background rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+    disabled={isLoading}
+    rows={2}
+  />
             <button
                 type="submit"
                 disabled={isLoading || !inputValue.trim()}

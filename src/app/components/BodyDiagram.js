@@ -19,10 +19,11 @@ useEffect(() => {
 
 const handlePartTap = (part, event) => {
     const rect = event.target.getBoundingClientRect();
-    setTooltipPosition({
-    x: rect.left + window.scrollX,
-    y: rect.top + window.scrollY,
-    });
+    const containerRect = diagramRef.current.getBoundingClientRect();
+        setTooltipPosition({
+            x: rect.left - containerRect.left + rect.width / 2 + 15, 
+            y: rect.top - containerRect.top - 10, 
+        });
 
     if (isTouchDevice) {
     if (tapPart === part) {
@@ -40,9 +41,11 @@ const handlePartTap = (part, event) => {
 const handleMouseEnter = (part, event) => {
     setHoveredPart(part);
     const rect = event.target.getBoundingClientRect();
+    const containerRect = diagramRef.current.getBoundingClientRect();
+    setHoveredPart(part);
     setTooltipPosition({
-    x: rect.left + window.scrollX,
-    y: rect.top + window.scrollY,
+        x: rect.left - containerRect.left + rect.width / 2 + 35,
+        y: rect.top - containerRect.top - 10, 
     });
 };
 
@@ -1176,27 +1179,31 @@ d="M303.26,229.14c-1.05-3.84-1.84-6.97-2.77-10.06c-1.95-6.42-3.93-12.84-6.01-19.
 </g>
 
 </svg>
+
 {hoveredPart && (
-<div
-    className="tooltip"
-    style={{
-    position: 'fixed',
-    top: `${tooltipPosition.y}px`,
-    left: `${tooltipPosition.x + 30}px`,
-    padding: '8px',
-    backgroundColor: '#333',
-    color: '#fff',
-    borderRadius: '4px',
-    fontSize: '14px',
-    pointerEvents: 'none',
-    zIndex: 1000,
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    }}
->
-    {hoveredPart}
-</div>
-)}
+    <div
+        className="tooltip"
+        style={{
+            position: 'absolute',
+            left: `${tooltipPosition.x}px`,
+            transform: 'translateX(-50%)', // Center tooltip horizontally
+            padding: '8px',
+            backgroundColor: '#333',
+            color: '#fff',
+            borderRadius: '4px',
+            fontSize: '14px',
+            pointerEvents: 'none',
+            zIndex: 1000,
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+            whiteSpace: 'nowrap',
+            maxWidth: '150px',
+            textAlign: 'center',
+        }}
+        >
+        {hoveredPart}
     </div>
+)}
+</div>
 );
 };
 

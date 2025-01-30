@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import styles from './AnimatedBotIcon.module.css';
 
 
 
 type EyePosition = 'center' | 'left' | 'right';
 
-const AnimatedBotIcon = ({ size = 32, isLoading = false }) => {
+const AnimatedBotIcon = ({ size = 34, isLoading = false }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isBlinking, setIsBlinking] = useState(false);
     const [eyePosition, setEyePosition] = useState<EyePosition>('center');
 
     useEffect(() => {
         const blinkInterval = setInterval(() => {
-            setIsBlinking(true); // Start blinking
+            setIsBlinking(true); 
             
             setTimeout(() => {
-                setIsBlinking(false); // Stop blinking after 200ms
+                setIsBlinking(false); 
             }, 200); 
         }, Math.random() * 4000 + 4000);
     
@@ -68,7 +69,7 @@ return (
     height={size}
     onMouseEnter={handleInteraction}
     onMouseLeave={() => setIsHovered(false)}
-    className={`transition-all duration-300 ease-in-out ${isLoading ?  'animate-spin' : ''}`}
+    className={`transition-all duration-300 ${isLoading ?  'animate-spin' : ''}`}
     >
 
 
@@ -76,27 +77,28 @@ return (
         // Loading spinner version of the icon
         <>
         <circle
-            cx="12"
-            cy="12"
-            r="10"
+            cx="29" 
+            cy="31"   
+            r="25"     
             stroke="currentColor"
-            strokeWidth="2"
+            strokeWidth="4"
             fill="none"
             className="opacity-25"
         />
         <path
             className="opacity-75"
             fill="currentColor"
+            transform="translate(13, 15)"  // Center and scale up the path
             d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
         />
         </>
     ) : (
         <>
 
+        
 
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 62"
 
->
+
 
 
 <path id="outline" d="M26.46.05c5.64-.36,21.74.95,22.14,7.45-.12,1.83-1.44,4.27-2.43,5.89-.48.73-.74,1.34-.44,2.22.4,1.27.84,2.66.9,4.07-.12,4-.2,8.99,4.66,13.04.71.81,1.98,1.09,1.67,2.14-.15.39-.7,1.02-1.2,1.34-1.51,1.08-3.65,1.79-5.62,2.41-.26.12-.67.21-.69.45-.03.3,1.08.7,1.54.88,7.23,2.75,10.02,6.43,10.74,13.15.18,2.6,1.24,8.34-2.68,8.8-5.29.01-47.9.1-52.1.11-1.07.02-2.28-.98-2.61-1.97-.74-2.69-.11-5.68.25-8.36.86-5.61,4.99-9.97,10.99-12.04,3.21-1.02.12-1.27-1.26-1.68-1.84-.64-7.46-2.78-4.98-4.55,8.07-4.53,5.05-11.37,7.21-17.54.35-1.04-.04-1.96-.7-2.8-.82-1.31-1.43-3.07-2-4.48-.51-1.31-.48-2.59.49-3.65C13.01,2.36,21.53.47,26.28.07h.18Z" fill="#343333"/>
@@ -181,7 +183,6 @@ fill="#D72638"/>
 
 
 
-</svg>
 
 </>
     )}

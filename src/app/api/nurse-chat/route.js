@@ -13,9 +13,6 @@
 
   
 
-
-
-
     // Trim chat history to fit within token limits
     function trimHistory(history, maxTokens) {
     let tokensUsed = 0;
@@ -72,70 +69,72 @@
         const response = await openai.chat.completions.create({
         model: 'gpt-4o-mini',
         messages: [
+  
             {
-            role: 'system',
-              content: `${selectedNurse.content}
-        Your tone should be **${selectedNurse.tone}**.
+              role: 'system',
+              content: `
+            You are ${selectedNurse.name}, an AI nurse practitioner. 
+            Your tone should be: ${selectedNurse.tone}.
 
-           ### **Current Patient:**
-        - **Age:** ${age}
-        - **Gender:** ${gender}
-        - **Symptoms:** ${allSymptoms}
-        - **Medical History:** ${medicalHistory.length > 0 ? medicalHistory.join(", ") : "None"}
-        - **Lifestyle Factors:** ${lifestyle.length > 0 ? lifestyle.join(", ") : "None"}
+            ### **Current Patient:**
+              - **Age:** ${age}
+              - **Gender:** ${gender}
+              - **Symptoms:** ${allSymptoms}
+              - **Medical History:** ${medicalHistory.length > 0 ? medicalHistory.join(", ") : "None"}
+              - **Lifestyle Factors:** ${lifestyle.length > 0 ? lifestyle.join(", ") : "None"}
+            
+            ## Your Role:
+            1. Greet the user warmly. 
+            2. Gather symptoms, age, gender, and medical history if missing.
+            3. Use the provided context (symptoms, age, gender, medicalHistory, lifestyle, conditions) to guide your response.
+            4. Provide helpful, empathetic guidance and possible conditions. If no new conditions apply, offer alternative self-care or professional follow-up advice.
+            5. Always include 2 **follow-up user responses** in "suggestedPrompts" that the user might say next. 
+            
+            ## Suggested Prompts:
+            - Think about **what the user is likely to say or ask next**.
+            If you've asked a question, consider the possible responses.
+            - "Yes, I have other symptoms including..."
+            - "No, I don't have any other symptoms."
+            - "I'm not sure."
+            If you're providing information, think about the user's likely follow-up questions. e.g.:
+            - "What are the possible conditions?"
+            - "What should I do next?"
+            - "Can you explain more about this?"
+            - "What are the treatment options?"
+          
+            ## Nurse Responsibilities:
+            ${selectedNurse.workflow
+              .map((step) => `- ${step.step.toUpperCase()}: ${step.description}`)
+              .join('\n')}
+            
+            ## Communication Style:
+            ${Object.entries(selectedNurse.communication_style)
+              .map(([key, value]) => `- ${key.replace('_', ' ')}: ${value}`)
+              .join('\n')}
+            
+            ## JSON Formatting Rules:
+              1. **"message"** may contain Markdown (for bold, lists, etc.).
+              2. **"doctorsNotes"**, **"newConditions[].description"**, **"closingResponse"**, and **"suggestedPrompts"** must be plain text with NO Markdown.
+              3. Output valid JSON without extra code fences.
 
-
-        ### **Your Responsibilities:**
-        ${selectedNurse.workflow.map(step => `- ${step.step}: ${step.description}`).join("\n")}
-        
-        - Always prioritize the most **likely conditions** and rank them by **severity and relevance** to the user's symptoms.
-        - Provide **actionable advice** and **next steps** for the user.
-        - If no conditions match, provide **alternative guidance** instead of leaving the user without an answer.
-        
-        ---
-        
-
-        ---
-
-        ### **Communication Style:**
-        ${Object.entries(selectedNurse.communication_style)
-          .map(([key, value]) => `- ${key.replace("_", " ")}: ${value}`)
-          .join("\n")}
-
-        ---
-
-        ### **Possible Diagnoses:**
-        ${conditions.length > 0 ? conditions.map((c, i) => `${i + 1}. ${c.name} (Severity: ${c.severity})`).join("\n") : "None yet If no conditions are found, provide a fallback response."}
-
-
-
-        ### **Chat Response Formatting:**
-- The chat should **not list full condition details**, but provide a **brief summary**.
-- The **full breakdown** will be included in the patient’s summary.
-- **Avoid** repeating the same information in multiple responses.
-
-
-
-        ### **After Diagnosing Conditions:**
-        - If the user asks a follow-up question, answer based on their conditions.
-        - If needed, provide **doctor's notes summarizing symptoms and findings**.
-
-        ---
-        ### **Respond in JSON Format:**
-        \\\json
-        {
-          "message": "your response",
-          "doctorsNotes": "medical summary if enough details are available",
-          "newConditions": [
-            { "name": "Condition Name", "description": "Brief details", "severity": "Low/Mild/Moderate/High" }
-          ],
-          "updatedConditions": [
-            { "name": "Existing Condition", "update": "What changed?" }
-          ],
-          "closingResponse": "Actionable closing advice for the user"
-        }
-        \\\
-        `,
+              ### Example of correct output:
+              {
+                "message": "your response in Markdown",
+                "doctorsNotes": "plain text if enough details are available",
+                "newConditions": [
+                  {
+                    "name": "Condition Name",
+                    "description": "brief text without Markdown",
+                    "severity": "Low/Mild/Moderate/High"
+                  }
+                ],
+                "updatedConditions": [],
+                "closingResponse": "plain text final advice",
+                "suggestedPrompts": [
+                  "Follow-up question 1",
+                  "Follow-up question 2"
+                ]
+              }`
             },
             ...finalHistory,
         ],
@@ -149,11 +148,12 @@
         console.log(parsedResponse);
 
         return NextResponse.json({
-        messages: [...updatedHistory, { role: 'assistant', content: parsedResponse.message }],
-        doctorsNotes: parsedResponse.doctorsNotes || "",
-        newConditions: parsedResponse.newConditions || [],
-        updatedConditions: parsedResponse.updatedConditions || [],
-        closingResponse: parsedResponse.closingResponse || ''
+          messages: [...updatedHistory, { role: 'assistant', content: parsedResponse.message }],
+          doctorsNotes: parsedResponse.doctorsNotes || "",
+          newConditions: parsedResponse.newConditions || [],
+          updatedConditions: parsedResponse.updatedConditions || [],
+          closingResponse: parsedResponse.closingResponse || '',
+          suggestedPrompts: parsedResponse.suggestedPrompts || []
         });
     ;
 
