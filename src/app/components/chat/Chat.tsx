@@ -6,6 +6,7 @@ import 'react-resizable/css/styles.css';
 import styles from './Chatbot.module.css';
 import NurseChat from '../NurseChat';
 import AnimatedBotIcon from './AnimatedBotIcon'; 
+import { selectNurse } from '../../utils/nurseUtils';
 
 const LOCAL_STORAGE_KEY = 'nurseChatHistory';
 
@@ -13,7 +14,6 @@ interface SectionData {
   question: string;
   answer: string;
 }
-
 
 interface ChatbotProps {
   populateFields?: (fields: Record<string, string>) => void;
@@ -33,25 +33,32 @@ interface ChatbotProps {
   selectedSections?: SectionData[];
   medicalHistory: string;
   conditions: string;
+  setConditions: (conditions: string) => void;
+  closingResponse: string;
+  setClosingResponse: (closingResponse: string) => void;
 }
 
 const Chatbot: React.FC<ChatbotProps> = ({
   context,
   onUpdateNotes,
-    age,
-    otherSymptoms,
-    symptoms,
-    gender,
-    userInput,
-    medicalHistory,
-    lifestyle,
-    conditions, 
+  age,
+  otherSymptoms,
+  symptoms,
+  gender,
+  userInput,
+  medicalHistory,
+  lifestyle,
+  conditions,
+  setConditions,
+  closingResponse,
+  setClosingResponse,
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isFullScreen, setIsFullScreen] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [messages, setMessages] = useState([]);
-
+  const userData = { age, symptoms };
+  const nurse = selectNurse(userData);
 
   useEffect(() => {
     // Load previous chat history
@@ -63,15 +70,27 @@ const Chatbot: React.FC<ChatbotProps> = ({
 
   useEffect(() => {
     // Save chat history whenever it updates
-    localStorage.setItem('nurseChatHistory', JSON.stringify(messages));
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(messages));
   }, [messages]);
 
+  useEffect(() => {
+    if (messages.length === 0) {
+      const initialMessage = {
+        id: crypto.randomUUID(),
+        role: 'assistant',
+        content: `Hello, I'm ${nurse.name}. I'll be helping gather some information about your health before we proceed with the symptom checker. Could you start by telling me what brings you in today?`,
+        timestamp: new Date().toISOString(),
+      };
+      setMessages([initialMessage]);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleMessagesUpdate = (newMessages) => {
     setMessages(newMessages);
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newMessages));
   };
-
+  
 
 
   const toggleChat = () => setIsOpen(!isOpen);
@@ -135,7 +154,7 @@ const Chatbot: React.FC<ChatbotProps> = ({
 
           {/* Chat Content */}
           <div className={styles.chatContent}>
-            <NurseChat
+          <NurseChat
               onUpdateNotes={onUpdateNotes}
               context={context}
               userInput={userInput}
@@ -143,15 +162,16 @@ const Chatbot: React.FC<ChatbotProps> = ({
               symptoms={symptoms}
               age={age}
               gender={gender}
+              closingResponse={closingResponse}
+              setClosingResponse={setClosingResponse} 
               medicalHistory={medicalHistory}
               otherSymptoms={otherSymptoms}
               lifestyle={lifestyle}
-              
               conditions={conditions}
+              setConditions={setConditions}
               messages={messages} 
               setMessages={setMessages} 
               onMessagesUpdate={handleMessagesUpdate} 
-
             />
           </div>
         </ResizableBox>

@@ -36,6 +36,7 @@ function HomePage() {
   const [chatHistory, setChatHistory] = useState([]);
   const [messages, setMessages] = useState([]);
   const [newConditions, setNewConditions] = useState([]);
+
 const [updatedConditions, setUpdatedConditions] = useState([]);
 const [highlightCondition, setHighlightCondition] = useState(null);
 
@@ -65,6 +66,11 @@ const [highlightCondition, setHighlightCondition] = useState(null);
     console.log("onUpdateNotes called with:", notes);
     
   };
+
+  useEffect(() => {
+    console.log('Conditions updated:', conditions);
+  }, [conditions]);
+  
 
   useEffect(() => {
     console.log("doctorsNotes state changed to:", doctorsNotes);
@@ -203,6 +209,7 @@ const [highlightCondition, setHighlightCondition] = useState(null);
     setShowResults(false); 
     setDoctorsNotes('');
     localStorage.removeItem('nurseChatHistory');
+    setChatHistory([]);
   };
 
   const handleCategorySelect = (categoryName) => {
@@ -404,8 +411,22 @@ const [highlightCondition, setHighlightCondition] = useState(null);
             lifestyle={lifestyle}
             onUpdateNotes={onUpdateNotes}
             doctorsNotes={doctorsNotes}
-            conditions={conditions} 
-            
+           
+            openingResponse={openingResponse}
+            setOpeningResponse={setOpeningResponse}
+            closingResponse={closingResponse}
+            setClosingResponse={setClosingResponse}
+            setChatHistory={setChatHistory}
+            conditions={conditions}
+            setConditions={(newConditions) => {
+              console.log('Setting conditions from Chat:', newConditions);
+              setConditions(newConditions);
+              setShowResults(true); 
+            }}
+            updatedConditions={updatedConditions}
+            setUpdatedConditions={setUpdatedConditions}
+            highlightCondition={highlightCondition}
+            setHighlightCondition={setHighlightCondition}
           />
         </div>
 
@@ -521,7 +542,7 @@ const [highlightCondition, setHighlightCondition] = useState(null);
       </main>
 
          {/* Sidebars */}
-         {isCategorySidebarOpen && (
+        {isCategorySidebarOpen && (
           <CategorySidebar
             symptomsData={symptomsData.symptoms}
             onCategorySelect={handleCategorySelect}

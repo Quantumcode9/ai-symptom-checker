@@ -2310,17 +2310,12 @@
             "name": "Tenderness",
             "id": 9
         },
-
-        {
-            "name": "Back Muscle Spasm",
-            "id": 10
-        },
         {
             "name": "Pain When Bending Forward",
             "id": 11
         },
         {
-            "name": "Can't Bend Backwards",
+            "name": "Pain When Lifting",
             "id": 12
         },
         {
@@ -2336,15 +2331,15 @@
             "id": 15
         },
         {
-            "name": "Kidney Disease",
+            "name": "Inability to Stand Up Straight",
             "id": 16
         },
         {
-            "name": "Kidney Stone",
+            "name": "Inability to Twist",
             "id": 17
         },
         {
-            "name": "Kidney, Polycystic",
+            "name": "Kyphosis",
             "id": 18
         },
         {

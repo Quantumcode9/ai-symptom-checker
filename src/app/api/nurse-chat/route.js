@@ -1,18 +1,23 @@
-import { NextResponse } from 'next/server';
-import OpenAI from 'openai';
+    import { NextResponse } from 'next/server';
+    import OpenAI from 'openai';
+    import { selectNurse } from '../../utils/nurseUtils';
 
-const openai = new OpenAI({
-apiKey: process.env.OPENAI_API_KEY,
-});
+    const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+    });
 
-
-// Helper function to estimate token count
-function countTokens(text) {
+    // Helper function to count tokens
+    function countTokens(text) {
     return Math.ceil(text.length / 4);
-}
+    }
 
-// Trims the history to fit within a specified token limit
-function trimHistory(history, maxTokens) {
+  
+
+
+
+
+    // Trim chat history to fit within token limits
+    function trimHistory(history, maxTokens) {
     let tokensUsed = 0;
     const trimmedHistory = [];
 
@@ -27,121 +32,136 @@ function trimHistory(history, maxTokens) {
     }
 
     return trimmedHistory;
-}
-
-
-function extractGatheredInfo(history) {
-    const gathered = new Set();
-
-    for (const message of history) {
-        if (message.role === "assistant") {
-            if (message.content.includes("severe") || message.content.includes("mild")) {
-                gathered.add("severity");
-            }
-            if (message.content.match(/\b(days?|weeks?)\b/)) {
-                gathered.add("duration");
-            }
-            if (message.content.includes("medication") || message.content.includes("recent changes")) {
-                gathered.add("medications");
-                gathered.add("recent changes");
-            }
-        }
     }
-    return Array.from(gathered);
-}
 
-
-
-export async function POST(request) {
+    export async function POST(request) {
     try {
-    const {
+        const  {
         history = [],
         userInput,
-        symptoms,
-        medicalHistory,
-        otherSymptoms,
+        symptoms = [],
+        medicalHistory = [],
+        otherSymptoms = "",
         age,
         gender,
-        lifestyle,
-        conditions, 
-    } = await request.json();
+        lifestyle = [],
+        conditions = [],
+        
+        } = await request.json();
 
-    const updatedHistory = [
-        ...history,
-        {
-        role: 'user',
-        content: userInput,
-        },
-    ];
+        
 
-    // 2. Trim the updated conversation
-    const finalHistory = trimHistory(updatedHistory, 1500);
-    const requiredInfo = ["severity", "duration", "recent changes", "medications"];
-    const gatheredInfo = extractGatheredInfo(history);
+        console.log('symptoms:', symptoms);
+        // Format symptoms into readable text
+        const symptomsText = symptoms.map(item => `${item.bodyPart}: ${item.symptom}`).join(', ');
+        const allSymptoms = otherSymptoms.trim()
+        ? `${symptomsText}, ${otherSymptoms}`
+        : symptomsText;
 
+        const selectedNurse = selectNurse({ age, symptoms, gender });
+        console.log(`👩‍⚕️ Assigned Nurse: ${selectedNurse.name}`);
 
-    
+  
+
+        // Prepare the chat history
+        const updatedHistory = [...history];
+
+        const finalHistory = trimHistory(updatedHistory, 1500);
+
+        // Generate a response from the AI
         const response = await openai.chat.completions.create({
-            
-            model: 'gpt-4o-mini',
-            messages: [
-                {
-                    role: 'system',
-                    content: `You are Nurse Sarah, a friendly AI nurse assistant. 
-                    - Your role is **not** to diagnose the user.
-                    - If the user has **not** been diagnosed yet, ask about symptoms and guide them to the doctor via the diagnose button.
-                    - Only provide general health information. Do not assume a diagnosis.
-                        ## Current Patient: 
-            - Age: ${age}
-            - Gender: ${gender}
-            - Symptoms: ${JSON.stringify(symptoms)}
-            - Medical History: ${medicalHistory}
-    
-            ## Information Goals: 
-            - Identify: Severity and duration of symptoms.
-            - Ask: Recent changes in health or medications.
-            - Determine: If emergency care is needed.
-            - Ensure: All relevant history is gathered before summarizing.
-
-            **Track Progress:**
-            - Information still needed: ${JSON.stringify(requiredInfo.filter(i => !gatheredInfo.includes(i)))}
-            - If all key details are gathered, summarize and conclude.
-
-
-            - If the user has **diagnosed conditions**, answer follow-up questions and provide general health guidance.
-
-
-### Possible Diagnosed Conditions:
-${conditions.length > 0 ? conditions.map((c, i) => `${i + 1}. ${c.name} (Severity: ${c.severity})`).join("\n") : "None yet"}
-
-### Conversation History:
-${history.map((m) => `${m.role}: ${m.content}`).join("\n")}
-
-            **Respond in JSON format:**
+        model: 'gpt-4o-mini',
+        messages: [
             {
-                "message": "your response",
-                "doctorsNotes": "medical summary"
-            }`
-        },
-        ...trimHistory(history, 1500)
-    ],
-    temperature: 0.7,
-            response_format: { type: "json_object" }
+            role: 'system',
+              content: `${selectedNurse.content}
+        Your tone should be **${selectedNurse.tone}**.
+
+           ### **Current Patient:**
+        - **Age:** ${age}
+        - **Gender:** ${gender}
+        - **Symptoms:** ${allSymptoms}
+        - **Medical History:** ${medicalHistory.length > 0 ? medicalHistory.join(", ") : "None"}
+        - **Lifestyle Factors:** ${lifestyle.length > 0 ? lifestyle.join(", ") : "None"}
+
+
+        ### **Your Responsibilities:**
+        ${selectedNurse.workflow.map(step => `- ${step.step}: ${step.description}`).join("\n")}
+        
+        - Always prioritize the most **likely conditions** and rank them by **severity and relevance** to the user's symptoms.
+        - Provide **actionable advice** and **next steps** for the user.
+        - If no conditions match, provide **alternative guidance** instead of leaving the user without an answer.
+        
+        ---
+        
+
+        ---
+
+        ### **Communication Style:**
+        ${Object.entries(selectedNurse.communication_style)
+          .map(([key, value]) => `- ${key.replace("_", " ")}: ${value}`)
+          .join("\n")}
+
+        ---
+
+        ### **Possible Diagnoses:**
+        ${conditions.length > 0 ? conditions.map((c, i) => `${i + 1}. ${c.name} (Severity: ${c.severity})`).join("\n") : "None yet If no conditions are found, provide a fallback response."}
+
+
+
+        ### **Chat Response Formatting:**
+- The chat should **not list full condition details**, but provide a **brief summary**.
+- The **full breakdown** will be included in the patient’s summary.
+- **Avoid** repeating the same information in multiple responses.
+
+
+
+        ### **After Diagnosing Conditions:**
+        - If the user asks a follow-up question, answer based on their conditions.
+        - If needed, provide **doctor's notes summarizing symptoms and findings**.
+
+        ---
+        ### **Respond in JSON Format:**
+        \\\json
+        {
+          "message": "your response",
+          "doctorsNotes": "medical summary if enough details are available",
+          "newConditions": [
+            { "name": "Condition Name", "description": "Brief details", "severity": "Low/Mild/Moderate/High" }
+          ],
+          "updatedConditions": [
+            { "name": "Existing Condition", "update": "What changed?" }
+          ],
+          "closingResponse": "Actionable closing advice for the user"
+        }
+        \\\
+        `,
+            },
+            ...finalHistory,
+        ],
+        temperature: 0.7,
+        max_tokens: 750,
+        response_format: { type: "json_object" },
+
         });
-        console.log('response:', response, 'history:', history, 'userInput:', userInput, 'symptoms:', symptoms, 'medicalHistory:', medicalHistory, 'otherSymptoms:', otherSymptoms, 'age:', age);
+
         const parsedResponse = JSON.parse(response.choices[0].message.content);
-        console.log('OpenAI raw content:', response.choices[0].message.content);
+        console.log(parsedResponse);
 
         return NextResponse.json({
-        // 4. The new 'assistant' message is appended for the client
-        messages: [
-            ...updatedHistory,
-            { role: 'assistant', content: parsedResponse.message },
-        ],
-        doctorsNotes: parsedResponse.doctorsNotes,
+        messages: [...updatedHistory, { role: 'assistant', content: parsedResponse.message }],
+        doctorsNotes: parsedResponse.doctorsNotes || "",
+        newConditions: parsedResponse.newConditions || [],
+        updatedConditions: parsedResponse.updatedConditions || [],
+        closingResponse: parsedResponse.closingResponse || ''
         });
-    } catch (error) {
-        console.error('Error:', error);
-        return new NextResponse('Error processing request', { status: 500 });
-    }
+    ;
+
+      } catch (error) {
+        console.error('API route error:', error);
+        return NextResponse.json({ 
+          error: 'Internal server error',
+          details: error.message 
+        }, { status: 500 });
+      }
     }
