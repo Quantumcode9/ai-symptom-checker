@@ -1185,6 +1185,7 @@ d="M303.26,229.14c-1.05-3.84-1.84-6.97-2.77-10.06c-1.95-6.42-3.93-12.84-6.01-19.
         className="tooltip"
         style={{
             position: 'absolute',
+            top: `${tooltipPosition.y}px`,
             left: `${tooltipPosition.x}px`,
             transform: 'translateX(-50%)', // Center tooltip horizontally
             padding: '8px',

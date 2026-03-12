@@ -2,7 +2,8 @@ import { NextResponse } from 'next/server';
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  baseURL: 'https://openrouter.ai/api/v1',
+  apiKey: process.env.OPENROUTER_API_KEY,
 });
 
 export async function POST(req) {
@@ -16,7 +17,7 @@ export async function POST(req) {
       : symptomsWithBodyParts;
 
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'qwen/qwen3-32b',
       messages: [
         {
           role: 'system',
@@ -64,12 +65,12 @@ Condition 3:
       throw new Error('No choices returned from OpenAI API');
     }
 
-    const content = choices[0].message.content.trim();
+    const content = (choices[0].message.content ?? choices[0].message.reasoning ?? '').trim();
 
     // parse the response
     const sections = content.split(/\n\n+/);
-    const openingResponse = sections.shift();
-    const closingResponse = sections.pop();
+    const openingResponse = sections.shift().replace(/^\[Opening Response\]\s*/i, '').trim();
+    const closingResponse = sections.pop().replace(/^\[Closing recommendation\]\s*/i, '').trim();
 
     const conditions = sections.map((section) => {
       const lines = section.split('\n');

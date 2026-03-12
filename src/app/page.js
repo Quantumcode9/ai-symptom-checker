@@ -286,7 +286,7 @@ const [highlightCondition, setHighlightCondition] = useState(null);
                 id="formGender"
                 value={gender}
                 onChange={handleGenderChange}
-                className="w-full p-2 rounded-md dark:bg-textArea shadow-sm border focus:ring-2"
+                className="w-full p-2.5 rounded-md dark:bg-textArea shadow-sm border focus:ring-2"
               >
                 <option value="">Select your gender</option>
                 <option value="male">Male</option>
@@ -311,7 +311,6 @@ const [highlightCondition, setHighlightCondition] = useState(null);
                 >All Body Parts</button>
               </div>
               <CategoryButtons handleCategoryClick={handleCategoryClick} />
-
             </div>
 
             {/* Middle: Body Diagram */}
@@ -338,7 +337,8 @@ const [highlightCondition, setHighlightCondition] = useState(null);
                         onClick={() => handleRemoveSymptom(index)}
                         className="ml-2"
                         type="button"
-                      >X</button>
+                      >X
+                      </button>
                     </div>
                   ))}
                 </div>
@@ -347,7 +347,7 @@ const [highlightCondition, setHighlightCondition] = useState(null);
               )}
             </div>
           </section>
-<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Additional Symptoms */}
           <section className="space-y-4 text-center">
             <label htmlFor="formOtherSymptoms" className="block text-md font-medium text-center">
@@ -358,31 +358,31 @@ const [highlightCondition, setHighlightCondition] = useState(null);
               value={otherSymptoms}
               onChange={handleTextAreaChange}
               placeholder="If you have any other symptoms, or additional details, please enter them here."
-              className="w-3/4 p-3  rounded-md  bg-textArea border border-gray-300 shadow-sm border min-h-[100px]"
+              className="w-3/4 p-3  rounded-md  bg-textArea border border-gray-300 shadow-sm min-h-[100px]"
             />
           </section>
 
-  <div className="mt-6">
-  <label 
-    htmlFor="doctorsNotes" 
-    className="block text-sm font-medium text-foreground"
-  >
-    Doctor Notes
-  </label>
-  <textarea
-    id="doctorsNotes"
-    value={doctorsNotes}
-    readOnly
-    className="mt-1 block w-full p-2 bg-background text-foreground border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-    rows={4}
-  />
-</div>
-</div>
+          <div className="mt-6">
+            <label 
+              htmlFor="doctorsNotes" 
+              className="block text-sm font-medium text-foreground"
+            >
+              Doctor Notes
+            </label>
+              <textarea
+                id="doctorsNotes"
+                value={doctorsNotes}
+                readOnly
+                className="mt-1 block w-full p-2 bg-background text-foreground border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                rows={4}
+              />
+          </div>
+          </div>
           {/* Action Buttons */}
           <section className="flex justify-center space-x-4">
             <button
               type="submit"
-              className="bg-diagnoseButton text-white py-2 px-3 hover:bg-blue-700 mr-3 py-2 px-6 rounded disabled:opacity-50"
+              className="bg-diagnoseButton text-white  hover:bg-blue-700 mr-3 py-2 px-6 rounded disabled:opacity-50"
               disabled={loading}
             >
               {loading ? 'Diagnosing...' : 'Diagnose'}
@@ -390,14 +390,13 @@ const [highlightCondition, setHighlightCondition] = useState(null);
             <button
               type="button"
               onClick={handleReset}
-              className="py-2 px-6 rounded bg-resetButton text-white py-2 px-3 rounded hover:bg-red-500 focus:ring-4 focus:ring-red-500"
+              className="py-2 px-6 rounded bg-resetButton text-white  hover:bg-red-500 focus:ring-4 focus:ring-red-500"
             >
               Reset
             </button>
           </section>
         </form>
 
-     
         <div className="mt-6">
 
           <Chat 
@@ -411,7 +410,6 @@ const [highlightCondition, setHighlightCondition] = useState(null);
             lifestyle={lifestyle}
             onUpdateNotes={onUpdateNotes}
             doctorsNotes={doctorsNotes}
-           
             openingResponse={openingResponse}
             setOpeningResponse={setOpeningResponse}
             closingResponse={closingResponse}
@@ -432,71 +430,71 @@ const [highlightCondition, setHighlightCondition] = useState(null);
 
         {error && <div className="mt-3 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">{error}</div>}
         {showResults && (
-    <section className="results text-center mt-5">
+    <section className="results max-w-6xl mx-auto text-center mt-5">
     <p className="text-cardText mb-4">{openingResponse}</p>
     <h2 className="text-xl font-semibold mb-4">Possible Conditions:</h2>
     {conditions.length > 0 ? (
-  <div className="flex flex-wrap -mx-2">
-    {conditions.map((condition, index) => {
-      const isHighlighted = condition.name === highlightCondition;
-      const isUpdated = updatedConditions.some((upd) => upd.name === condition.name);
-      
-      let severityColor;
-      switch (condition.severity.toLowerCase()) {
-        case 'low':
-          severityColor = 'text-yellow-200';
-          break;
-        case 'mild':
-          severityColor = 'text-yellow-500';
-          break;
-        case 'moderate':
-          severityColor = 'text-orange-500';
-          break;
-        case 'high':
-          severityColor = 'text-red-500';
-          break;
-        default:
-          severityColor = 'text-gray-700';
-      }
+      <div className="flex flex-wrap -mx-2">
+        {conditions.map((condition, index) => {
+          const isHighlighted = condition.name === highlightCondition;
+          const isUpdated = updatedConditions.some((upd) => upd.name === condition.name);
+          
+          let severityColor;
+          switch (condition.severity.toLowerCase()) {
+            case 'low':
+              severityColor = 'text-yellow-200';
+              break;
+            case 'mild':
+              severityColor = 'text-yellow-500';
+              break;
+            case 'moderate':
+              severityColor = 'text-orange-500';
+              break;
+            case 'high':
+              severityColor = 'text-red-500';
+              break;
+            default:
+              severityColor = 'text-gray-700';
+          }
 
-      return (
-        <div key={index} className="w-full md:w-1/2 px-2 mb-3">
-          <div className={`bg-resultsCard shadow-lg rounded-lg p-4 ${isHighlighted ? 'border-2 border-yellow-500' : ''}`}>
-            <h3 className={`text-lg font-semibold ${severityColor}`}>
-              {condition.name}
-            </h3>
-            <p className="text-cardText font-light">{condition.description}</p>
-            <p className="text-sm text-gray-500">Severity: {condition.severity}</p>
-            
-            {isUpdated && (
-              <p className="text-sm text-blue-500">Updated: {updatedConditions.find(upd => upd.name === condition.name)?.update}</p>
-            )}
-          </div>
-        </div>
-      );
-    })}
-  </div>
+          return (
+            <div key={index} className="w-full md:w-1/2 px-2 mb-3">
+              <div className={`bg-resultsCard shadow-lg rounded-lg p-4 ${isHighlighted ? 'border-2 border-yellow-500' : ''}`}>
+                <h3 className={`text-lg font-semibold ${severityColor}`}>
+                  {condition.name}
+                </h3>
+                <p className="text-cardText font-light">{condition.description}</p>
+                <p className="text-sm text-gray-500">Severity: {condition.severity}</p>
+                
+                {isUpdated && (
+                  <p className="text-sm text-blue-500">Updated: {updatedConditions.find(upd => upd.name === condition.name)?.update}</p>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
 ) : (
   <p>No conditions found.</p>
 )}
-    <div className="mt-6 flex justify-center items-center">
+  <div className="mt-6 flex justify-center items-center">
     <div className="bg-resultsCard w-2/3 shadow-lg rounded-lg p-6 mt-6">
-  <h3 className="text-xl font-semibold blueText mb-4">Recommendation:</h3>
-  <hr className="border-gray-300 my-4" />
-  <p className="mt-4">{closingResponse}</p>
-  </div>
+      <h3 className="text-xl font-semibold blueText mb-4">Recommendation:</h3>
+      <hr className="border-gray-300 my-4" />
+      <p className="mt-4">{closingResponse}</p>
+    </div>
   </div>
 
 
 {/* Follow-Up Button */}
   <div className="mt-6">
-  <button
-    onClick={() => setShowFollowUpForm(true)}
-    className="bg-diagnoseButton text-white py-2 px-3 hover:bg-blue-700 mr-3 py-2 px-6 rounded" 
-  >
-    Ask a follow-up question
-  </button>
-</div>
+    <button
+      onClick={() => setShowFollowUpForm(true)}
+      className="bg-diagnoseButton text-white hover:bg-blue-700 mr-3 py-2 px-6 rounded" 
+    >
+      Ask a follow-up question
+    </button>
+  </div>
       {/* Follow-Up Question Form */}
       {showFollowUpForm && (
           <div className="flex flex-col items-center mt-6">
@@ -506,7 +504,7 @@ const [highlightCondition, setHighlightCondition] = useState(null);
                 value={followUpQuestion}
                 onChange={(e) => setFollowUpQuestion(e.target.value)}
                 placeholder="Ask about a specific condition, symptom, or treatment..."
-                className="w-3/4 p-3  rounded-md  bg-textArea border border-gray-300 shadow-sm border"
+                className="w-3/4 p-3  rounded-md  bg-textArea  border-gray-300 shadow-sm border"
                 rows={3}
               />
               <button
@@ -525,22 +523,21 @@ const [highlightCondition, setHighlightCondition] = useState(null);
             )}
           </div>
         )}
-<div className="mt-6">
-{showResults && 
-<PDFGenerator 
-  conditions={conditions}
-  openingResponse={openingResponse}
-  closingResponse={closingResponse}
-  doctorsNotes={doctorsNotes}
-  symptoms={selectedSymptoms}
+      <div className="mt-6">
+        {showResults && 
+        <PDFGenerator 
+          conditions={conditions}
+          openingResponse={openingResponse}
+          closingResponse={closingResponse}
+          doctorsNotes={doctorsNotes}
+          symptoms={selectedSymptoms}
 
-/>}
-</div>
+        />}
+      </div>
   </section>
 )}
 
       </main>
-
          {/* Sidebars */}
         {isCategorySidebarOpen && (
           <CategorySidebar

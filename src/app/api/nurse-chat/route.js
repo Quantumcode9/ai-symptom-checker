@@ -3,7 +3,8 @@
     import { selectNurse } from '../../utils/nurseUtils';
 
     const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+      baseURL: 'https://openrouter.ai/api/v1',
+      apiKey: process.env.OPENROUTER_API_KEY,
     });
 
     // Helper function to count tokens
@@ -67,7 +68,7 @@
 
         // Generate a response from the AI
         const response = await openai.chat.completions.create({
-        model: 'gpt-4o-mini',
+        model: 'qwen/qwen3-32b',
         messages: [
   
             {
