@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 import symptomsData from './data/symptoms.json';
 import BodyDiagram from './components/BodyDiagram';
@@ -255,7 +256,7 @@ const [highlightCondition, setHighlightCondition] = useState(null);
       {/* Fixed Header */}
       <header className="fixed bg-header text-white top-0 left-0 w-full z-20 py-4">
         <div className="container mx-auto px-4 flex justify-center items-center"> 
-          <img src="/static/icon.png" alt="Icon" className="h-10 w-10 mr-3" />
+          <Image src="/static/icon.png" alt="Icon" width={40} height={40} className="mr-3" />
           <h1 className="text-4xl font-bold">Diagnoself</h1>
         </div>
       </header>

@@ -3,18 +3,17 @@ import React, { useEffect, useRef } from 'react';
 const CategorySidebar = ({ symptomsData, onCategorySelect, onClose }) => {
 const sidebarRef = useRef(null);
 
-const handleClickOutside = (event) => {
-    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-    onClose();
-    }
-};
-
 useEffect(() => {
+    const handleClickOutside = (event) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        onClose();
+    }
+    };
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
     document.removeEventListener('mousedown', handleClickOutside);
     };
-}, []);
+}, [onClose]);
 
 return (
     <div ref={sidebarRef} 

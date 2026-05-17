@@ -13,18 +13,17 @@ const bodyPartData = symptomsData.symptoms.find(
     (item) => item.name === bodyPart
 );
 
-const handleClickOutside = (event) => {
-    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-    onClose();
-    }
-};
-
 useEffect(() => {
+    const handleClickOutside = (event) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        onClose();
+    }
+    };
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
     document.removeEventListener('mousedown', handleClickOutside);
     };
-}, []);
+}, [onClose]);
 
 if (!bodyPartData) {
     return null;

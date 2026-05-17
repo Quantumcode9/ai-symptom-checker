@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { ResizableBox, ResizeHandle} from 'react-resizable';
-import 'react-resizable/css/styles.css';
 import styles from './Chatbot.module.css';
 import NurseChat from '../NurseChat';
 import AnimatedBotIcon from './AnimatedBotIcon'; 
